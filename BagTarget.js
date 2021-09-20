@@ -1,6 +1,11 @@
 // initialState: {targetItem: [  ] }
 
-export default function BagTarget({ $target, initialState, onRemove }) {
+export default function BagTarget({
+  $target,
+  initialState,
+  onRemove,
+  viewInfo,
+}) {
   const $bagTarget = document.createElement("div");
   $bagTarget.setAttribute("id", "bagTarget");
   $target.appendChild($bagTarget);
@@ -16,15 +21,20 @@ export default function BagTarget({ $target, initialState, onRemove }) {
   this.render = () => {
     console.log(this.state);
     $bagTarget.innerHTML = `
+      <div>목표 아이템</div>
       <ul>
         ${this.state.targetItem
           .map(
             (item, index) =>
-              `<li data-id="${item.id}${index}">${item.name}<button class="bagTargetRemoveBtn">x</button></li>`
+              `<li data-id="${item.id}${index}">
+                ${item.name}
+                <button class="bagTargetRemoveBtn">x</button>
+                <button class="bagTargetInfoBtn">info</button>
+              </li>`
           )
           .join("")}
       </ul>
-      <button class="bagTargetRemoveAllBtn">ALL X</button>
+      <button id="bagTargetRemoveAllBtn">목표 전체 삭제</button>
     `;
 
     $bagTarget.querySelectorAll(".bagTargetRemoveBtn").forEach((btn) =>
@@ -36,11 +46,17 @@ export default function BagTarget({ $target, initialState, onRemove }) {
     );
 
     $bagTarget
-      .querySelector(".bagTargetRemoveAllBtn")
+      .querySelector("#bagTargetRemoveAllBtn")
       .addEventListener("click", (e) => {
-        console.log(e.target);
         onRemove("ALL");
       });
+
+    $bagTarget.querySelectorAll(".bagTargetInfoBtn").forEach((btn) =>
+      btn.addEventListener("click", (e) => {
+        const target = e.target.closest("li").dataset.id;
+        viewInfo(target.slice(0, target.length - 1));
+      })
+    );
   };
 
   this.render();

@@ -15,6 +15,7 @@ const selectItem = new SelectItem({
   },
   submitItem: (selected) => {
     console.log(selected);
+    console.log(bag.state);
     const nextBagState = {
       ...bag.state,
       targetItem: [...bag.state.targetItem, selected],
@@ -38,6 +39,7 @@ const bag = new Bag({
         name: "빵",
         count: 2,
         limit: 5,
+        location: "pocket0",
       },
       pocket1: {
         id: "WD002",
@@ -45,6 +47,7 @@ const bag = new Bag({
         name: "물",
         count: 2,
         limit: 5,
+        location: "pocket1",
       },
       pocket2: { id: false },
       pocket3: { id: false },
@@ -68,6 +71,10 @@ const bag = new Bag({
     console.log(nextTarget);
     needDrops.setState(nextTarget);
   },
+  viewInfo: (targetId) => {
+    console.log(targetId);
+    selectItem.setState({ ...selectItem.state, cart: targetId });
+  },
 });
 
 const needDrops = new NeedDrops({
@@ -86,7 +93,7 @@ const area = new Area({
   $target,
   initialState: [],
   getDrop: (dropInfo) => {
-    const bagInfo = bag.state;
+    const bagInfo = JSON.parse(JSON.stringify(bag.state));
     console.log(dropInfo);
     console.log(bagInfo);
 
@@ -95,6 +102,7 @@ const area = new Area({
       const bagEquip = { ...bagInfo.equip };
 
       if (weaponSort.includes(dropInfo.sort) && !bagInfo.equip.weapon.id) {
+        dropInfo.location = "weapon";
         bagEquip.weapon = dropInfo;
         bag.setState({ ...bagInfo, equip: bagEquip }, "equip");
         return;
@@ -102,6 +110,7 @@ const area = new Area({
         !weaponSort.includes(dropInfo.sort) &&
         !bagInfo.equip[dropInfo.sort].id
       ) {
+        dropInfo.location = dropInfo.sort;
         bagEquip[dropInfo.sort] = dropInfo;
         bag.setState({ ...bagInfo, equip: bagEquip }, "equip");
         return;
@@ -114,7 +123,7 @@ const area = new Area({
     const bagInventory = { ...bagInfo.inventory };
     console.log(bagInventory);
 
-    // 가방에 동일한 아이템이 있는지 확인
+    // 가방에 동일한 아이템을 겹칠 수 있는지 확인
     let bagSpace = Object.keys(bagInventory).findIndex(
       (pocket) =>
         bagInventory[pocket].id === dropInfo.id &&
@@ -122,7 +131,7 @@ const area = new Area({
     );
     console.log(bagSpace);
 
-    // 가방에 동일한 아이템이 없을 때
+    // 가방에 동일한 아이템을 겹칠 수 없을 때
     if (bagSpace < 0) {
       // 빈 공간 있는지 확인
       bagSpace = Object.keys(bagInfo.inventory).findIndex(
@@ -134,6 +143,7 @@ const area = new Area({
         console.log(bagInfo.inventory);
         return;
       }
+      dropInfo.location = `pocket${bagSpace}`;
       bagInventory[`pocket${bagSpace}`] = dropInfo;
     } else {
       const targetPocket = bagInventory[`pocket${bagSpace}`];
@@ -156,6 +166,7 @@ const area = new Area({
           console.log(bagInfo.inventory);
           return;
         }
+        remains.location = `pocket${bagSpace}`;
         bagInventory[`pocket${bagSpace}`] = remains;
       } else {
         targetPocket.count += dropInfo.count;
@@ -164,6 +175,7 @@ const area = new Area({
     console.log("bag space: pocket" + bagSpace);
     console.log(bagInventory);
     bag.setState({ ...bagInfo, inventory: bagInventory }, "inventory");
+    console.log(bag.state);
   },
 });
 

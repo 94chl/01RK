@@ -33,6 +33,9 @@ export default function BagInitialWeapon({ $target, initialState, onClick }) {
           id: $li.dataset.id,
           sort: $li.dataset.sort,
           name: $li.innerText,
+          count: 1,
+          limit: 1,
+          location: "weapon",
         };
         onClick(clickedInfo);
       });

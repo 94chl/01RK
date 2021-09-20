@@ -1,4 +1,4 @@
-import { areaData, searchById } from "./itemTable.js";
+import { areaData, searchById, eng2Kor } from "./itemTable.js";
 import { disassembleGD } from "./disassemble.js";
 
 export default function SelectPreview({
@@ -43,6 +43,14 @@ export default function SelectPreview({
                 <span class="attrKey">이름 : </span>
                 <span class="attrValue"  data-grade="${this.state.cartInfo.id[0]}">
                   ${this.state.cartInfo[key]}
+                </span>
+              </li>`;
+          } else if (key == "sort") {
+            return `
+              <li id="itemSort">
+                <span class="attrKey">종류 : </span>
+                <span class="attrValue">
+                  ${eng2Kor[this.state.cartInfo[key]]}
                 </span>
               </li>`;
           } else if (key == "material") {

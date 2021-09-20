@@ -56,7 +56,8 @@ export default function BagEquip({ $target, initialState, onMove, onRemove }) {
           id: $li.dataset.id,
           sort: $li.dataset.sort,
           name: $li.querySelector(".itemName").innerText,
-          count: $li.dataset.count,
+          count: 1,
+          limit: 1,
           location: $li.dataset.pocket,
         };
         onMove(clickedInfo);
@@ -70,7 +71,8 @@ export default function BagEquip({ $target, initialState, onMove, onRemove }) {
           id: $li.dataset.id,
           sort: $li.dataset.sort,
           name: $li.querySelector(".itemName").innerText,
-          count: $li.dataset.count,
+          count: 1,
+          limit: 1,
           location: $li.dataset.pocket,
         };
         if (clickedInfo.id) onRemove(clickedInfo);

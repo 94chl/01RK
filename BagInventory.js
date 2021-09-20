@@ -28,6 +28,9 @@ export default function BagInventory({
       bagEquip.setState(this.state.equip);
     } else if (targetState === "inventory") {
       bagItem.setState(this.state.inventory);
+    } else if (targetState === "allBag") {
+      bagEquip.setState(this.state.equip);
+      bagItem.setState(this.state.inventory);
     }
   };
 
@@ -54,7 +57,9 @@ export default function BagInventory({
     initialState: this.state.equip,
     onMove: (clickedInfo) => {
       console.log(clickedInfo);
+      // 우선 선택된 아이템이 없다면, 현 아이템이 우선항목이 된다
       if (!moveItems.from.id) {
+        // 빈 항목이 선택되었을 때, 무효처리
         if (!clickedInfo.id)
           document.querySelector(".nowClicked").classList.remove("nowClicked");
         moveItems.from = clickedInfo;
@@ -89,6 +94,7 @@ export default function BagInventory({
       nextInventory.equip[clickedInfo.location] = { id: false };
       console.log(nextInventory);
       this.setState(nextInventory, "equip");
+      bagUpdate(nextInventory);
     },
   });
 
@@ -97,7 +103,9 @@ export default function BagInventory({
     initialState: this.state.inventory,
     onMove: (clickedInfo) => {
       console.log(clickedInfo);
+      // 우선 선택된 아이템이 없다면, 현 아이템이 우선항목이 된다
       if (!moveItems.from.id) {
+        // 빈 항목이 선택되었을 때, 무효처리
         if (!clickedInfo.id)
           document.querySelector(".nowClicked").classList.remove("nowClicked");
         moveItems.from = clickedInfo;

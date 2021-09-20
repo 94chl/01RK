@@ -27,6 +27,7 @@ export default function SelectItem({ $target, initialState, submitItem }) {
       category: nextState.category,
       data: nextState.data,
       defaultCheck: nextState.defaultCheck,
+      cart: nextState.cart || "",
     };
     console.log(this.state);
     selectCategory.setState(this.state);

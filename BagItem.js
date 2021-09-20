@@ -34,6 +34,7 @@ export default function BagItem({ $target, initialState, onMove, onRemove }) {
             data-id="${this.state[pocket].id}" 
             data-sort="${this.state[pocket].sort}" 
             data-count="${this.state[pocket].count}" 
+            data-limit="${this.state[pocket].limit}" 
             data-pocket="${pocket}">
               <span class="itemName">${this.state[pocket].name}</span>
               (x${this.state[pocket].count ? this.state[pocket].count : 1})
@@ -61,7 +62,8 @@ export default function BagItem({ $target, initialState, onMove, onRemove }) {
           id: $li.dataset.id,
           sort: $li.dataset.sort,
           name: $li.querySelector(".itemName").innerText,
-          count: $li.dataset.count,
+          count: parseInt($li.dataset.count),
+          limit: parseInt($li.dataset.limit),
           location: $li.dataset.pocket,
         };
         onMove(clickedInfo);
@@ -75,7 +77,8 @@ export default function BagItem({ $target, initialState, onMove, onRemove }) {
           id: $li.dataset.id,
           sort: $li.dataset.sort,
           name: $li.querySelector(".itemName").innerText,
-          count: $li.dataset.count,
+          count: parseInt($li.dataset.count),
+          limit: parseInt($li.dataset.limit),
           location: $li.dataset.pocket,
         };
         if (clickedInfo.id) onRemove(clickedInfo);

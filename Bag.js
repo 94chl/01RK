@@ -14,6 +14,7 @@ export default function Bag({
   initialState,
   targetItemRemove,
   viewInfo,
+  pathFinder,
 }) {
   const $bag = document.createElement("div");
   $bag.setAttribute("id", "bag");
@@ -52,6 +53,7 @@ export default function Bag({
       targetItemRemove(this.state.targetItem);
     },
     viewInfo,
+    pathFinder,
   });
 
   const bagInventory = new BagInventory({

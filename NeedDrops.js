@@ -10,7 +10,6 @@ export default function NeedDrops({ $target, initialState, onChange }) {
   this.state = initialState;
 
   this.setState = (nextState) => {
-    console.log(this.state);
     this.state = disassembleAllWD(nextState);
     console.log(this.state);
     this.render();

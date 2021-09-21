@@ -5,6 +5,7 @@ export default function SelectPreview({
   $target,
   initialState,
   searchItemInfo,
+  pathFinder,
 }) {
   const $selectPreview = document.createElement("div");
   $selectPreview.setAttribute("id", "selectPreview");
@@ -34,7 +35,7 @@ export default function SelectPreview({
   this.render = () => {
     console.log(this.state);
     console.log(itemInfoKeys);
-    $selectPreview.innerHTML = `<ul>
+    $selectPreview.innerHTML = `<ul data-id="${this.state.cart}">
       ${itemInfoKeys
         .map((key, index) => {
           if (key == "name") {
@@ -84,8 +85,34 @@ export default function SelectPreview({
           }
         })
         .join("")}
+      <button class="pathFinderBtn">route</button>
+      <button class="removePathBtn">path X</button>
+      <div id="itemPath"></div>
     </ul>`;
+
     searchItemInfo(this.state);
+
+    $selectPreview
+      .querySelector(".pathFinderBtn")
+      .addEventListener("click", (e) => {
+        const $itemPath = $selectPreview.querySelector("#itemPath");
+
+        if ($itemPath.querySelector("ul")) return;
+
+        const paths = pathFinder(e.target.closest("ul").dataset.id);
+
+        console.log(paths);
+
+        $itemPath.innerHTML += `<ul>
+          ${paths.map((path) => `<li>${path.join(" -> ")}</li>`).join("")}
+        </ul>`;
+      });
+
+    $selectPreview
+      .querySelector(".removePathBtn")
+      .addEventListener("click", () => {
+        $selectPreview.querySelector("#itemPath").innerHTML = "";
+      });
   };
 
   this.render();

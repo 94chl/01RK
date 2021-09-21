@@ -2,11 +2,16 @@ import SelectCategory from "./SelectCategory.js";
 import SelectDetails from "./SelectDetails.js";
 import SelectDept from "./SelectDept.js";
 import SelectPreview from "./SelectPreview.js";
-import { database, searchById } from "./itemTable.js";
+import { database } from "./itemTable.js";
 
 //initialState: { dept, category, data }
 
-export default function SelectItem({ $target, initialState, submitItem }) {
+export default function SelectItem({
+  $target,
+  initialState,
+  submitItem,
+  pathFinder,
+}) {
   const $selectItemBox = document.createElement("div");
   $selectItemBox.setAttribute("id", "selectItemBox");
   $target.appendChild($selectItemBox);
@@ -90,6 +95,7 @@ export default function SelectItem({ $target, initialState, submitItem }) {
       console.log(itemInfo);
       this.state = itemInfo;
     },
+    pathFinder,
   });
 
   const $itemSubmitBtn = document.createElement("button");

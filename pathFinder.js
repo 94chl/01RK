@@ -1,3 +1,5 @@
+import { areaData } from "./itemTable.js";
+
 //맵(이동정보)
 const areaPath = [
   //골목길# 002 : 0
@@ -32,171 +34,126 @@ const areaPath = [
   [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0],
 ];
 
-//파라미터 = 아이템 아이디
-function itemRoute(itemId, route) {
-  $(`.tab.${itemId} .routeBox`).toggleClass("hide");
-  //계산 여부 확인
-  if ($(`.tab.${itemId} .routeBox .shortRoute`).length > 0) {
-    return;
-  }
-  let needs = [];
-  let routeArr = [];
-  let routeStack = JSON.parse(JSON.stringify(route));
-  let startPoint = [];
-  let pathT = JSON.parse(JSON.stringify(areaPath));
-  let mapT = JSON.parse(JSON.stringify(area));
-  if (itemId == "total") {
-    for (let i = 0; i < needDrops.length; i++) {
-      if (needDrops[i].ID == startW && needDrops[i].count == 1) {
-      } else {
-        needs.push(needDrops[i].ID);
-      }
-    }
-  } else {
-    let equipMat = JSON.parse(JSON.stringify(getById(itemId, selectedG).drops));
-    if (equipMat.indexOf(startW) >= 0) {
-      equipMat.splice(equipMat.indexOf(startW), 1);
-    }
-    needs = needs.concat(equipMat);
-  }
+// 지역 드랍테이블, 남은 드랍 갯수를 포인트로 변환
+function checkAreaDrop(area, needs) {
+  Object.keys(area).forEach((areaId) => {
+    const areaDrop = needs.filter((needsId) =>
+      area[areaId].drop.includes(needsId)
+    );
 
-  needs = needs.reduce(function (acc, cur) {
-    if (acc.indexOf(cur) < 0) {
-      acc.push(cur);
-    }
-    return acc;
-  }, []);
-
-  $(needs).each(function (a, n) {
-    if (bag.indexOf(n) >= 0) {
-      needs.splice(needs.indexOf(n), 1);
-    }
+    area[areaId].drop = areaDrop;
+    area[areaId].point = areaDrop.length;
   });
-  mapT = calcP(mapT, needs);
+  return area;
+}
 
-  if (routeStack.length > 0) {
-    for (let i = 0; i < routeStack.length; i++) {
-      let routeTemp = getById(routeStack[i], mapT).drop;
-      needs = needs.filter(function (x) {
-        if (routeTemp.includes(x)) {
-          return false;
-        } else {
-          return true;
+//파라미터 = 아이템 아이디
+export function pathFinder(route, needsNow, bagNow) {
+  const pathInfo = JSON.parse(JSON.stringify(areaPath));
+  let mapInfo = JSON.parse(JSON.stringify(areaData));
+
+  const routeStack = [...route];
+  const finishedRoute = [];
+
+  const bag = bagNow.filter((item) => needsNow.includes(item));
+  const needs = needsNow.filter(
+    (need) => !bag.includes(need) && !mapInfo.A000.drop.includes(need)
+  );
+
+  console.log(bag);
+  console.log(needs);
+
+  mapInfo = checkAreaDrop(mapInfo, needs);
+  console.log(mapInfo);
+
+  const startPoint = Object.keys(mapInfo)
+    .reduce((acc, areaId) => {
+      if (mapInfo[areaId].point > 0) {
+        acc.push({ ...mapInfo[areaId], id: areaId });
+      }
+      return acc;
+    }, [])
+    .sort((a, b) => b.point - a.point);
+
+  console.log(startPoint);
+
+  // 최단 경로 탐색
+  let maxLength = 10;
+
+  function shortRoute(needs, bag, path, map, startPoint, route) {
+    // 출발지 [{id, name, drop, point}...]
+    let startT = JSON.parse(JSON.stringify(startPoint));
+    console.log(startT);
+
+    // 출발지 별 도착지 탐색
+    for (let i = 0; i < startT.length; i++) {
+      const needsT = [...needs];
+      const bagT = [...bag];
+      let mapInfo = JSON.parse(JSON.stringify(map));
+      const pathInfo = JSON.parse(JSON.stringify(path));
+
+      // 출발지의 드랍템 처리
+      mapInfo[startT[i].id].drop.forEach((dropId) => {
+        if (needsT.includes(dropId)) {
+          bagT.push(dropId);
+          needsT.splice(needsT.indexOf(dropId), 1);
         }
       });
-    }
-    mapT = calcP(mapT, needs);
-    for (let o = 2; o < mapT.length; o++) {
-      if (
-        mapT[o].pt > 0 &&
-        pathT[Number(routeStack[routeStack.length - 1].substring(1)) - 2][
-          o - 2
-        ] > 0
-      ) {
-        startPoint.push(mapT[o]);
-      }
-    }
-  } else {
-    $(mapT).each(function () {
-      if (this.pt > 0) {
-        startPoint.push(this);
-      }
-    });
-  }
 
-  startPoint.sort(function (a, b) {
-    return b.pt - a.pt;
-  });
-  //렌즈, 보급형기타 없이 상위템 만들기 불가능(드랍이 안댐)
-  if (needs.indexOf("DW027") >= 0 || needs.indexOf("DW028") >= 0) {
-    alert("보급형 기타, 렌즈는 시작무기를 통해 추가해주세요");
-    return;
-  }
+      // 드랍템 처리 후 지역 점수 및 드랍 재측정
+      mapInfo = checkAreaDrop(mapInfo, needsT);
 
-  //지역 드랍테이블, 남은 드랍 갯수를 포인트로 변환
-  function calcP(areaTemp, needTemp) {
-    $(areaTemp).each(function (a, at) {
-      for (let i = 0; i < at.drop.length; ) {
-        if (needTemp.indexOf(at.drop[i]) < 0) {
-          at.drop.splice(i, 1);
+      // 이동 가능 지역 갱신
+      for (let e = 0; e < pathInfo.length; e++) {
+        pathInfo[e][parseInt(startT[i].id.substring(1) - 2)] = 0;
+      }
+
+      //도착지 후보 선정(드랍템 유무, 이동가능 유무)
+      const dest = [];
+      for (const [areaId, areaDetail] of Object.entries(mapInfo)) {
+        if (parseInt(areaId.substring(1)) < 2) continue;
+        if (
+          areaDetail.point > 0 &&
+          pathInfo[parseInt(startT[i].id.substring(1)) - 2][
+            parseInt(areaId.substring(1)) - 2
+          ] > 0
+        ) {
+          dest.push({ ...areaDetail, id: areaId });
+        }
+      }
+
+      dest.sort((a, b) => b.point - a.point);
+
+      //출발지를 루트에 추가, 재귀함수 호출
+      //이동경로
+      const routeT = [...route];
+      if (needsT.length < 1) {
+        routeT.push(startT[i].id);
+        if (maxLength >= routeT.length) {
+          maxLength = routeT.length;
+          const routeName = routeT.map((areaId) => areaData[areaId].name);
+          finishedRoute.push(routeName);
+          console.log(routeName);
+        }
+      } else if (needsT.length > 0 && dest.length > 0) {
+        routeT.push(startT[i].id);
+        // 탐색 중인 루트 폐기, 다음 루트 탐색
+        if (routeT.length >= maxLength) {
+          continue;
         } else {
-          i++;
+          shortRoute(needsT, bagT, pathInfo, mapInfo, dest, routeT);
         }
-      }
-      at.pt = at.drop.length;
-    });
-    return areaTemp;
-  }
-
-  let shortest = 10;
-  function shortRoute(needs, bag, path, map, idx, route) {
-    //출발지
-    let startT = JSON.parse(JSON.stringify(idx));
-    if (route.length > shortest) {
-      //긴 경로 제외
-    } else {
-      //출발지 별 도착지 탐색
-      for (let i = 0; i < startT.length; i++) {
-        let needsT = JSON.parse(JSON.stringify(needs));
-        let bagT = JSON.parse(JSON.stringify(bag));
-        let mapT = JSON.parse(JSON.stringify(map));
-        let pathT = JSON.parse(JSON.stringify(path));
-        //출발지의 드랍템 처리
-        $(getById(startT[i].ID, mapT).drop).each(function (a, drop) {
-          bagT.push(drop);
-          if (needsT.indexOf(drop) >= 0) {
-            needsT.splice(needsT.indexOf(drop), 1);
-          }
-        });
-        mapT = calcP(mapT, needsT);
-        for (let e = 0; e < pathT.length; e++) {
-          pathT[e][Number(startT[i].ID.substring(1) - 2)] = 0;
-        }
-        //도착지 후보 선정(드랍템 유무, 이동가능 유무)
-        let nextIdxs = [];
-        for (let o = 2; o < mapT.length; o++) {
-          if (
-            mapT[o].pt > 0 &&
-            pathT[Number(startT[i].ID.substring(1)) - 2][o - 2] > 0
-          ) {
-            nextIdxs.push(mapT[o]);
-          }
-        }
-        nextIdxs.sort(function (a, b) {
-          return b.pt - a.pt;
-        });
-        //출발지를 루트에 추가, 재귀함수 호출
-        //이동경로
-        let routeT = JSON.parse(JSON.stringify(route));
-        if (needsT.length < 1) {
-          routeT.push(startT[i].ID);
-          if (shortest >= routeT.length) {
-            shortest = routeT.length;
-            let setRoute = [];
-            $(routeT).each(function () {
-              setRoute.push(getById(this, area).name);
-            });
-            routeArr.push(setRoute);
-          }
-        } else if (needsT.length > 0 && nextIdxs.length > 0) {
-          routeT.push(startT[i].ID);
-          if (routeT.length >= shortest) {
-            continue;
-          } else {
-            shortRoute(needsT, bagT, pathT, mapT, nextIdxs, routeT);
-          }
-        } else {
-          //탐색 불가
-        }
+      } else {
+        //탐색 불가
       }
     }
   } //shortRoute
 
-  shortRoute(needs, bag, pathT, mapT, startPoint, routeStack);
+  shortRoute(needs, bag, pathInfo, mapInfo, startPoint, routeStack);
 
-  routeArr = routeArr.filter(function (e) {
-    return e.length <= shortest;
-  });
+  const shortestRoute = finishedRoute.filter(
+    (route) => route.length <= maxLength
+  );
 
-  return routeArr;
+  return shortestRoute;
 }

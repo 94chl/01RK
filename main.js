@@ -2,7 +2,9 @@ import SelectItem from "./SelectItem.js";
 import Bag from "./Bag.js";
 import NeedDrops from "./NeedDrops.js";
 import { weaponData, database, equippable, weaponSort } from "./itemTable.js";
+import { disassembleWD } from "./disassemble.js";
 import Area from "./Area.js";
+import { pathFinder } from "./pathFinder.js";
 
 const $target = document.querySelector("#app");
 
@@ -23,6 +25,41 @@ const selectItem = new SelectItem({
     console.log(nextBagState);
     bag.setState(nextBagState, "targetItem");
     needDrops.setState(nextBagState.targetItem);
+  },
+  pathFinder: (selectedId) => {
+    const bagTarget = [selectedId];
+    const needsInfo = disassembleWD(bagTarget);
+    const needsIdArray = Object.keys(needsInfo.dropMatId);
+
+    console.log(needsInfo);
+    console.log(needsIdArray);
+
+    const bagEquip = Object.values(bag.state.equip).reduce((acc, item) => {
+      if (item.id) acc.push(item.id);
+      return acc;
+    }, []);
+    const bagInventory = Object.values(bag.state.inventory).reduce(
+      (acc, item) => {
+        if (item.id) acc.push(item.id);
+        return acc;
+      },
+      []
+    );
+
+    const bagNow = bagEquip.concat(bagInventory);
+    console.log(bagNow);
+    console.log(bagTarget);
+
+    const loading = document.createElement("div");
+    loading.classList.add("loading");
+    loading.innerHTML = "루트 탐색 중";
+    $target.appendChild(loading);
+
+    const routes = pathFinder([], needsIdArray, bagNow);
+
+    $target.querySelector(".loading").remove();
+
+    return routes;
   },
 });
 
@@ -74,6 +111,40 @@ const bag = new Bag({
   viewInfo: (targetId) => {
     console.log(targetId);
     selectItem.setState({ ...selectItem.state, cart: targetId });
+  },
+  pathFinder: () => {
+    const bagTarget = JSON.parse(JSON.stringify(bag.state)).targetItem;
+    const needsInfo = JSON.parse(JSON.stringify(needDrops.state));
+    const needsIdArray = Object.keys(needsInfo.dropMatId);
+
+    console.log(needsIdArray);
+
+    const bagEquip = Object.values(bag.state.equip).reduce((acc, item) => {
+      if (item.id) acc.push(item.id);
+      return acc;
+    }, []);
+    const bagInventory = Object.values(bag.state.inventory).reduce(
+      (acc, item) => {
+        if (item.id) acc.push(item.id);
+        return acc;
+      },
+      []
+    );
+
+    const bagNow = bagEquip.concat(bagInventory);
+    console.log(bagNow);
+    console.log(bagTarget);
+
+    const loading = document.createElement("div");
+    loading.classList.add("loading");
+    loading.innerHTML = "루트 탐색 중";
+    $target.appendChild(loading);
+
+    const routes = pathFinder([], needsIdArray, bagNow);
+
+    $target.querySelector(".loading").remove();
+
+    return routes;
   },
 });
 

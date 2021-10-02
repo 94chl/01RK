@@ -5,6 +5,7 @@ import { weaponData, database, equippable, weaponSort } from "./itemTable.js";
 import { disassembleWD } from "./disassemble.js";
 import Area from "./Area.js";
 import { pathFinder } from "./pathFinder.js";
+import CustomRoute from "./customRoute.js";
 
 const $target = document.querySelector("#app");
 
@@ -153,6 +154,11 @@ const needDrops = new NeedDrops({
   },
 });
 
+const customRoute = new CustomRoute({
+  $target,
+  initialState: [],
+});
+
 const area = new Area({
   $target,
   initialState: { pickedArea: [], dropMatId: [] },
@@ -240,6 +246,9 @@ const area = new Area({
     console.log(bagInventory);
     bag.setState({ ...bagInfo, inventory: bagInventory }, "inventory");
     console.log(bag.state);
+  },
+  routeCustom: (route) => {
+    customRoute.setState(route);
   },
 });
 

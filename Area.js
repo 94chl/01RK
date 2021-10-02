@@ -3,7 +3,7 @@ import { areaData } from "./itemTable.js";
 
 // initialState: {pickedArea, dropMatId}
 
-export default function Area({ $target, initialState, getDrop }) {
+export default function Area({ $target, initialState, getDrop, routeCustom }) {
   const $areaBox = document.createElement("div");
   $areaBox.setAttribute("id", "areaBox");
   $target.appendChild($areaBox);
@@ -90,18 +90,21 @@ export default function Area({ $target, initialState, getDrop }) {
             (area, index) =>
               ($areaBox.querySelector(
                 `#areaList [data-id=${area}] .customRouteOrder`
-              ).innerHTML = `<span class="order${index + 1}">${
-                index + 1
-              }</span>`)
+              ).innerHTML = `
+              <span class="order${index + 1}">
+                ${index + 1}
+              </span>`)
           );
         } else {
           customRoute.push(picked.dataset.id);
-          picked.querySelector(
-            ".customRouteOrder"
-          ).innerHTML = `<span class="order${customRoute.length}">${customRoute.length}</span>`;
+          picked.querySelector(".customRouteOrder").innerHTML = `
+          <span class="order${customRoute.length}">
+           ${customRoute.length}
+          </span>`;
         }
         console.log(customRoute);
         this.state.pickedArea = customRoute;
+        routeCustom(this.state.pickedArea);
       });
     });
   };

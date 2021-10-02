@@ -38,7 +38,7 @@ export default function BagTarget({
       <button id="bagTargetRemoveAllBtn">목표 전체 삭제</button>
       <button class="pathFinderBtn">route</button>
       <button class="removePathBtn">path X</button>
-      <div id="itemPath"></div>
+      <div class="itemPath"></div>
     `;
 
     $bagTarget.querySelectorAll(".bagTargetRemoveBtn").forEach((btn) =>
@@ -63,12 +63,16 @@ export default function BagTarget({
     );
 
     $bagTarget.querySelector(".pathFinderBtn").addEventListener("click", () => {
-      const $itemPath = $bagTarget.querySelector("#itemPath");
+      const $itemPath = $bagTarget.querySelector(".itemPath");
 
-      if ($itemPath.querySelector("ul")) return;
+      if ($itemPath.querySelector("ul")) {
+        $bagTarget.querySelector(".itemPath").innerHTML = "";
+      }
+      document.querySelector("#loading").classList.toggle("hide");
 
       const paths = pathFinder("total");
 
+      document.querySelector("#loading").classList.toggle("hide");
       console.log(paths);
 
       $itemPath.innerHTML += `<ul>
@@ -77,7 +81,7 @@ export default function BagTarget({
     });
 
     $bagTarget.querySelector(".removePathBtn").addEventListener("click", () => {
-      $bagTarget.querySelector("#itemPath").innerHTML = "";
+      $bagTarget.querySelector(".itemPath").innerHTML = "";
     });
   };
 

@@ -135,14 +135,7 @@ const bag = new Bag({
     console.log(bagNow);
     console.log(bagTarget);
 
-    const loading = document.createElement("div");
-    loading.classList.add("loading");
-    loading.innerHTML = "루트 탐색 중";
-    $target.appendChild(loading);
-
     const routes = pathFinder([], needsIdArray, bagNow);
-
-    $target.querySelector(".loading").remove();
 
     return routes;
   },
@@ -156,13 +149,13 @@ const needDrops = new NeedDrops({
     dropMatId: {},
   },
   onChange: (dropMatId) => {
-    area.setState(dropMatId);
+    area.setState({ ...area.state, dropMatId });
   },
 });
 
 const area = new Area({
   $target,
-  initialState: [],
+  initialState: { pickedArea: [], dropMatId: [] },
   getDrop: (dropInfo) => {
     const bagInfo = JSON.parse(JSON.stringify(bag.state));
     console.log(dropInfo);

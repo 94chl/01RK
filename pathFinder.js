@@ -81,6 +81,9 @@ export function pathFinder(route, needsNow, bagNow) {
   let maxLength = 10;
 
   function shortRoute(needs, bag, path, map, startPoint, route) {
+    //긴 경로 제외
+    if (route.length > maxLength) return;
+
     // 출발지 [{id, name, drop, point}...]
     let startT = JSON.parse(JSON.stringify(startPoint));
     console.log(startT);
@@ -154,6 +157,6 @@ export function pathFinder(route, needsNow, bagNow) {
   const shortestRoute = finishedRoute.filter(
     (route) => route.length <= maxLength
   );
-
+  console.log(shortestRoute);
   return shortestRoute;
 }

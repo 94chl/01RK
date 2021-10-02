@@ -1,0 +1,174 @@
+body {
+}
+
+header {
+}
+
+main {
+  #selectItemBox {
+    #selectDept {
+      .dept {
+      }
+      label {
+      }
+    }
+
+    #selectCategory {
+      #categoryList {
+        option {
+        }
+      }
+    }
+
+    #selectDetails {
+      #detailsList {
+        option {
+        }
+      }
+    }
+
+    #selectPreview {
+      ul {
+        li {
+          .attrKey {
+          }
+
+          .attrValue {
+          }
+        }
+
+        .pathFinderBtn {
+        }
+
+        .removePathBtn {
+        }
+
+        #itemPath {
+          ul {
+            li {
+            }
+          }
+        }
+      }
+    }
+
+    #itemSubmitBtn {
+    }
+  }
+
+  #bag {
+    #bagTarget {
+      div {
+      }
+
+      ul {
+        li {
+          .bagTargetRemoveBtn {
+          }
+
+          .bagTargetInfoBtn {
+          }
+        }
+      }
+
+      #bagTargetRemoveAllBtn {
+      }
+
+      .pathFinderBtn {
+      }
+
+      .removePathBtn {
+      }
+
+      #itemPath {
+        ul {
+          li {
+          }
+        }
+      }
+    }
+
+    #bagInventory {
+      #bagInitialWeapon {
+        ul {
+          li {
+            .initialWeaponBtn {
+            }
+          }
+        }
+      }
+
+      #bagEquip {
+        ul {
+          li {
+            .itemName {
+            }
+
+            .moveBtn {
+            }
+
+            .removeBtn {
+            }
+          }
+        }
+      }
+
+      #bagItem {
+        ul {
+          li {
+            .itemName {
+            }
+          }
+          div {
+            .moveBtn {
+            }
+
+            .removeBtn {
+            }
+          }
+        }
+      }
+    }
+
+    #bagAssembles {
+      ul {
+        li {
+          .assembleBtn {
+          }
+        }
+      }
+    }
+  }
+
+  #needDrops {
+    ul {
+      li {
+      }
+    }
+  }
+
+  #areaBox {
+    > div {
+    }
+    #areaList {
+      li {
+        .toggleDropsBtn {
+        }
+
+        .areaNeedDrops {
+          ul {
+            li {
+              &.neededDrops {
+              }
+              &.noNeededDrops {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+}

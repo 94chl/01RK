@@ -4,7 +4,7 @@ import { areaData, searchById } from "./itemTable.js";
 
 export default function AreaNeedDrops({ $target, initialState, getDrop }) {
   const $areaNeedDrops = document.createElement("div");
-  $areaNeedDrops.setAttribute("id", "areaNeedDrops");
+  $areaNeedDrops.setAttribute("class", "areaNeedDrops");
   $target.appendChild($areaNeedDrops);
 
   this.state = initialState;
@@ -25,8 +25,10 @@ export default function AreaNeedDrops({ $target, initialState, getDrop }) {
             data-sort="${dropInfo.sort}"  
             data-pickup="${dropInfo.pickup}"
             data-limit="${dropInfo.limit}"
+            class="neededDrops"
             style="font-weight:800; color:red;">
-              <button class="getDropBtn">${dropInfo.name}</button>(x${this.state.dropMatId[dropId]})
+              <button class="getDropBtn">${dropInfo.name}</button>
+              <span data-pickupCount="${this.state.dropMatId[dropId]}">(x${this.state.dropMatId[dropId]})</span>
             </li>`;
           else {
             return `<li 
@@ -34,7 +36,7 @@ export default function AreaNeedDrops({ $target, initialState, getDrop }) {
             data-sort="${dropInfo.sort}"  
             data-pickup="${dropInfo.pickup}"
             data-limit="${dropInfo.limit}"
-            class="noNeed hide">
+            class="noNeededDrops hide">
               <button class="getDropBtn">${dropInfo.name}</button>
             </li>`;
           }

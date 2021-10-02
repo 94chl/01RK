@@ -87,7 +87,7 @@ export default function SelectPreview({
         .join("")}
       <button class="pathFinderBtn">route</button>
       <button class="removePathBtn">path X</button>
-      <div id="itemPath"></div>
+      <div class="itemPath"></div>
     </ul>`;
 
     searchItemInfo(this.state);
@@ -95,9 +95,11 @@ export default function SelectPreview({
     $selectPreview
       .querySelector(".pathFinderBtn")
       .addEventListener("click", (e) => {
-        const $itemPath = $selectPreview.querySelector("#itemPath");
+        const $itemPath = $selectPreview.querySelector(".itemPath");
 
-        if ($itemPath.querySelector("ul")) return;
+        if ($itemPath.querySelector("ul")) {
+          $selectPreview.querySelector(".itemPath").innerHTML = "";
+        }
 
         const paths = pathFinder(e.target.closest("ul").dataset.id);
 
@@ -111,7 +113,7 @@ export default function SelectPreview({
     $selectPreview
       .querySelector(".removePathBtn")
       .addEventListener("click", () => {
-        $selectPreview.querySelector("#itemPath").innerHTML = "";
+        $selectPreview.querySelector(".itemPath").innerHTML = "";
       });
   };
 

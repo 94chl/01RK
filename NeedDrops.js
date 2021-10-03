@@ -5,6 +5,7 @@ import { disassembleAllWD } from "./disassemble.js";
 export default function NeedDrops({ $target, initialState, onChange }) {
   const $needDrops = document.createElement("div");
   $needDrops.setAttribute("id", "needDrops");
+  // $needDrops.classList.add("hide")
   $target.appendChild($needDrops);
 
   this.state = initialState;
@@ -18,14 +19,24 @@ export default function NeedDrops({ $target, initialState, onChange }) {
 
   this.render = () => {
     $needDrops.innerHTML = `
-    <ul>
+    <div class="tabName">
+      필요 드랍템
+      <button class="toggleTabContentBtn">+</button>
+    </div>
+    <ul id="needDropsBox">
       ${this.state.dropMatArr
         .map(
           (drop) => `<li data-id="${drop.id}">${drop.name}(x${drop.count})</li>`
         )
         .join("")}
-    </ul>
-    `;
+    </ul>`;
+
+    $needDrops
+      .querySelector(".toggleTabContentBtn")
+      .addEventListener("click", () => {
+        console.log("click");
+        $needDrops.querySelector("#needDropsBox").classList.toggle("hide");
+      });
   };
 
   this.render();

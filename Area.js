@@ -23,19 +23,42 @@ export default function Area({ $target, initialState, getDrop, routeCustom }) {
     console.log(areaIdList);
     console.log(this.state);
     $areaBox.innerHTML = `
-    <div>지역</div>
+    <div class="tabName">
+      지역
+      <button class="removeAllBtn">X</button>
+    </div>
     <ul id="areaList">
       ${areaIdList
-        .map(
-          (area) => `
+        .map((area) =>
+          area === "A000"
+            ? `
           <li data-id="${area}">
             <span class="areaName">${areaData[area].name}</span>
-            <div class="customRouteOrder"></div>
             <button class="toggleDropsBtn">toggle</button>
-            <button class="pickAreaBtn">pick</button>
+          </li>`
+            : `<li data-id="${area}">
+            <span class="areaName">${areaData[area].name}</span>
+            <div class="customRouteOrder"></div>
+            <div class="areaInfoBox">
+              ${
+                areaData[area].resurrection
+                  ? "<div class='resurrection'>부활</div>"
+                  : ""
+              }
+              ${
+                areaData[area].hyperloop
+                  ? "<div class='hyperloop'>텔포</div>"
+                  : ""
+              }
+              <div class="areaBtnBox">
+                <button class="pickAreaBtn">pick</button>
+                <button class="toggleDropsBtn">toggle</button>
+              </div>
+            </div>
           </li>`
         )
         .join("")}
+        
     </ul>
     `;
 
@@ -105,6 +128,15 @@ export default function Area({ $target, initialState, getDrop, routeCustom }) {
         console.log(customRoute);
         this.state.pickedArea = customRoute;
         routeCustom(this.state.pickedArea);
+      });
+    });
+
+    $areaBox.querySelector(".removeAllBtn").addEventListener("click", () => {
+      this.state.pickedArea = [];
+      routeCustom(this.state.pickedArea);
+      $areaBox.querySelectorAll(".picked").forEach((el) => {
+        el.classList.remove("picked");
+        el.innerHTML = "";
       });
     });
   };

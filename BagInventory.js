@@ -50,6 +50,12 @@ export default function BagInventory({
     },
   });
 
+  const $inventoryTab = document.createElement("div");
+  $inventoryTab.classList.add("tabName");
+  $bagInventory.appendChild($inventoryTab);
+  $inventoryTab.innerHTML = `인벤토리
+    <button class="toggleTabContentBtn">+</button>`;
+
   const moveItems = { from: { id: false }, to: { id: false } };
 
   const bagEquip = new BagEquip({
@@ -157,4 +163,12 @@ export default function BagInventory({
       bagUpdate(nextInventory);
     },
   });
+
+  document
+    .querySelector("#bagInventory > .tabName .toggleTabContentBtn")
+    .addEventListener("click", (e) => {
+      console.log("click");
+      $bagInventory.querySelector("#bagEquip").classList.toggle("hide");
+      $bagInventory.querySelector("#bagItem").classList.toggle("hide");
+    });
 }

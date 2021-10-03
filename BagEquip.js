@@ -23,8 +23,9 @@ export default function BagEquip({ $target, initialState, onMove, onRemove }) {
           if (!this.state[sort].id) {
             equipNode = `<li 
             data-pocket="${sort}">
-              <span class="itemName">empty</span>
-              <button class="moveBtn">이동</button>
+              <button class="moveBtn">
+                <span class="itemName">empty</span>
+              </button>
               <button class="removeBtn">삭제</button>
             </li>`;
           } else {
@@ -33,8 +34,9 @@ export default function BagEquip({ $target, initialState, onMove, onRemove }) {
             data-sort="${this.state[sort].sort}" 
             data-count="1" 
             data-pocket="${sort}">
-              <span class="itemName">${this.state[sort].name}</span>
-              <button class="moveBtn">이동</button>
+              <button class="moveBtn">
+                <span class="itemName">${this.state[sort].name}</span>
+              </button>
               <button class="removeBtn">삭제</button>
             </li>`;
           }

@@ -15,6 +15,11 @@ export default function SelectItem({
   const $selectItemBox = document.createElement("div");
   $selectItemBox.setAttribute("id", "selectItemBox");
   $target.appendChild($selectItemBox);
+  $selectItemBox.innerHTML = `
+  <div class="tabName">
+    아이템 선택
+    <button class="toggleTabContentBtn">+</button>
+  </div>`;
 
   this.state = {
     ...initialState,
@@ -84,6 +89,19 @@ export default function SelectItem({
     },
   });
 
+  const $itemSubmitBtn = document.createElement("button");
+  $itemSubmitBtn.setAttribute("id", "itemSubmitBtn");
+  $itemSubmitBtn.innerHTML = `add`;
+
+  $selectItemBox.appendChild($itemSubmitBtn);
+  $selectItemBox
+    .querySelector("#itemSubmitBtn")
+    .addEventListener("click", () => {
+      console.log(this.state);
+      console.log(this.state.cartInfo);
+      submitItem(this.state.cartInfo);
+    });
+
   const selectPreview = new SelectPreview({
     $target: $selectItemBox,
     initialState: {
@@ -98,16 +116,14 @@ export default function SelectItem({
     pathFinder,
   });
 
-  const $itemSubmitBtn = document.createElement("button");
-  $itemSubmitBtn.setAttribute("id", "itemSubmitBtn");
-  $itemSubmitBtn.innerHTML = `add`;
-
-  $selectItemBox.appendChild($itemSubmitBtn);
   $selectItemBox
-    .querySelector("#itemSubmitBtn")
+    .querySelector(".toggleTabContentBtn")
     .addEventListener("click", () => {
-      console.log(this.state);
-      console.log(this.state.cartInfo);
-      submitItem(this.state.cartInfo);
+      console.log("click");
+      $selectItemBox.querySelector("#selectDept").classList.toggle("hide");
+      $selectItemBox.querySelector("#selectCategory").classList.toggle("hide");
+      $selectItemBox.querySelector("#selectDetails").classList.toggle("hide");
+      $selectItemBox.querySelector("#itemSubmitBtn").classList.toggle("hide");
+      $selectItemBox.querySelector("#selectPreview").classList.toggle("hide");
     });
 }

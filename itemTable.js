@@ -75,6 +75,7 @@ export const idToCategory = {
 export const initialWeapon = [
   { id: "WWA003", sort: "dagger", name: "식칼" },
   { id: "WWB001", sort: "twoHand", name: "녹슨 검" },
+  { id: "WWD001", sort: "dual", name: "쌍칼" },
   { id: "WWC002", sort: "axe", name: "손도끼" },
   { id: "WWE002", sort: "glove", name: "목장갑" },
   { id: "WWF001", sort: "tonfa", name: "대나무" },

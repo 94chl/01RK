@@ -35,7 +35,12 @@ export default function SelectPreview({
   this.render = () => {
     console.log(this.state);
     console.log(itemInfoKeys);
-    $selectPreview.innerHTML = `<ul data-id="${this.state.cart}">
+    $selectPreview.innerHTML = `
+      <div data-id="${this.state.cart}" id="itemPreview">
+        <div id="itemImg">
+          <img src="" alt="" /> image
+        </div>
+        <ul id="itemOptions">
       ${itemInfoKeys
         .map((key, index) => {
           if (key == "name") {
@@ -77,7 +82,7 @@ export default function SelectPreview({
           } else if (key == "location" && this.state.cartInfo[key]) {
             return `
               <li>
-                <span class="attrKey">드랍 장소 : </span>
+                <span class="attrKey">드랍 : </span>
                 <span class="attrValue">${this.state.cartInfo[key]
                   .map((area) => `${areaData[area].name}`)
                   .join(", ")}</span>
@@ -85,23 +90,26 @@ export default function SelectPreview({
           }
         })
         .join("")}
-      <button class="pathFinderBtn">route</button>
-      <button class="removePathBtn">path X</button>
-      <div class="itemPath"></div>
-    </ul>`;
+        </ul>
+        <div id="itemPathBox">
+          <button class="pathFinderBtn">route</button>
+          <button class="removePathBtn">path X</button>
+          <div class="itemPathModal"></div>
+        </div>
+      </div>`;
 
     searchItemInfo(this.state);
 
     $selectPreview
       .querySelector(".pathFinderBtn")
       .addEventListener("click", (e) => {
-        const $itemPath = $selectPreview.querySelector(".itemPath");
+        const $itemPath = $selectPreview.querySelector(".itemPathModal");
 
         if ($itemPath.querySelector("ul")) {
-          $selectPreview.querySelector(".itemPath").innerHTML = "";
+          $selectPreview.querySelector(".itemPathModal").innerHTML = "";
         }
 
-        const paths = pathFinder(e.target.closest("ul").dataset.id);
+        const paths = pathFinder(e.target.closest("#itemPreview").dataset.id);
 
         console.log(paths);
 
@@ -113,7 +121,7 @@ export default function SelectPreview({
     $selectPreview
       .querySelector(".removePathBtn")
       .addEventListener("click", () => {
-        $selectPreview.querySelector(".itemPath").innerHTML = "";
+        $selectPreview.querySelector(".itemPathModal").innerHTML = "";
       });
   };
 

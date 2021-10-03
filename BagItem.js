@@ -16,16 +16,17 @@ export default function BagItem({ $target, initialState, onMove, onRemove }) {
     console.log(this.state);
     const pocketName = Object.keys(this.state);
     $bagItem.innerHTML = `
-    <ul style="display:flex; justify-content: space-evenly;">
+    <ul>
       ${pocketName
         .map((pocket) => {
           let pocketNode;
           if (!this.state[pocket].id) {
-            pocketNode = `<li 
-            data-pocket="${pocket}">
-              <span class="itemName">empty</span>
+            pocketNode = `
+            <li data-pocket="${pocket}">
+              <button class="moveBtn">
+                <span class="itemName">empty</span>
+              </button>
               <div>
-                <button class="moveBtn">이동</button>
                 <button class="removeBtn">삭제</button>
               </div>
             </li>`;
@@ -36,10 +37,11 @@ export default function BagItem({ $target, initialState, onMove, onRemove }) {
             data-count="${this.state[pocket].count}" 
             data-limit="${this.state[pocket].limit}" 
             data-pocket="${pocket}">
-              <span class="itemName">${this.state[pocket].name}</span>
-              (x${this.state[pocket].count ? this.state[pocket].count : 1})
+              <button class="moveBtn">
+                <span class="itemName">${this.state[pocket].name}</span>
+                (x${this.state[pocket].count ? this.state[pocket].count : 1})
+              </button>
               <div>
-                <button class="moveBtn">이동</button>
                 <button class="removeBtn">삭제</button>
               </div>
             </li>`;

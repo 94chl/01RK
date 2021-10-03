@@ -1,12 +1,85 @@
+.hide {
+  display: none;
+}
+
+.nowClicked .itemName {
+  font-style: italic;
+}
+
+@mixin headerActive {
+  display: block;
+  position: fixed;
+  top: 70px;
+  width: 360px;
+  background: #fff;
+  z-index: 10;
+}
+
+div,
+li,
+button {
+  border: 1px solid #000;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
 body {
+  min-width: 360px;
+  width: 360px;
+  margin: 0 auto;
 }
 
 header {
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: #fff;
+
+  #headerBox {
+    display: flex;
+    height: 100%;
+    line-height: 70px;
+    justify-content: space-between;
+    #logo {
+      width: 50px;
+      margin: 10px;
+    }
+    #title {
+    }
+    #headerBtnBox {
+      button {
+      }
+    }
+  }
 }
 
 main {
+  margin-top: 70px;
+  position: relative;
+  .tabName {
+    height: 30px;
+    line-height: 30px;
+  }
   #selectItemBox {
+    display: grid;
+    grid-template-columns: 25% auto 70px;
+    grid-template-rows: repeat(4, fit-content);
+    gap: 5px;
+    .tabName {
+      grid-column: 1 / 4;
+    }
+
     #selectDept {
+      grid-column: 1 / 4;
+      height: 30px;
+
+      &.hide {
+        display: none;
+      }
+
       .dept {
       }
       label {
@@ -14,36 +87,78 @@ main {
     }
 
     #selectCategory {
+      height: 30px;
+
+      &.hide {
+        display: none;
+      }
+
       #categoryList {
+        width: 100%;
+        height: 100%;
         option {
         }
       }
     }
 
     #selectDetails {
+      height: 30px;
+
+      &.hide {
+        display: none;
+      }
+
       #detailsList {
+        width: 100%;
+        height: 100%;
         option {
         }
       }
     }
 
-    #selectPreview {
-      ul {
-        li {
-          .attrKey {
-          }
+    #itemSubmitBtn {
+      height: 30px;
 
-          .attrValue {
+      &.hide {
+        display: none;
+      }
+    }
+
+    #selectPreview {
+      grid-column: 1 / 4;
+      position: relative;
+
+      &.hide {
+        display: none;
+      }
+
+      #itemPreview {
+        display: grid;
+        grid-template-columns: 70px auto;
+
+        ul {
+          li {
+            .attrKey {
+            }
+
+            .attrValue {
+            }
           }
         }
+      }
 
+      #itemPathBox {
+        grid-column: 1/3;
+        position: absolute;
+        top: 0;
+        right: 0;
         .pathFinderBtn {
         }
 
         .removePathBtn {
         }
 
-        #itemPath {
+        #itemPathModal {
           ul {
             li {
             }
@@ -51,27 +166,35 @@ main {
         }
       }
     }
-
-    #itemSubmitBtn {
-    }
   }
 
-  #bag {
-    #bagTarget {
-      div {
+  #targetItems {
+    position: relative;
+    div {
+    }
+
+    #targetItemBox {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+
+      &.hide {
+        display: none;
       }
 
-      ul {
-        li {
-          .bagTargetRemoveBtn {
-          }
+      li {
+        .targetItemsRemoveBtn {
+        }
 
-          .bagTargetInfoBtn {
-          }
+        .targetItemsInfoBtn {
         }
       }
+    }
 
-      #bagTargetRemoveAllBtn {
+    #bagBtnBox {
+      position: absolute;
+      top: 0;
+      right: 0;
+      #targetItemsRemoveAllBtn {
       }
 
       .pathFinderBtn {
@@ -87,19 +210,42 @@ main {
         }
       }
     }
+  }
+
+  #bag {
+    position: relative;
 
     #bagInventory {
+      display: none;
+      &.active {
+        @include headerActive();
+      }
       #bagInitialWeapon {
-        ul {
+        #initialWeaponBox {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          &.hide {
+            display: none;
+          }
+
           li {
+            height: 30px;
             .initialWeaponBtn {
             }
           }
         }
       }
-
       #bagEquip {
+        &.hide {
+          display: none;
+        }
+
         ul {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          gap: 10px;
           li {
             .itemName {
             }
@@ -114,16 +260,23 @@ main {
       }
 
       #bagItem {
-        ul {
-          li {
-            .itemName {
-            }
-          }
-          div {
-            .moveBtn {
-            }
+        &.hide {
+          display: none;
+        }
 
-            .removeBtn {
+        ul {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          gap: 5px;
+          li {
+            .moveBtn {
+              .itemName {
+              }
+              div {
+                .removeBtn {
+                }
+              }
             }
           }
         }
@@ -131,7 +284,12 @@ main {
     }
 
     #bagAssembles {
+      &.active {
+        position: fixed;
+        z-index: 15;
+      }
       ul {
+        display: flex;
         li {
           .assembleBtn {
           }
@@ -141,7 +299,29 @@ main {
   }
 
   #needDrops {
-    ul {
+    min-height: fit-content;
+    #needDropsBox {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 5px;
+      &.hide {
+        display: none;
+      }
+      li {
+        width: fit-content;
+      }
+    }
+  }
+
+  #customRoute {
+    min-height: fit-content;
+    #routeOrderList {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 5px;
+      &.hide {
+        display: none;
+      }
       li {
       }
     }
@@ -151,17 +331,57 @@ main {
     > div {
     }
     #areaList {
-      li {
-        .toggleDropsBtn {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      > li {
+        position: relative;
+        .areaName {
+        }
+        .customRouteOrder {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 20px;
+          text-align: center;
+        }
+
+        .areaInfoBox {
+          display: flex;
+          .resurrection {
+          }
+          .hyperloop {
+          }
+          .areaBtnBox {
+            display: flex;
+            margin-left: auto;
+            .pickAreaBtn {
+            }
+            .toggleDropsBtn {
+            }
+          }
         }
 
         .areaNeedDrops {
           ul {
             li {
               &.neededDrops {
+                font-weight: 800;
+                color: red;
               }
               &.noNeededDrops {
               }
+            }
+          }
+        }
+
+        &:last-child {
+          grid-column: 1/4;
+          .areaNeedDrops {
+            ul {
+              display: grid;
+              gap: 0 10px;
+              grid-template-columns: repeat(3, 1fr);
             }
           }
         }

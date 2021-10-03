@@ -17,16 +17,27 @@ export default function CustomRoute({ $target, initialState }) {
   this.render = () => {
     console.log(this.state);
     $customRoute.innerHTML = `
-    <div>루트 순서</div>
+    <div class="tabName">
+      루트 순서
+      <button class="toggleTabContentBtn">+</button>
+    </div>
     <ul id="routeOrderList">
       ${this.state
         .map(
           (area) => `
           <li data-id="${area}">${areaData[area].name}</li>`
         )
-        .join("")}
+        .join("->")}
     </ul>
     `;
+
+    $customRoute
+      .querySelector(".toggleTabContentBtn")
+      .addEventListener("click", () => {
+        console.log("click");
+        console.log($customRoute.querySelector("#routeOrderList"));
+        $customRoute.querySelector("#routeOrderList").classList.toggle("hide");
+      });
   };
 
   this.render();

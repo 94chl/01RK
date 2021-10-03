@@ -1,4 +1,3 @@
-import BagTarget from "./BagTarget.js";
 import BagInventory from "./BagInventory.js";
 import BagAssembles from "./BagAssembles.js";
 import { equippable, searchById, weaponSort } from "./itemTable.js";
@@ -9,13 +8,7 @@ import { equippable, searchById, weaponSort } from "./itemTable.js";
 //    equip: { weapon: {  }, clothes: {  }, helmet: {  }, bracelet: {  }, shoes:  {  }, accessory: {  } }
 //  }
 
-export default function Bag({
-  $target,
-  initialState,
-  targetItemRemove,
-  viewInfo,
-  pathFinder,
-}) {
+export default function Bag({ $target, initialState }) {
   const $bag = document.createElement("div");
   $bag.setAttribute("id", "bag");
   $target.appendChild($bag);
@@ -25,7 +18,8 @@ export default function Bag({
   this.setState = (nextState, targetState) => {
     this.state = nextState;
     if (targetState === "targetItem") {
-      bagTarget.setState({ targetItem: this.state.targetItem });
+      // bagTarget.setState({ targetItem: this.state.targetItem });
+      console.log("targeted past");
     } else {
       bagInventory.setState(
         { inventory: this.state.inventory, equip: this.state.equip },
@@ -35,26 +29,6 @@ export default function Bag({
     }
     console.log(this.state);
   };
-
-  const bagTarget = new BagTarget({
-    $target: $bag,
-    initialState: { targetItem: this.state.targetItem },
-    onRemove: (targetId) => {
-      console.log(targetId);
-      const bagInfo = JSON.parse(JSON.stringify(this.state));
-
-      if (targetId === "ALL") {
-        bagInfo.targetItem = [];
-      } else {
-        bagInfo.targetItem.splice(bagInfo.targetItem.indexOf(targetId), 1);
-      }
-
-      this.setState(bagInfo, "targetItem");
-      targetItemRemove(this.state.targetItem);
-    },
-    viewInfo,
-    pathFinder,
-  });
 
   const bagInventory = new BagInventory({
     $target: $bag,

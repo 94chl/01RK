@@ -25,8 +25,7 @@ export default function AreaNeedDrops({ $target, initialState, getDrop }) {
             data-sort="${dropInfo.sort}"  
             data-pickup="${dropInfo.pickup}"
             data-limit="${dropInfo.limit}"
-            class="neededDrops"
-            style="font-weight:800; color:red;">
+            class="neededDrops">
               <button class="getDropBtn">${dropInfo.name}</button>
               <span data-pickupCount="${this.state.dropMatId[dropId]}">(x${this.state.dropMatId[dropId]})</span>
             </li>`;

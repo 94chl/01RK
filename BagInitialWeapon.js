@@ -17,11 +17,15 @@ export default function BagInitialWeapon({ $target, initialState, onClick }) {
   this.render = () => {
     console.log(this.state);
     $bagInitialWeapon.innerHTML = `
-    <ul style="display:flex;">
+    <div class="tabName">
+      시작 무기    
+      <button class="toggleTabContentBtn">+</button>
+    </div>
+    <ul id="initialWeaponBox">
       ${initialWeapon
         .map(
           (weapon) =>
-            `<li data-id="${weapon.id}" data-sort="${weapon.sort}" style="list-style:none;"><button class="initialWeaponBtn">${weapon.name}</button></li>`
+            `<li data-id="${weapon.id}" data-sort="${weapon.sort}"><button class="initialWeaponBtn">${weapon.name}</button></li>`
         )
         .join("")}
     </ul>`;
@@ -40,6 +44,15 @@ export default function BagInitialWeapon({ $target, initialState, onClick }) {
         onClick(clickedInfo);
       });
     });
+
+    $bagInitialWeapon
+      .querySelector(".toggleTabContentBtn")
+      .addEventListener("click", () => {
+        console.log("click");
+        $bagInitialWeapon
+          .querySelector("#initialWeaponBox")
+          .classList.toggle("hide");
+      });
   };
 
   this.render();

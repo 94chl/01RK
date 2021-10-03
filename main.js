@@ -1,13 +1,19 @@
+import Header from "./Header.js";
 import SelectItem from "./SelectItem.js";
+import TargetItems from "./TargetItems.js";
 import Bag from "./Bag.js";
 import NeedDrops from "./NeedDrops.js";
-import { weaponData, database, equippable, weaponSort } from "./itemTable.js";
+import { weaponData, equippable, weaponSort } from "./itemTable.js";
 import { disassembleWD } from "./disassemble.js";
 import Area from "./Area.js";
 import { pathFinder } from "./pathFinder.js";
 import CustomRoute from "./customRoute.js";
 
 const $target = document.querySelector("#app");
+
+const header = new Header({
+  $target: document.querySelector("#header"),
+});
 
 const selectItem = new SelectItem({
   $target,
@@ -18,13 +24,11 @@ const selectItem = new SelectItem({
   },
   submitItem: (selected) => {
     console.log(selected);
-    console.log(bag.state);
     const nextBagState = {
-      ...bag.state,
-      targetItem: [...bag.state.targetItem, selected],
+      targetItem: [...targetItems.state.targetItem, selected],
     };
     console.log(nextBagState);
-    bag.setState(nextBagState, "targetItem");
+    targetItems.setState(nextBagState, "targetItem");
     needDrops.setState(nextBagState.targetItem);
   },
   pathFinder: (selectedId) => {
@@ -64,7 +68,29 @@ const selectItem = new SelectItem({
   },
 });
 
-console.log(database);
+const targetItems = new TargetItems({
+  $target,
+  initialState: { targetItem: [] },
+  onRemove: (targetId) => {
+    console.log(targetId);
+    const bagInfo = JSON.parse(JSON.stringify(targetItems.state));
+    console.log(bagInfo);
+
+    if (targetId === "ALL") {
+      bagInfo.targetItem = [];
+    } else {
+      bagInfo.targetItem.splice(bagInfo.targetItem.indexOf(targetId), 1);
+    }
+
+    targetItems.state = bagInfo;
+    needDrops.setState(targetItems.state.targetItem);
+  },
+  viewInfo: (targetId) => {
+    console.log(targetId);
+    selectItem.setState({ ...selectItem.state, cart: targetId });
+  },
+  pathFinder,
+});
 
 const bag = new Bag({
   $target,
@@ -104,41 +130,6 @@ const bag = new Bag({
       shoes: { id: false },
       accessory: { id: false },
     },
-  },
-  targetItemRemove: (nextTarget) => {
-    console.log(nextTarget);
-    needDrops.setState(nextTarget);
-  },
-  viewInfo: (targetId) => {
-    console.log(targetId);
-    selectItem.setState({ ...selectItem.state, cart: targetId });
-  },
-  pathFinder: () => {
-    const bagTarget = JSON.parse(JSON.stringify(bag.state)).targetItem;
-    const needsInfo = JSON.parse(JSON.stringify(needDrops.state));
-    const needsIdArray = Object.keys(needsInfo.dropMatId);
-
-    console.log(needsIdArray);
-
-    const bagEquip = Object.values(bag.state.equip).reduce((acc, item) => {
-      if (item.id) acc.push(item.id);
-      return acc;
-    }, []);
-    const bagInventory = Object.values(bag.state.inventory).reduce(
-      (acc, item) => {
-        if (item.id) acc.push(item.id);
-        return acc;
-      },
-      []
-    );
-
-    const bagNow = bagEquip.concat(bagInventory);
-    console.log(bagNow);
-    console.log(bagTarget);
-
-    const routes = pathFinder([], needsIdArray, bagNow);
-
-    return routes;
   },
 });
 

@@ -5,7 +5,6 @@ export default function TargetItems({
   initialState,
   onRemove,
   viewInfo,
-  pathFinder,
 }) {
   const $targetItems = document.createElement("div");
   $targetItems.setAttribute("id", "targetItems");
@@ -40,9 +39,6 @@ export default function TargetItems({
       </ul>
       <div id="bagBtnBox">
         <button id="targetItemsRemoveAllBtn">전체 삭제</button>
-        <button class="pathFinderBtn">route</button>
-        <button class="removePathBtn">path X</button>
-        <div class="itemPath"></div>
       </div>
     `;
 
@@ -56,7 +52,7 @@ export default function TargetItems({
 
     $targetItems
       .querySelector("#targetItemsRemoveAllBtn")
-      .addEventListener("click", (e) => {
+      .addEventListener("click", () => {
         onRemove("ALL");
         $targetItems.querySelector(`#targetItemBox`).innerHTML = "";
       });
@@ -67,32 +63,6 @@ export default function TargetItems({
         viewInfo(target.slice(0, target.length - 1));
       })
     );
-
-    $targetItems
-      .querySelector(".pathFinderBtn")
-      .addEventListener("click", () => {
-        const $itemPath = $targetItems.querySelector(".itemPath");
-
-        if ($itemPath.querySelector("ul")) {
-          $targetItems.querySelector(".itemPath").innerHTML = "";
-        }
-        document.querySelector("#loading").classList.toggle("hide");
-
-        const paths = pathFinder("total");
-
-        document.querySelector("#loading").classList.toggle("hide");
-        console.log(paths);
-
-        $itemPath.innerHTML += `<ul>
-        ${paths.map((path) => `<li>${path.join(" -> ")}</li>`).join("")}
-      </ul>`;
-      });
-
-    $targetItems
-      .querySelector(".removePathBtn")
-      .addEventListener("click", () => {
-        $targetItems.querySelector(".itemPath").innerHTML = "";
-      });
 
     $targetItems
       .querySelector(".toggleTabContentBtn")

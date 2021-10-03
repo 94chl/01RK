@@ -93,8 +93,10 @@ export default function SelectPreview({
         </ul>
         <div id="itemPathBox">
           <button class="pathFinderBtn">route</button>
-          <button class="removePathBtn">path X</button>
-          <div class="itemPathModal"></div>
+        </div>
+        <div id="itemPathModal" class="hide">
+          <button class="removePathBtn">X</button>
+          <div id="itemPaths"></div>
         </div>
       </div>`;
 
@@ -103,17 +105,18 @@ export default function SelectPreview({
     $selectPreview
       .querySelector(".pathFinderBtn")
       .addEventListener("click", (e) => {
-        const $itemPath = $selectPreview.querySelector(".itemPathModal");
+        $selectPreview.querySelector("#itemPathModal").classList.remove("hide");
+        const $itemPaths = $selectPreview.querySelector("#itemPaths");
 
-        if ($itemPath.querySelector("ul")) {
-          $selectPreview.querySelector(".itemPathModal").innerHTML = "";
+        if ($itemPaths.querySelector("ul")) {
+          $itemPaths.innerHTML = "";
         }
 
         const paths = pathFinder(e.target.closest("#itemPreview").dataset.id);
 
         console.log(paths);
 
-        $itemPath.innerHTML += `<ul>
+        $itemPaths.innerHTML += `<ul>
           ${paths.map((path) => `<li>${path.join(" -> ")}</li>`).join("")}
         </ul>`;
       });
@@ -121,7 +124,8 @@ export default function SelectPreview({
     $selectPreview
       .querySelector(".removePathBtn")
       .addEventListener("click", () => {
-        $selectPreview.querySelector(".itemPathModal").innerHTML = "";
+        $selectPreview.querySelector("#itemPathModal").classList.add("hide");
+        $selectPreview.querySelector("#itemPaths").innerHTML = "";
       });
   };
 

@@ -13,6 +13,40 @@ const $target = document.querySelector("#app");
 
 const header = new Header({
   $target: document.querySelector("#header"),
+  pathFinder: () => {
+    const bagTarget = JSON.parse(JSON.stringify(targetItems.state)).targetItem;
+    const needsInfo = JSON.parse(JSON.stringify(needDrops.state));
+    const needsIdArray = Object.keys(needsInfo.dropMatId);
+
+    console.log(needsIdArray);
+
+    const bagEquip = Object.values(bag.state.equip).reduce((acc, item) => {
+      if (item.id) acc.push(item.id);
+      return acc;
+    }, []);
+    const bagInventory = Object.values(bag.state.inventory).reduce(
+      (acc, item) => {
+        if (item.id) acc.push(item.id);
+        return acc;
+      },
+      []
+    );
+
+    const bagNow = bagEquip.concat(bagInventory);
+    console.log(bagNow);
+    console.log(bagTarget);
+
+    const loading = document.createElement("div");
+    loading.classList.add("loading");
+    loading.innerHTML = "루트 탐색 중";
+    $target.appendChild(loading);
+
+    const routes = pathFinder([], needsIdArray, bagNow);
+
+    $target.querySelector(".loading").remove();
+
+    return routes;
+  },
 });
 
 const selectItem = new SelectItem({
@@ -89,13 +123,11 @@ const targetItems = new TargetItems({
     console.log(targetId);
     selectItem.setState({ ...selectItem.state, cart: targetId });
   },
-  pathFinder,
 });
 
 const bag = new Bag({
   $target,
   initialState: {
-    targetItem: [],
     inventory: {
       pocket0: {
         id: "WF007",

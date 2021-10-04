@@ -18,7 +18,10 @@ export default function SelectItem({
   $selectItemBox.innerHTML = `
   <div class="tabName">
     아이템 선택
-    <button class="toggleTabContentBtn">+</button>
+    <button class="toggleTabContentBtn">
+      <i class="fas fa-angle-double-down"></i>
+      <i class="fas fa-angle-double-up"></i>
+    </button>
   </div>`;
 
   this.state = {
@@ -91,7 +94,7 @@ export default function SelectItem({
 
   const $itemSubmitBtn = document.createElement("button");
   $itemSubmitBtn.setAttribute("id", "itemSubmitBtn");
-  $itemSubmitBtn.innerHTML = `add`;
+  $itemSubmitBtn.innerHTML = `<i class="fas fa-plus"></i>`;
 
   $selectItemBox.appendChild($itemSubmitBtn);
   $selectItemBox
@@ -118,8 +121,9 @@ export default function SelectItem({
 
   $selectItemBox
     .querySelector(".toggleTabContentBtn")
-    .addEventListener("click", () => {
+    .addEventListener("click", (e) => {
       console.log("click");
+      e.target.closest(".toggleTabContentBtn").classList.toggle("closed");
       $selectItemBox.querySelector("#selectDept").classList.toggle("hide");
       $selectItemBox.querySelector("#selectCategory").classList.toggle("hide");
       $selectItemBox.querySelector("#selectDetails").classList.toggle("hide");

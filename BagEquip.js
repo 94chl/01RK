@@ -26,7 +26,9 @@ export default function BagEquip({ $target, initialState, onMove, onRemove }) {
               <button class="moveBtn">
                 <span class="itemName">empty</span>
               </button>
-              <button class="removeBtn">삭제</button>
+              <button class="removeBtn">
+                <i class="fas fa-minus"></i>
+              </button>
             </li>`;
           } else {
             equipNode = `<li 
@@ -37,7 +39,9 @@ export default function BagEquip({ $target, initialState, onMove, onRemove }) {
               <button class="moveBtn">
                 <span class="itemName">${this.state[sort].name}</span>
               </button>
-              <button class="removeBtn">삭제</button>
+              <button class="removeBtn">
+                <i class="fas fa-minus"></i>
+              </button>
             </li>`;
           }
           return equipNode;

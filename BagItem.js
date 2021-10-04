@@ -27,7 +27,9 @@ export default function BagItem({ $target, initialState, onMove, onRemove }) {
                 <span class="itemName">empty</span>
               </button>
               <div>
-                <button class="removeBtn">삭제</button>
+                <button class="removeBtn">
+                  <i class="fas fa-minus"></i>
+                </button>
               </div>
             </li>`;
           } else {
@@ -39,11 +41,13 @@ export default function BagItem({ $target, initialState, onMove, onRemove }) {
             data-pocket="${pocket}">
               <button class="moveBtn">
                 <span class="itemName">${this.state[pocket].name}</span>
-                (x${this.state[pocket].count ? this.state[pocket].count : 1})
+                <span class="itemCount">(x${
+                  this.state[pocket].count ? this.state[pocket].count : 1
+                })</span>
               </button>
-              <div>
-                <button class="removeBtn">삭제</button>
-              </div>
+              <button class="removeBtn">
+                <i class="fas fa-minus"></i>
+              </button>
             </li>`;
           }
           return pocketNode;

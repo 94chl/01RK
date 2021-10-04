@@ -19,7 +19,10 @@ export default function CustomRoute({ $target, initialState }) {
     $customRoute.innerHTML = `
     <div class="tabName">
       루트 순서
-      <button class="toggleTabContentBtn">+</button>
+      <button class="toggleTabContentBtn">
+        <i class="fas fa-angle-double-down"></i>
+        <i class="fas fa-angle-double-up"></i>
+      </button>
     </div>
     <ul id="routeOrderList">
       ${this.state
@@ -33,8 +36,9 @@ export default function CustomRoute({ $target, initialState }) {
 
     $customRoute
       .querySelector(".toggleTabContentBtn")
-      .addEventListener("click", () => {
+      .addEventListener("click", (e) => {
         console.log("click");
+        e.target.closest(".toggleTabContentBtn").classList.toggle("closed");
         console.log($customRoute.querySelector("#routeOrderList"));
         $customRoute.querySelector("#routeOrderList").classList.toggle("hide");
       });

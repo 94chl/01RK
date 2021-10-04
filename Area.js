@@ -25,7 +25,9 @@ export default function Area({ $target, initialState, getDrop, routeCustom }) {
     $areaBox.innerHTML = `
     <div class="tabName">
       지역
-      <button class="removeAllBtn">X</button>
+      <button class="removeAllBtn">
+        <i class="fas fa-trash-alt"></i>
+      </button>
     </div>
     <ul id="areaList">
       ${areaIdList
@@ -34,7 +36,10 @@ export default function Area({ $target, initialState, getDrop, routeCustom }) {
             ? `
           <li data-id="${area}">
             <span class="areaName">${areaData[area].name}</span>
-            <button class="toggleDropsBtn">toggle</button>
+            <button class="toggleDropsBtn">              
+              <i class="fas fa-angle-double-down"></i>
+              <i class="fas fa-angle-double-up"></i>
+            </button>
           </li>`
             : `<li data-id="${area}">
             <span class="areaName">${areaData[area].name}</span>
@@ -42,17 +47,26 @@ export default function Area({ $target, initialState, getDrop, routeCustom }) {
             <div class="areaInfoBox">
               ${
                 areaData[area].resurrection
-                  ? "<div class='resurrection'>부활</div>"
+                  ? `<div class='resurrection'>
+                      <i class="fas fa-cross"></i>
+                    </div>`
                   : ""
               }
               ${
                 areaData[area].hyperloop
-                  ? "<div class='hyperloop'>텔포</div>"
+                  ? `<div class='hyperloop'>
+                      <i class='fas fa-angle-double-left'></i>
+                    </div>`
                   : ""
               }
               <div class="areaBtnBox">
-                <button class="pickAreaBtn">pick</button>
-                <button class="toggleDropsBtn">toggle</button>
+                <button class="pickAreaBtn">
+                  <i class="fab fa-font-awesome-flag"></i>
+                </button>
+                <button class="toggleDropsBtn">
+                  <i class="fas fa-angle-double-down"></i>
+                  <i class="fas fa-angle-double-up"></i>
+                </button>
               </div>
             </div>
           </li>`
@@ -87,6 +101,7 @@ export default function Area({ $target, initialState, getDrop, routeCustom }) {
     // 드랍템 토글
     $areaBox.querySelectorAll(".toggleDropsBtn").forEach((btn) => {
       btn.addEventListener("click", (e) => {
+        e.target.closest(".toggleDropsBtn").classList.toggle("closed");
         e.target
           .closest("li")
           .querySelectorAll(".noNeededDrops")
@@ -100,6 +115,7 @@ export default function Area({ $target, initialState, getDrop, routeCustom }) {
     // setState 쓰지 않기. 렌더링을 다시할 필요가 없다
     $areaBox.querySelectorAll(".pickAreaBtn").forEach((btn) => {
       btn.addEventListener("click", (e) => {
+        e.target.classList.toggle("pickedBtn");
         const picked = e.target.closest("li");
         const customRoute = [...this.state.pickedArea];
         picked.querySelector(".customRouteOrder").classList.toggle("picked");

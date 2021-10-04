@@ -14,7 +14,6 @@ const $target = document.querySelector("#app");
 const header = new Header({
   $target: document.querySelector("#header"),
   pathFinder: () => {
-    const bagTarget = JSON.parse(JSON.stringify(targetItems.state)).targetItem;
     const needsInfo = JSON.parse(JSON.stringify(needDrops.state));
     const needsIdArray = Object.keys(needsInfo.dropMatId);
 
@@ -34,14 +33,13 @@ const header = new Header({
 
     const bagNow = bagEquip.concat(bagInventory);
     console.log(bagNow);
-    console.log(bagTarget);
 
     const loading = document.createElement("div");
     loading.classList.add("loading");
     loading.innerHTML = "루트 탐색 중";
     $target.appendChild(loading);
 
-    const routes = pathFinder([], needsIdArray, bagNow);
+    const routes = pathFinder(customRoute.state, needsIdArray, bagNow);
 
     $target.querySelector(".loading").remove();
 
@@ -94,7 +92,7 @@ const selectItem = new SelectItem({
     loading.innerHTML = "루트 탐색 중";
     $target.appendChild(loading);
 
-    const routes = pathFinder([], needsIdArray, bagNow);
+    const routes = pathFinder(customRoute.state, needsIdArray, bagNow);
 
     $target.querySelector(".loading").remove();
 
@@ -175,11 +173,6 @@ const needDrops = new NeedDrops({
   onChange: (dropMatId) => {
     area.setState({ ...area.state, dropMatId });
   },
-});
-
-const customRoute = new CustomRoute({
-  $target,
-  initialState: [],
 });
 
 const area = new Area({
@@ -273,6 +266,11 @@ const area = new Area({
   routeCustom: (route) => {
     customRoute.setState(route);
   },
+});
+
+const customRoute = new CustomRoute({
+  $target,
+  initialState: [],
 });
 
 // const dataCtrl = () => {

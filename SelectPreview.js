@@ -92,11 +92,20 @@ export default function SelectPreview({
         .join("")}
         </ul>
         <div id="itemPathBox">
-          <button class="pathFinderBtn">route</button>
+          <button class="pathFinderBtn">
+            <i class="fas fa-map-marked-alt"></i>
+          </button>
         </div>
         <div id="itemPathModal" class="hide">
-          <button class="removePathBtn">X</button>
-          <div id="itemPaths"></div>
+          <div id="itemPathModalBtnBox">
+            <button class="rePathFinderBtn">
+              <i class="fas fa-redo"></i>
+            </button>
+            <button class="removePathBtn">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <div class="itemPaths"></div>
         </div>
       </div>`;
 
@@ -104,28 +113,62 @@ export default function SelectPreview({
 
     $selectPreview
       .querySelector(".pathFinderBtn")
-      .addEventListener("click", (e) => {
+      .addEventListener("click", async (e) => {
         $selectPreview.querySelector("#itemPathModal").classList.remove("hide");
-        const $itemPaths = $selectPreview.querySelector("#itemPaths");
+        const $itemPaths = $selectPreview.querySelector(".itemPaths");
+
+        const $loadingModule = document.createElement("div");
+        $loadingModule.classList.add("loadingModule");
+        $loadingModule.innerHTML = "탐색중입니다.";
+        $itemPaths.appendChild($loadingModule);
 
         if ($itemPaths.querySelector("ul")) {
           $itemPaths.innerHTML = "";
         }
 
-        const paths = pathFinder(e.target.closest("#itemPreview").dataset.id);
+        await setTimeout(() => {
+          const paths = pathFinder(e.target.closest("#itemPreview").dataset.id);
 
-        console.log(paths);
+          console.log(paths);
 
-        $itemPaths.innerHTML += `<ul>
+          $itemPaths.innerHTML += `<ul>
           ${paths.map((path) => `<li>${path.join(" -> ")}</li>`).join("")}
         </ul>`;
+        }, 500);
+
+        $itemPaths.querySelector(".loadingModule").remove();
+      });
+
+    $selectPreview
+      .querySelector(".rePathFinderBtn")
+      .addEventListener("click", async (e) => {
+        const $itemPathModal = $selectPreview.querySelector("#itemPathModal");
+        $itemPathModal.querySelector("ul").remove();
+
+        const $loadingModule = document.createElement("div");
+        $loadingModule.classList.add("loadingModule");
+        $loadingModule.innerHTML = "탐색중입니다.";
+        $loadingModule.style.height =
+          $itemPathModal.querySelector(".itemPaths").style.height;
+        $selectPreview.querySelector(".itemPaths").appendChild($loadingModule);
+
+        await setTimeout(() => {
+          const paths = pathFinder(e.target.closest("#itemPreview").dataset.id);
+
+          $itemPathModal.querySelector(".itemPaths").innerHTML += `
+          <ul>
+            ${paths.map((path) => `<li>${path.join(" -> ")}</li>`).join("")}
+          </ul>`;
+        }, 500);
+
+        $selectPreview.querySelector(".loadingModule").remove();
       });
 
     $selectPreview
       .querySelector(".removePathBtn")
       .addEventListener("click", () => {
         $selectPreview.querySelector("#itemPathModal").classList.add("hide");
-        $selectPreview.querySelector("#itemPaths").innerHTML = "";
+        $selectPreview.querySelector(".itemPaths").innerHTML = "";
       });
   };
 

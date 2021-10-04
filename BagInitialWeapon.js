@@ -19,9 +19,12 @@ export default function BagInitialWeapon({ $target, initialState, onClick }) {
     $bagInitialWeapon.innerHTML = `
     <div class="tabName">
       시작 무기    
-      <button class="toggleTabContentBtn">+</button>
+      <button class="toggleTabContentBtn closed">
+        <i class="fas fa-angle-double-down"></i>
+        <i class="fas fa-angle-double-up"></i>
+      </button>
     </div>
-    <ul id="initialWeaponBox">
+    <ul id="initialWeaponBox" class="hide">
       ${initialWeapon
         .map(
           (weapon) =>
@@ -47,8 +50,9 @@ export default function BagInitialWeapon({ $target, initialState, onClick }) {
 
     $bagInitialWeapon
       .querySelector(".toggleTabContentBtn")
-      .addEventListener("click", () => {
+      .addEventListener("click", (e) => {
         console.log("click");
+        e.target.closest(".toggleTabContentBtn").classList.toggle("closed");
         $bagInitialWeapon
           .querySelector("#initialWeaponBox")
           .classList.toggle("hide");

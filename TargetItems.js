@@ -23,22 +23,33 @@ export default function TargetItems({
     $targetItems.innerHTML = `
       <div class="tabName">
         목표 아이템
-        <button class="toggleTabContentBtn">+</button>
+        <button class="toggleTabContentBtn">
+          <i class="fas fa-angle-double-down"></i>
+          <i class="fas fa-angle-double-up"></i>
+        </button>
       </div>
       <ul id="targetItemBox">
         ${this.state.targetItem
           .map(
             (item, index) =>
               `<li data-id="${item.id}${index}">
-                ${item.name}
-                <button class="targetItemsRemoveBtn">x</button>
-                <button class="targetItemsInfoBtn">info</button>
+                <div id="targetItemName">${item.name}</div>
+                <div id="targetItemBtnBox">
+                  <button class="targetItemsRemoveBtn">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <button class="targetItemsInfoBtn">
+                    <i class="fas fa-info-circle"></i>
+                  </button>
+                </div>
               </li>`
           )
           .join("")}
       </ul>
-      <div id="bagBtnBox">
-        <button id="targetItemsRemoveAllBtn">전체 삭제</button>
+      <div id="targetItemsRemoveAllBtnBox">
+        <button id="targetItemsRemoveAllBtn">
+          <i class="fas fa-trash-alt"></i>
+        </button>
       </div>
     `;
 
@@ -66,8 +77,9 @@ export default function TargetItems({
 
     $targetItems
       .querySelector(".toggleTabContentBtn")
-      .addEventListener("click", () => {
+      .addEventListener("click", (e) => {
         console.log("click");
+        e.target.closest(".toggleTabContentBtn").classList.toggle("closed");
         $targetItems.querySelector("#targetItemBox").classList.toggle("hide");
       });
   };

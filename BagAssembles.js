@@ -61,15 +61,20 @@ export default function BagAssembles({ $target, initialState, onClick }) {
     const assemblables = assemblable(this.state);
     const assemblablesId = Object.keys(assemblables);
     $bagAssembles.innerHTML = `
+      <div class="tabName">제작가능</div>
       <ul>
-        ${assemblablesId
-          .map(
-            (itemId) =>
-              `<li data-id="${itemId}">
+        ${
+          assemblablesId.length > 0
+            ? assemblablesId
+                .map(
+                  (itemId) =>
+                    `<li data-id="${itemId}">
                 <button class="assembleBtn">${assemblables[itemId].name}</button>
               </li>`
-          )
-          .join("")}
+                )
+                .join("")
+            : "<li>없음</li>"
+        }
       </ul>
     `;
 

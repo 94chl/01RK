@@ -6,27 +6,47 @@
   font-style: italic;
 }
 
+$color1: #0adb96;
+$color2: #ddfdf3;
+$color3: #255f4c;
+$color4: #e9ad7c;
+$color5: #a06536;
+
 @mixin active {
   display: block;
   position: fixed;
   top: 70px;
   width: 360px;
-  background: #fff;
   z-index: 5;
+}
+
+@mixin fasIcon($input) {
+  height: $input;
+  line-height: $input;
+  width: $input;
+  text-align: center;
+  border-radius: 5px;
+  .fas {
+    line-height: $input;
+    height: $input;
+  }
 }
 
 div,
 li,
-button {
-  border: 1px solid #000;
-  box-sizing: border-box;
+label {
   overflow: hidden;
+}
+
+button {
+  border: none;
 }
 
 body {
   min-width: 360px;
   width: 360px;
   margin: 0 auto;
+  background: #ffffff;
 }
 
 header {
@@ -36,22 +56,43 @@ header {
   top: 0;
   left: 0;
   z-index: 10;
-  background: #fff;
+  background: $color1;
 
   #headerBox {
     display: flex;
     height: 100%;
-    line-height: 70px;
     justify-content: space-between;
     position: relative;
     #logo {
       width: 50px;
       margin: 10px;
+      height: 50px;
+      line-height: 50px;
+      margin: 10px;
     }
     #title {
+      height: 50px;
+      line-height: 50px;
+      margin: 10px 0;
+      color: $color2;
+      font-weight: bold;
+      font-size: 2.5em;
+      letter-spacing: 0.2em;
     }
     #headerBtnBox {
+      padding: 0 5px;
+      height: 50px;
+      line-height: 50px;
+      margin: 10px 0;
       button {
+        @include fasIcon(30px);
+        color: $color2;
+        border: 1px solid $color2;
+        box-shadow: 0 0 1px 1px $color3;
+        &.openedBtn {
+          background: $color3;
+          box-shadow: 0 0 1px 1px $color3 inset;
+        }
       }
     }
 
@@ -60,7 +101,11 @@ header {
       height: fit-content;
       background: #fff;
       min-width: 35px;
+      max-height: 30%;
       text-align: right;
+      border-radius: 5px;
+      border: 1px solid $color3;
+      box-sizing: border-box;
 
       overflow-y: scroll;
       -ms-overflow-style: none;
@@ -75,8 +120,26 @@ header {
         margin-left: -180px;
         z-index: 11;
       }
-      ul {
-        li {
+
+      .tabName {
+        height: 30px;
+        line-height: 30px;
+        text-align: left;
+        border-bottom: 1px solid $color3;
+        box-sizing: border-box;
+        text-indent: 5px;
+        .rePathFinderBtn {
+          @include fasIcon(30px);
+        }
+      }
+
+      .itemPaths {
+        height: fit-content;
+        ul {
+          li {
+            height: 30px;
+            line-height: 30px;
+          }
         }
       }
     }
@@ -86,36 +149,81 @@ header {
 main {
   margin-top: 70px;
   position: relative;
+
+  > div {
+    margin-bottom: 10px;
+    background: $color2;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px 0 $color1;
+  }
+
   .tabName {
     height: 30px;
     line-height: 30px;
+    text-indent: 5px;
+    font-weight: bold;
+    color: $color3;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    .toggleTabContentBtn {
+      @include fasIcon(30px);
+      .fa-angle-double-down {
+        display: none;
+      }
+      .fa-angle-double-up {
+        display: block;
+      }
+      &.closed {
+        .fa-angle-double-down {
+          display: block;
+        }
+        .fa-angle-double-up {
+          display: none;
+        }
+      }
+    }
   }
+
   #selectItemBox {
     display: grid;
     grid-template-columns: 25% auto 70px;
     grid-template-rows: repeat(4, fit-content);
     gap: 5px;
+    padding: 0 5px;
+
     .tabName {
       grid-column: 1 / 4;
+      text-indent: 0;
     }
 
     #selectDept {
       grid-column: 1 / 4;
       height: 30px;
+      display: flex;
 
       &.hide {
         display: none;
       }
 
       .dept {
+        display: none;
       }
       label {
+        margin: 2.5px 5px;
+        box-shadow: 0 0 1px 1px $color1;
+        border-radius: 5px;
+        padding: 0 5px;
+        &.selected {
+          background: $color3;
+          color: $color2;
+          box-shadow: 0 0 1px 1px $color3 inset;
+          border: 1px solid $color3;
+        }
       }
     }
 
     #selectCategory {
       height: 30px;
-
       &.hide {
         display: none;
       }
@@ -123,6 +231,8 @@ main {
       #categoryList {
         width: 100%;
         height: 100%;
+        border: none;
+        border-radius: 5px;
         option {
         }
       }
@@ -138,6 +248,8 @@ main {
       #detailsList {
         width: 100%;
         height: 100%;
+        border: none;
+        border-radius: 5px;
         option {
         }
       }
@@ -145,9 +257,15 @@ main {
 
     #itemSubmitBtn {
       height: 30px;
+      border-radius: 5px;
+      box-shadow: 0 0 1px 1px $color1;
 
       &.hide {
         display: none;
+      }
+
+      .fa-plus {
+        color: $color3;
       }
     }
 
@@ -165,11 +283,11 @@ main {
 
         ul {
           li {
-            .attrKey {
-            }
-
-            .attrValue {
-            }
+            height: 25px;
+            line-height: 25px;
+            text-indent: 5px;
+            background: #fff;
+            border-bottom: 2px solid $color2;
           }
         }
       }
@@ -178,18 +296,25 @@ main {
         position: absolute;
         top: 0;
         right: 0;
+        height: 25px;
+
         .pathFinderBtn {
+          @include fasIcon(25px);
         }
       }
 
       #itemPathModal {
+        border: 1px solid $color3;
+        border-radius: 5px;
+        background: #fff;
+
         height: 100%;
         position: absolute;
         top: 0;
         right: 0;
         z-index: 5;
         background: #fff;
-        min-width: 35px;
+        min-width: 50px;
         text-align: right;
 
         overflow-y: scroll;
@@ -202,13 +327,22 @@ main {
         &.hide {
           display: none;
         }
-
-        .removePathBtn {
+        #itemPathModalBtnBox {
+          display: flex;
+          justify-content: space-between;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          .removePathBtn,
+          .rePathFinderBtn {
+            @include fasIcon(25px);
+          }
         }
-        #itemPaths {
-        }
-        ul {
-          li {
+        .itemPaths {
+          margin-top: 25px;
+          ul {
+            li {
+            }
           }
         }
       }
@@ -223,111 +357,39 @@ main {
     #targetItemBox {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
-
       &.hide {
         display: none;
       }
 
-      li {
-        .targetItemsRemoveBtn {
+      > li {
+        background: #fff;
+        border-radius: 5px;
+        margin: 5px;
+        #targetItemName {
+          text-align: center;
+          overflow: hidden;
         }
+        #targetItemBtnBox {
+          display: flex;
+          justify-content: space-evenly;
+          padding: 5px;
+          .targetItemsRemoveBtn {
+            color: #ff0000;
+          }
 
-        .targetItemsInfoBtn {
+          .targetItemsInfoBtn {
+            color: $color1;
+          }
         }
       }
     }
 
-    #bagBtnBox {
+    #targetItemsRemoveAllBtnBox {
       position: absolute;
       top: 0;
       right: 0;
       #targetItemsRemoveAllBtn {
-      }
-    }
-  }
-
-  #bag {
-    position: relative;
-
-    #bagInventory {
-      display: none;
-      &.active {
-        @include active();
-      }
-      #bagInitialWeapon {
-        #initialWeaponBox {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-around;
-          &.hide {
-            display: none;
-          }
-
-          li {
-            height: 30px;
-            .initialWeaponBtn {
-            }
-          }
-        }
-      }
-      #bagEquip {
-        &.hide {
-          display: none;
-        }
-
-        ul {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          grid-template-rows: repeat(2, 1fr);
-          gap: 10px;
-          li {
-            .itemName {
-            }
-
-            .moveBtn {
-            }
-
-            .removeBtn {
-            }
-          }
-        }
-      }
-
-      #bagItem {
-        &.hide {
-          display: none;
-        }
-
-        ul {
-          display: grid;
-          grid-template-columns: repeat(5, 1fr);
-          grid-template-rows: repeat(2, 1fr);
-          gap: 5px;
-          li {
-            .moveBtn {
-              .itemName {
-              }
-              div {
-                .removeBtn {
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    #bagAssembles {
-      &.active {
-        position: fixed;
-        z-index: 15;
-      }
-      ul {
-        display: flex;
-        li {
-          .assembleBtn {
-          }
-        }
+        @include fasIcon(30px);
       }
     }
   }
@@ -342,68 +404,117 @@ main {
         display: none;
       }
       li {
+        margin: 5px;
         width: fit-content;
-      }
-    }
-  }
-
-  #customRoute {
-    min-height: fit-content;
-    #routeOrderList {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0 5px;
-      &.hide {
-        display: none;
-      }
-      li {
+        background: #fff;
+        border-radius: 5px;
+        padding: 5px;
       }
     }
   }
 
   #areaBox {
-    > div {
+    position: relative;
+    .tabName {
+      .removeAllBtn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include fasIcon(30px);
+      }
     }
+
     #areaList {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
+      padding: 5px;
       > li {
         position: relative;
+        border-radius: 5px;
+
+        min-height: 50px;
         .areaName {
+          background: #fff;
+          width: 100%;
+          display: block;
+          height: 25px;
+          line-height: 25px;
+          text-indent: 5px;
         }
         .customRouteOrder {
           position: absolute;
           top: 0;
           right: 0;
           width: 20px;
+          height: 25px;
+          line-height: 25px;
           text-align: center;
+          font-style: italic;
         }
 
         .areaInfoBox {
           display: flex;
+          height: 25px;
+          line-height: 25px;
+          background: #fff;
           .resurrection {
+            @include fasIcon(25px);
+            color: rgb(60, 202, 190);
           }
           .hyperloop {
+            @include fasIcon(25px);
+            color: rgb(31, 119, 252);
           }
+
           .areaBtnBox {
             display: flex;
             margin-left: auto;
             .pickAreaBtn {
+              @include fasIcon(25px);
+              .pickedBtn {
+                color: #ff0000;
+              }
             }
             .toggleDropsBtn {
+              @include fasIcon(25px);
+              .fa-angle-double-down {
+                display: block;
+              }
+              .fa-angle-double-up {
+                display: none;
+              }
+              &.closed {
+                .fa-angle-double-down {
+                  display: none;
+                }
+                .fa-angle-double-up {
+                  display: block;
+                }
+              }
             }
           }
         }
 
         .areaNeedDrops {
+          border-top: 1px solid $color1;
+          background: #fff;
           ul {
             li {
+              overflow: hidden;
+              .getDropBtn {
+                padding: 5px;
+              }
               &.neededDrops {
-                font-weight: 800;
-                color: red;
+                .getDropBtn {
+                  font-weight: 800;
+                  color: red;
+                }
               }
               &.noNeededDrops {
+                .getDropBtn {
+                  color: #999;
+                }
               }
             }
           }
@@ -411,6 +522,26 @@ main {
 
         &:last-child {
           grid-column: 1/4;
+          .toggleDropsBtn {
+            position: absolute;
+            top: 0;
+            right: 5px;
+            @include fasIcon(25px);
+            .fa-angle-double-down {
+              display: block;
+            }
+            .fa-angle-double-up {
+              display: none;
+            }
+            &.closed {
+              .fa-angle-double-down {
+                display: none;
+              }
+              .fa-angle-double-up {
+                display: block;
+              }
+            }
+          }
           .areaNeedDrops {
             ul {
               display: grid;
@@ -418,6 +549,171 @@ main {
               grid-template-columns: repeat(3, 1fr);
             }
           }
+        }
+      }
+    }
+  }
+}
+
+#customRoute {
+  min-height: fit-content;
+  #routeOrderList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 5px;
+    line-height: 40px;
+    color: $color1;
+    font-weight: bold;
+
+    &.hide {
+      display: none;
+    }
+
+    li {
+      color: #000;
+      font-weight: normal;
+      height: 30px;
+      line-height: 30px;
+      margin: 5px;
+      width: fit-content;
+      background: #fff;
+      border-radius: 5px;
+      text-align: center;
+      padding: 0 5px;
+    }
+  }
+}
+
+#bag {
+  display: none;
+  border-radius: 5px;
+  background: $color5;
+
+  &.active {
+    @include active();
+  }
+
+  #bagInventory {
+    #bagInitialWeapon {
+      .tabName {
+        color: $color2;
+        .fas {
+          color: $color2;
+        }
+      }
+      #initialWeaponBox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 0 5px;
+        background: $color4;
+        border-radius: 5px;
+        &.hide {
+          display: none;
+        }
+
+        li {
+          height: 25px;
+          .initialWeaponBtn {
+            @include fasIcon(25px);
+          }
+        }
+      }
+    }
+
+    .tabName {
+      color: $color2;
+    }
+
+    #bagEquip {
+      margin: 5px 0;
+      ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+        background: $color4;
+        border-radius: 5px;
+        padding: 5px;
+        li {
+          height: 25px;
+          position: relative;
+          background: #fff;
+          border-radius: 5px;
+          .moveBtn {
+            @include fasIcon(25px);
+            width: fit-content;
+            overflow: hidden;
+          }
+
+          .removeBtn {
+            @include fasIcon(25px);
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #ff0000;
+          }
+        }
+      }
+    }
+
+    #bagItem {
+      ul {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 5px;
+        background: $color4;
+        border-radius: 5px;
+        padding: 5px;
+        li {
+          position: relative;
+          height: 25px;
+          background: #fff;
+          border-radius: 5px;
+          .moveBtn {
+            @include fasIcon(25px);
+            width: 100%;
+            text-align: left;
+            position: relative;
+            .itemCount {
+              color: #00eeff;
+              font-size: 0.5em;
+              font-weight: bold;
+              position: absolute;
+              top: 0px;
+              right: 25px;
+              height: fit-content;
+              line-height: normal;
+            }
+          }
+          .removeBtn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: red;
+            @include fasIcon(25px);
+          }
+        }
+      }
+    }
+  }
+
+  #bagAssembles {
+    .tabName {
+      color: $color2;
+    }
+    &.active {
+      position: fixed;
+      z-index: 15;
+    }
+    ul {
+      display: flex;
+      background: $color4;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      li {
+        .assembleBtn {
         }
       }
     }

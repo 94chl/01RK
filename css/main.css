@@ -8,17 +8,19 @@
 
 div,
 li,
-button {
-  border: 1px solid #000;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+label {
   overflow: hidden;
+}
+
+button {
+  border: none;
 }
 
 body {
   min-width: 360px;
   width: 360px;
   margin: 0 auto;
+  background: #ffffff;
 }
 
 header {
@@ -28,7 +30,7 @@ header {
   top: 0;
   left: 0;
   z-index: 10;
-  background: #fff;
+  background: #0adb96;
 }
 
 header #headerBox {
@@ -36,7 +38,6 @@ header #headerBox {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  line-height: 70px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -46,6 +47,49 @@ header #headerBox {
 header #headerBox #logo {
   width: 50px;
   margin: 10px;
+  height: 50px;
+  line-height: 50px;
+  margin: 10px;
+}
+
+header #headerBox #title {
+  height: 50px;
+  line-height: 50px;
+  margin: 10px 0;
+  color: #ddfdf3;
+  font-weight: bold;
+  font-size: 2.5em;
+  letter-spacing: 0.2em;
+}
+
+header #headerBox #headerBtnBox {
+  padding: 0 5px;
+  height: 50px;
+  line-height: 50px;
+  margin: 10px 0;
+}
+
+header #headerBox #headerBtnBox button {
+  height: 30px;
+  line-height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 5px;
+  color: #ddfdf3;
+  border: 1px solid #ddfdf3;
+  -webkit-box-shadow: 0 0 1px 1px #255f4c;
+          box-shadow: 0 0 1px 1px #255f4c;
+}
+
+header #headerBox #headerBtnBox button .fas {
+  line-height: 30px;
+  height: 30px;
+}
+
+header #headerBox #headerBtnBox button.openedBtn {
+  background: #255f4c;
+  -webkit-box-shadow: 0 0 1px 1px #255f4c inset;
+          box-shadow: 0 0 1px 1px #255f4c inset;
 }
 
 header #headerBox #allItemPath {
@@ -55,7 +99,12 @@ header #headerBox #allItemPath {
   height: fit-content;
   background: #fff;
   min-width: 35px;
+  max-height: 30%;
   text-align: right;
+  border-radius: 5px;
+  border: 1px solid #255f4c;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -70,11 +119,44 @@ header #headerBox #allItemPath.active {
   position: fixed;
   top: 70px;
   width: 360px;
-  background: #fff;
   z-index: 5;
   left: 50%;
   margin-left: -180px;
   z-index: 11;
+}
+
+header #headerBox #allItemPath .tabName {
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+  border-bottom: 1px solid #255f4c;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-indent: 5px;
+}
+
+header #headerBox #allItemPath .tabName .rePathFinderBtn {
+  height: 30px;
+  line-height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+header #headerBox #allItemPath .tabName .rePathFinderBtn .fas {
+  line-height: 30px;
+  height: 30px;
+}
+
+header #headerBox #allItemPath .itemPaths {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+header #headerBox #allItemPath .itemPaths ul li {
+  height: 30px;
+  line-height: 30px;
 }
 
 main {
@@ -82,9 +164,51 @@ main {
   position: relative;
 }
 
+main > div {
+  margin-bottom: 10px;
+  background: #ddfdf3;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 1px 0 #0adb96;
+          box-shadow: 0 1px 1px 0 #0adb96;
+}
+
 main .tabName {
   height: 30px;
   line-height: 30px;
+  text-indent: 5px;
+  font-weight: bold;
+  color: #255f4c;
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
+}
+
+main .tabName .toggleTabContentBtn {
+  height: 30px;
+  line-height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+main .tabName .toggleTabContentBtn .fas {
+  line-height: 30px;
+  height: 30px;
+}
+
+main .tabName .toggleTabContentBtn .fa-angle-double-down {
+  display: none;
+}
+
+main .tabName .toggleTabContentBtn .fa-angle-double-up {
+  display: block;
+}
+
+main .tabName .toggleTabContentBtn.closed .fa-angle-double-down {
+  display: block;
+}
+
+main .tabName .toggleTabContentBtn.closed .fa-angle-double-up {
+  display: none;
 }
 
 main #selectItemBox {
@@ -96,12 +220,14 @@ main #selectItemBox {
       grid-template-rows: repeat(4, -webkit-fit-content);
       grid-template-rows: repeat(4, fit-content);
   gap: 5px;
+  padding: 0 5px;
 }
 
 main #selectItemBox .tabName {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 / 4;
+  text-indent: 0;
 }
 
 main #selectItemBox #selectDept {
@@ -109,10 +235,33 @@ main #selectItemBox #selectDept {
   -ms-grid-column-span: 3;
   grid-column: 1 / 4;
   height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 main #selectItemBox #selectDept.hide {
   display: none;
+}
+
+main #selectItemBox #selectDept .dept {
+  display: none;
+}
+
+main #selectItemBox #selectDept label {
+  margin: 2.5px 5px;
+  -webkit-box-shadow: 0 0 1px 1px #0adb96;
+          box-shadow: 0 0 1px 1px #0adb96;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+main #selectItemBox #selectDept label.selected {
+  background: #255f4c;
+  color: #ddfdf3;
+  -webkit-box-shadow: 0 0 1px 1px #255f4c inset;
+          box-shadow: 0 0 1px 1px #255f4c inset;
+  border: 1px solid #255f4c;
 }
 
 main #selectItemBox #selectCategory {
@@ -126,6 +275,8 @@ main #selectItemBox #selectCategory.hide {
 main #selectItemBox #selectCategory #categoryList {
   width: 100%;
   height: 100%;
+  border: none;
+  border-radius: 5px;
 }
 
 main #selectItemBox #selectDetails {
@@ -139,14 +290,23 @@ main #selectItemBox #selectDetails.hide {
 main #selectItemBox #selectDetails #detailsList {
   width: 100%;
   height: 100%;
+  border: none;
+  border-radius: 5px;
 }
 
 main #selectItemBox #itemSubmitBtn {
   height: 30px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 1px 1px #0adb96;
+          box-shadow: 0 0 1px 1px #0adb96;
 }
 
 main #selectItemBox #itemSubmitBtn.hide {
   display: none;
+}
+
+main #selectItemBox #itemSubmitBtn .fa-plus {
+  color: #255f4c;
 }
 
 main #selectItemBox #selectPreview {
@@ -167,20 +327,45 @@ main #selectItemBox #selectPreview #itemPreview {
       grid-template-columns: 70px auto;
 }
 
+main #selectItemBox #selectPreview #itemPreview ul li {
+  height: 25px;
+  line-height: 25px;
+  text-indent: 5px;
+  background: #fff;
+  border-bottom: 2px solid #ddfdf3;
+}
+
 main #selectItemBox #selectPreview #itemPathBox {
   position: absolute;
   top: 0;
   right: 0;
+  height: 25px;
+}
+
+main #selectItemBox #selectPreview #itemPathBox .pathFinderBtn {
+  height: 25px;
+  line-height: 25px;
+  width: 25px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+main #selectItemBox #selectPreview #itemPathBox .pathFinderBtn .fas {
+  line-height: 25px;
+  height: 25px;
 }
 
 main #selectItemBox #selectPreview #itemPathModal {
+  border: 1px solid #255f4c;
+  border-radius: 5px;
+  background: #fff;
   height: 100%;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 5;
   background: #fff;
-  min-width: 35px;
+  min-width: 50px;
   text-align: right;
   overflow-y: scroll;
   -ms-overflow-style: none;
@@ -193,6 +378,37 @@ main #selectItemBox #selectPreview #itemPathModal::-webkit-scrollbar {
 
 main #selectItemBox #selectPreview #itemPathModal.hide {
   display: none;
+}
+
+main #selectItemBox #selectPreview #itemPathModal #itemPathModalBtnBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+main #selectItemBox #selectPreview #itemPathModal #itemPathModalBtnBox .removePathBtn,
+main #selectItemBox #selectPreview #itemPathModal #itemPathModalBtnBox .rePathFinderBtn {
+  height: 25px;
+  line-height: 25px;
+  width: 25px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+main #selectItemBox #selectPreview #itemPathModal #itemPathModalBtnBox .removePathBtn .fas,
+main #selectItemBox #selectPreview #itemPathModal #itemPathModalBtnBox .rePathFinderBtn .fas {
+  line-height: 25px;
+  height: 25px;
+}
+
+main #selectItemBox #selectPreview #itemPathModal .itemPaths {
+  margin-top: 25px;
 }
 
 main #targetItems {
@@ -210,84 +426,52 @@ main #targetItems #targetItemBox.hide {
   display: none;
 }
 
-main #targetItems #bagBtnBox {
+main #targetItems #targetItemBox > li {
+  background: #fff;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+main #targetItems #targetItemBox > li #targetItemName {
+  text-align: center;
+  overflow: hidden;
+}
+
+main #targetItems #targetItemBox > li #targetItemBtnBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 5px;
+}
+
+main #targetItems #targetItemBox > li #targetItemBtnBox .targetItemsRemoveBtn {
+  color: #ff0000;
+}
+
+main #targetItems #targetItemBox > li #targetItemBtnBox .targetItemsInfoBtn {
+  color: #0adb96;
+}
+
+main #targetItems #targetItemsRemoveAllBtnBox {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-main #bag {
-  position: relative;
-}
-
-main #bag #bagInventory {
-  display: none;
-}
-
-main #bag #bagInventory.active {
-  display: block;
-  position: fixed;
-  top: 70px;
-  width: 360px;
-  background: #fff;
-  z-index: 5;
-}
-
-main #bag #bagInventory #bagInitialWeapon #initialWeaponBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-main #bag #bagInventory #bagInitialWeapon #initialWeaponBox.hide {
-  display: none;
-}
-
-main #bag #bagInventory #bagInitialWeapon #initialWeaponBox li {
+main #targetItems #targetItemsRemoveAllBtnBox #targetItemsRemoveAllBtn {
   height: 30px;
+  line-height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 5px;
 }
 
-main #bag #bagInventory #bagEquip.hide {
-  display: none;
-}
-
-main #bag #bagInventory #bagEquip ul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
-}
-
-main #bag #bagInventory #bagItem.hide {
-  display: none;
-}
-
-main #bag #bagInventory #bagItem ul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  gap: 5px;
-}
-
-main #bag #bagAssembles.active {
-  position: fixed;
-  z-index: 15;
-}
-
-main #bag #bagAssembles ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+main #targetItems #targetItemsRemoveAllBtnBox #targetItemsRemoveAllBtn .fas {
+  line-height: 30px;
+  height: 30px;
 }
 
 main #needDrops {
@@ -310,28 +494,33 @@ main #needDrops #needDropsBox.hide {
 }
 
 main #needDrops #needDropsBox li {
+  margin: 5px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  background: #fff;
+  border-radius: 5px;
+  padding: 5px;
 }
 
-main #customRoute {
-  min-height: -webkit-fit-content;
-  min-height: -moz-fit-content;
-  min-height: fit-content;
+main #areaBox {
+  position: relative;
 }
 
-main #customRoute #routeOrderList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 0 5px;
+main #areaBox .tabName .removeAllBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30px;
+  line-height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 5px;
 }
 
-main #customRoute #routeOrderList.hide {
-  display: none;
+main #areaBox .tabName .removeAllBtn .fas {
+  line-height: 30px;
+  height: 30px;
 }
 
 main #areaBox #areaList {
@@ -340,10 +529,22 @@ main #areaBox #areaList {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+  padding: 5px;
 }
 
 main #areaBox #areaList > li {
   position: relative;
+  border-radius: 5px;
+  min-height: 50px;
+}
+
+main #areaBox #areaList > li .areaName {
+  background: #fff;
+  width: 100%;
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  text-indent: 5px;
 }
 
 main #areaBox #areaList > li .customRouteOrder {
@@ -351,13 +552,47 @@ main #areaBox #areaList > li .customRouteOrder {
   top: 0;
   right: 0;
   width: 20px;
+  height: 25px;
+  line-height: 25px;
   text-align: center;
+  font-style: italic;
 }
 
 main #areaBox #areaList > li .areaInfoBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 25px;
+  line-height: 25px;
+  background: #fff;
+}
+
+main #areaBox #areaList > li .areaInfoBox .resurrection {
+  height: 25px;
+  line-height: 25px;
+  width: 25px;
+  text-align: center;
+  border-radius: 5px;
+  color: #3ccabe;
+}
+
+main #areaBox #areaList > li .areaInfoBox .resurrection .fas {
+  line-height: 25px;
+  height: 25px;
+}
+
+main #areaBox #areaList > li .areaInfoBox .hyperloop {
+  height: 25px;
+  line-height: 25px;
+  width: 25px;
+  text-align: center;
+  border-radius: 5px;
+  color: #1f77fc;
+}
+
+main #areaBox #areaList > li .areaInfoBox .hyperloop .fas {
+  line-height: 25px;
+  height: 25px;
 }
 
 main #areaBox #areaList > li .areaInfoBox .areaBtnBox {
@@ -367,9 +602,72 @@ main #areaBox #areaList > li .areaInfoBox .areaBtnBox {
   margin-left: auto;
 }
 
-main #areaBox #areaList > li .areaNeedDrops ul li.neededDrops {
+main #areaBox #areaList > li .areaInfoBox .areaBtnBox .pickAreaBtn {
+  height: 25px;
+  line-height: 25px;
+  width: 25px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+main #areaBox #areaList > li .areaInfoBox .areaBtnBox .pickAreaBtn .fas {
+  line-height: 25px;
+  height: 25px;
+}
+
+main #areaBox #areaList > li .areaInfoBox .areaBtnBox .pickAreaBtn .pickedBtn {
+  color: #ff0000;
+}
+
+main #areaBox #areaList > li .areaInfoBox .areaBtnBox .toggleDropsBtn {
+  height: 25px;
+  line-height: 25px;
+  width: 25px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+main #areaBox #areaList > li .areaInfoBox .areaBtnBox .toggleDropsBtn .fas {
+  line-height: 25px;
+  height: 25px;
+}
+
+main #areaBox #areaList > li .areaInfoBox .areaBtnBox .toggleDropsBtn .fa-angle-double-down {
+  display: block;
+}
+
+main #areaBox #areaList > li .areaInfoBox .areaBtnBox .toggleDropsBtn .fa-angle-double-up {
+  display: none;
+}
+
+main #areaBox #areaList > li .areaInfoBox .areaBtnBox .toggleDropsBtn.closed .fa-angle-double-down {
+  display: none;
+}
+
+main #areaBox #areaList > li .areaInfoBox .areaBtnBox .toggleDropsBtn.closed .fa-angle-double-up {
+  display: block;
+}
+
+main #areaBox #areaList > li .areaNeedDrops {
+  border-top: 1px solid #0adb96;
+  background: #fff;
+}
+
+main #areaBox #areaList > li .areaNeedDrops ul li {
+  overflow: hidden;
+}
+
+main #areaBox #areaList > li .areaNeedDrops ul li .getDropBtn {
+  padding: 5px;
+}
+
+main #areaBox #areaList > li .areaNeedDrops ul li.neededDrops .getDropBtn {
   font-weight: 800;
   color: red;
+}
+
+main #areaBox #areaList > li .areaNeedDrops ul li.noNeededDrops .getDropBtn {
+  color: #999;
 }
 
 main #areaBox #areaList > li:last-child {
@@ -378,11 +676,282 @@ main #areaBox #areaList > li:last-child {
   grid-column: 1/4;
 }
 
+main #areaBox #areaList > li:last-child .toggleDropsBtn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  height: 25px;
+  line-height: 25px;
+  width: 25px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+main #areaBox #areaList > li:last-child .toggleDropsBtn .fas {
+  line-height: 25px;
+  height: 25px;
+}
+
+main #areaBox #areaList > li:last-child .toggleDropsBtn .fa-angle-double-down {
+  display: block;
+}
+
+main #areaBox #areaList > li:last-child .toggleDropsBtn .fa-angle-double-up {
+  display: none;
+}
+
+main #areaBox #areaList > li:last-child .toggleDropsBtn.closed .fa-angle-double-down {
+  display: none;
+}
+
+main #areaBox #areaList > li:last-child .toggleDropsBtn.closed .fa-angle-double-up {
+  display: block;
+}
+
 main #areaBox #areaList > li:last-child .areaNeedDrops ul {
   display: -ms-grid;
   display: grid;
   gap: 0 10px;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+}
+
+#customRoute {
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+
+#customRoute #routeOrderList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0 5px;
+  line-height: 40px;
+  color: #0adb96;
+  font-weight: bold;
+}
+
+#customRoute #routeOrderList.hide {
+  display: none;
+}
+
+#customRoute #routeOrderList li {
+  color: #000;
+  font-weight: normal;
+  height: 30px;
+  line-height: 30px;
+  margin: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0 5px;
+}
+
+#bag {
+  display: none;
+  border-radius: 5px;
+  background: #a06536;
+}
+
+#bag.active {
+  display: block;
+  position: fixed;
+  top: 70px;
+  width: 360px;
+  z-index: 5;
+}
+
+#bag #bagInventory #bagInitialWeapon .tabName {
+  color: #ddfdf3;
+}
+
+#bag #bagInventory #bagInitialWeapon .tabName .fas {
+  color: #ddfdf3;
+}
+
+#bag #bagInventory #bagInitialWeapon #initialWeaponBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 0 5px;
+  background: #e9ad7c;
+  border-radius: 5px;
+}
+
+#bag #bagInventory #bagInitialWeapon #initialWeaponBox.hide {
+  display: none;
+}
+
+#bag #bagInventory #bagInitialWeapon #initialWeaponBox li {
+  height: 25px;
+}
+
+#bag #bagInventory #bagInitialWeapon #initialWeaponBox li .initialWeaponBtn {
+  height: 25px;
+  line-height: 25px;
+  width: 25px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#bag #bagInventory #bagInitialWeapon #initialWeaponBox li .initialWeaponBtn .fas {
+  line-height: 25px;
+  height: 25px;
+}
+
+#bag #bagInventory .tabName {
+  color: #ddfdf3;
+}
+
+#bag #bagInventory #bagEquip {
+  margin: 5px 0;
+}
+
+#bag #bagInventory #bagEquip ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  background: #e9ad7c;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#bag #bagInventory #bagEquip ul li {
+  height: 25px;
+  position: relative;
+  background: #fff;
+  border-radius: 5px;
+}
+
+#bag #bagInventory #bagEquip ul li .moveBtn {
+  height: 25px;
+  line-height: 25px;
+  width: 25px;
+  text-align: center;
+  border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  overflow: hidden;
+}
+
+#bag #bagInventory #bagEquip ul li .moveBtn .fas {
+  line-height: 25px;
+  height: 25px;
+}
+
+#bag #bagInventory #bagEquip ul li .removeBtn {
+  height: 25px;
+  line-height: 25px;
+  width: 25px;
+  text-align: center;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #ff0000;
+}
+
+#bag #bagInventory #bagEquip ul li .removeBtn .fas {
+  line-height: 25px;
+  height: 25px;
+}
+
+#bag #bagInventory #bagItem ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  gap: 5px;
+  background: #e9ad7c;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#bag #bagInventory #bagItem ul li {
+  position: relative;
+  height: 25px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+#bag #bagInventory #bagItem ul li .moveBtn {
+  height: 25px;
+  line-height: 25px;
+  width: 25px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  text-align: left;
+  position: relative;
+}
+
+#bag #bagInventory #bagItem ul li .moveBtn .fas {
+  line-height: 25px;
+  height: 25px;
+}
+
+#bag #bagInventory #bagItem ul li .moveBtn .itemCount {
+  color: #00eeff;
+  font-size: 0.5em;
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  line-height: normal;
+}
+
+#bag #bagInventory #bagItem ul li .removeBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+  height: 25px;
+  line-height: 25px;
+  width: 25px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#bag #bagInventory #bagItem ul li .removeBtn .fas {
+  line-height: 25px;
+  height: 25px;
+}
+
+#bag #bagAssembles .tabName {
+  color: #ddfdf3;
+}
+
+#bag #bagAssembles.active {
+  position: fixed;
+  z-index: 15;
+}
+
+#bag #bagAssembles ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #e9ad7c;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
 /*# sourceMappingURL=main.css.map */

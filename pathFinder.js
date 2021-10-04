@@ -66,6 +66,14 @@ export function pathFinder(route, needsNow, bagNow) {
   mapInfo = checkAreaDrop(mapInfo, needs);
   console.log(mapInfo);
 
+  if (routeStack.length > 0) {
+    routeStack.forEach((area) => {
+      mapInfo[area].drop.forEach((drop) => {
+        needs.includes(drop) ? needs.splice(needs.indexOf(drop), 1) : null;
+      });
+    });
+  }
+
   const startPoint = Object.keys(mapInfo)
     .reduce((acc, areaId) => {
       if (mapInfo[areaId].point > 0) {

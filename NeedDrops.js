@@ -21,7 +21,10 @@ export default function NeedDrops({ $target, initialState, onChange }) {
     $needDrops.innerHTML = `
     <div class="tabName">
       필요 드랍템
-      <button class="toggleTabContentBtn">+</button>
+      <button class="toggleTabContentBtn">
+        <i class="fas fa-angle-double-down"></i>
+        <i class="fas fa-angle-double-up"></i>
+      </button>
     </div>
     <ul id="needDropsBox">
       ${this.state.dropMatArr
@@ -33,8 +36,9 @@ export default function NeedDrops({ $target, initialState, onChange }) {
 
     $needDrops
       .querySelector(".toggleTabContentBtn")
-      .addEventListener("click", () => {
+      .addEventListener("click", (e) => {
         console.log("click");
+        e.target.closest(".toggleTabContentBtn").classList.toggle("closed");
         $needDrops.querySelector("#needDropsBox").classList.toggle("hide");
       });
   };

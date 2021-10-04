@@ -47,7 +47,7 @@ export default function SelectPreview({
             return `
               <li id="itemName">
                 <span class="attrKey">이름 : </span>
-                <span class="attrValue"  data-grade="${this.state.cartInfo.id[0]}">
+                <span class="attrValue value${this.state.cartInfo.id[0]}">
                   ${this.state.cartInfo[key]}
                 </span>
               </li>`;
@@ -64,11 +64,11 @@ export default function SelectPreview({
               <span class="attrKey">재료 : </span>
               <span class="attrValue">
                 <span data-id="${this.state.cartInfo[key][0]}" 
-                data-grade="${this.state.cartInfo[key][0][0]}">
+                class="value${this.state.cartInfo[key][0][0]}">
                   ${searchById(this.state.cartInfo[key][0]).name}
                 </span>,
                 <span data-id="${this.state.cartInfo[key][1]}" 
-                data-grade="${this.state.cartInfo[key][1][0]}">
+                class="value${this.state.cartInfo[key][1][0]}">
                   ${searchById(this.state.cartInfo[key][1]).name}
                 </span>
               </span>

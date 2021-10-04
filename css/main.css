@@ -341,12 +341,37 @@ main #selectItemBox #selectPreview #itemPreview {
       grid-template-columns: 70px auto;
 }
 
-main #selectItemBox #selectPreview #itemPreview ul li {
-  height: 25px;
+main #selectItemBox #selectPreview #itemPreview #itemOptions li {
+  min-height: 25px;
   line-height: 25px;
   text-indent: 5px;
   background: #fff;
   border-bottom: 2px solid #ddfdf3;
+}
+
+main #selectItemBox #selectPreview #itemPreview #itemOptions li .valueW {
+  background: #fff;
+  color: #000;
+}
+
+main #selectItemBox #selectPreview #itemPreview #itemOptions li .valueG {
+  background: #0e970e;
+  color: #fff;
+}
+
+main #selectItemBox #selectPreview #itemPreview #itemOptions li .valueB {
+  background: #0e3cb9;
+  color: #fffd77;
+}
+
+main #selectItemBox #selectPreview #itemPreview #itemOptions li .valueP {
+  background: #7513c5;
+  color: #fffd77;
+}
+
+main #selectItemBox #selectPreview #itemPreview #itemOptions li .valueY {
+  background: #ffee00;
+  color: #ff0000;
 }
 
 main #selectItemBox #selectPreview #itemPathBox {

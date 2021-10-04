@@ -289,13 +289,34 @@ main {
         display: grid;
         grid-template-columns: 70px auto;
 
-        ul {
+        #itemOptions {
           li {
-            height: 25px;
+            min-height: 25px;
             line-height: 25px;
             text-indent: 5px;
             background: #fff;
             border-bottom: 2px solid $color2;
+
+            .valueW {
+              background: #fff;
+              color: #000;
+            }
+            .valueG {
+              background: #0e970e;
+              color: #fff;
+            }
+            .valueB {
+              background: #0e3cb9;
+              color: #fffd77;
+            }
+            .valueP {
+              background: #7513c5;
+              color: #fffd77;
+            }
+            .valueY {
+              background: #ffee00;
+              color: #ff0000;
+            }
           }
         }
       }

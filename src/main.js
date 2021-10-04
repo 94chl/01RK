@@ -10,12 +10,26 @@ import { pathFinder } from "./utils/pathFinder.js";
 import CustomRoute from "./component/CustomRoute.js";
 
 const $target = document.querySelector("#app");
+let needsIdArrayNow = [];
 
 const header = new Header({
   $target: document.querySelector("#header"),
   pathFinder: () => {
     const needsInfo = JSON.parse(JSON.stringify(needDrops.state));
     const needsIdArray = Object.keys(needsInfo.dropMatId);
+
+    if (needsIdArray.length === needsIdArrayNow.length) {
+      const checkNeedsChange = needsIdArrayNow.filter((id) =>
+        needsIdArray.includes(id)
+      );
+      console.log(checkNeedsChange);
+      if (checkNeedsChange.length > 0) {
+        console.log("연산 불필요");
+        return false;
+      }
+    }
+
+    needsIdArrayNow = [...needsIdArray];
 
     console.log(needsIdArray);
 
@@ -42,7 +56,7 @@ const header = new Header({
     const routes = pathFinder(customRoute.state, needsIdArray, bagNow);
 
     $target.querySelector(".loading").remove();
-
+    console.log(needsIdArrayNow);
     return routes;
   },
 });

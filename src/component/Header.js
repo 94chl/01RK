@@ -53,15 +53,19 @@ export default function Header({ $target, pathFinder }) {
           $allItemPath.querySelector(".itemPaths").style.height;
         modalHeight > 0 ? ($loadingModule.style.height = modalHeight) : "30px";
 
-        if ($allItemPath.querySelector("ul")) {
-          $allItemPath.querySelector("ul").remove();
-          return;
-        }
-
-        const paths = await pathFinder();
-        $allItemPath.querySelector(".itemPaths").innerHTML += `<ul>
+        if ([...$allItemPath.classList].includes("active")) {
+          const paths = await pathFinder();
+          if (paths) {
+            if ($allItemPath.querySelector("ul")) {
+              $allItemPath.querySelector("ul").remove();
+            }
+            $allItemPath.querySelector(".itemPaths").innerHTML += `<ul>
           ${paths.map((path) => `<li>${path.join(" -> ")}</li>`).join("")}
         </ul>`;
+          }
+        } else {
+          console.log("close");
+        }
 
         $header.querySelector(".loadingModule").remove();
       });

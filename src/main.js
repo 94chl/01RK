@@ -1,13 +1,13 @@
-import Header from "./Header.js";
-import SelectItem from "./SelectItem.js";
-import TargetItems from "./TargetItems.js";
-import Bag from "./Bag.js";
-import NeedDrops from "./NeedDrops.js";
-import { weaponData, equippable, weaponSort } from "./itemTable.js";
-import { disassembleWD } from "./disassemble.js";
-import Area from "./Area.js";
-import { pathFinder } from "./pathFinder.js";
-import CustomRoute from "./customRoute.js";
+import Header from "./component/Header.js";
+import SelectItem from "./component/SelectItem.js";
+import TargetItems from "./component/TargetItems.js";
+import Bag from "./component/Bag.js";
+import NeedDrops from "./component/NeedDrops.js";
+import { weaponData, equippable, weaponSort } from "./utils/itemTable.js";
+import { disassembleWD } from "./utils/disassemble.js";
+import Area from "./component/Area.js";
+import { pathFinder } from "./utils/pathFinder.js";
+import CustomRoute from "./component/CustomRoute.js";
 
 const $target = document.querySelector("#app");
 

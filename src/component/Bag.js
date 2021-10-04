@@ -1,6 +1,6 @@
 import BagInventory from "./BagInventory.js";
 import BagAssembles from "./BagAssembles.js";
-import { equippable, searchById, weaponSort } from "./itemTable.js";
+import { equippable, searchById, weaponSort } from "../utils/itemTable.js";
 
 //  initialState: {
 //    targetItem: [  ],

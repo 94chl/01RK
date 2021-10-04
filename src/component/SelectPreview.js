@@ -1,5 +1,5 @@
-import { areaData, searchById, eng2Kor } from "./itemTable.js";
-import { disassembleGD } from "./disassemble.js";
+import { areaData, searchById, eng2Kor } from "../utils/itemTable.js";
+import { disassembleGD } from "../utils/disassemble.js";
 
 export default function SelectPreview({
   $target,
@@ -126,15 +126,12 @@ export default function SelectPreview({
           $itemPaths.innerHTML = "";
         }
 
-        await setTimeout(() => {
-          const paths = pathFinder(e.target.closest("#itemPreview").dataset.id);
-
-          console.log(paths);
-
-          $itemPaths.innerHTML += `<ul>
+        const paths = await pathFinder(
+          e.target.closest("#itemPreview").dataset.id
+        );
+        $selectPreview.querySelector(".itemPaths").innerHTML += `<ul>
           ${paths.map((path) => `<li>${path.join(" -> ")}</li>`).join("")}
         </ul>`;
-        }, 500);
 
         $itemPaths.querySelector(".loadingModule").remove();
       });
@@ -152,14 +149,12 @@ export default function SelectPreview({
           $itemPathModal.querySelector(".itemPaths").style.height;
         $selectPreview.querySelector(".itemPaths").appendChild($loadingModule);
 
-        await setTimeout(() => {
-          const paths = pathFinder(e.target.closest("#itemPreview").dataset.id);
-
-          $itemPathModal.querySelector(".itemPaths").innerHTML += `
-          <ul>
-            ${paths.map((path) => `<li>${path.join(" -> ")}</li>`).join("")}
-          </ul>`;
-        }, 500);
+        const paths = await pathFinder(
+          e.target.closest("#itemPreview").dataset.id
+        );
+        $selectPreview.querySelector(".itemPaths").innerHTML += `<ul>
+          ${paths.map((path) => `<li>${path.join(" -> ")}</li>`).join("")}
+        </ul>`;
 
         $selectPreview.querySelector(".loadingModule").remove();
       });

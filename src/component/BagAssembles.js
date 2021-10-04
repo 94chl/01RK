@@ -1,4 +1,4 @@
-import { searchById } from "./itemTable.js";
+import { searchById } from "../utils/itemTable.js";
 
 // initialState: [{equip}, {inventory}]
 // {id:[], tobe:{key:[values]}}

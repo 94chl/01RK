@@ -2,7 +2,7 @@ import SelectCategory from "./SelectCategory.js";
 import SelectDetails from "./SelectDetails.js";
 import SelectDept from "./SelectDept.js";
 import SelectPreview from "./SelectPreview.js";
-import { database } from "./itemTable.js";
+import { database } from "../utils/itemTable.js";
 
 //initialState: { dept, category, data }
 

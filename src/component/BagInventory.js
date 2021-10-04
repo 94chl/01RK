@@ -1,7 +1,7 @@
 import BagInitialWeapon from "./BagInitialWeapon.js";
 import BagEquip from "./BagEquip.js";
 import BagItem from "./BagItem.js";
-import { weaponSort } from "./itemTable.js";
+import { weaponSort } from "../utils/itemTable.js";
 
 //  initialState: {
 //    inventory: { },

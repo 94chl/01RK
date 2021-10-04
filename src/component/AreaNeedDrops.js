@@ -1,4 +1,4 @@
-import { areaData, searchById } from "./itemTable.js";
+import { areaData, searchById } from "../utils/itemTable.js";
 
 // initialState: {areaId: "", dropMatId:[]}
 

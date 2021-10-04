@@ -1,4 +1,4 @@
-import { initialWeapon } from "./itemTable.js";
+import { initialWeapon } from "../utils/itemTable.js";
 
 // initialState: { targetItem: [  ], inventory, equip }
 

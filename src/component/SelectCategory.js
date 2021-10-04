@@ -1,4 +1,4 @@
-import { eng2Kor } from "./itemTable.js";
+import { eng2Kor } from "../utils/itemTable.js";
 
 // initialState: {dept, category, categoryArray}
 

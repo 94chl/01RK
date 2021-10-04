@@ -1,4 +1,4 @@
-import { disassembleGD } from "./disassemble.js";
+import { disassembleGD } from "../utils/disassemble.js";
 
 // initialState: {dept, category, data}
 

@@ -1,4 +1,4 @@
-import { disassembleAllWD } from "./disassemble.js";
+import { disassembleAllWD } from "../utils/disassemble.js";
 
 // initialState: { greenMatId: {  }, greenMatName: {  } }
 

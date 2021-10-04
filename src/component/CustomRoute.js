@@ -1,4 +1,4 @@
-import { areaData } from "./itemTable.js";
+import { areaData } from "../utils/itemTable.js";
 
 // initialState: []
 

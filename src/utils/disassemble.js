@@ -51,6 +51,7 @@ export function disassembleWD(materialArr) {
     dropMatName: {},
   };
   console.log(materials);
+  console.log(need2Disassemble);
   for (let i = 0; i < need2Disassemble.length; ) {
     const result = searchById(need2Disassemble[i]);
     if (!result.location && result.id[0] !== "W") {

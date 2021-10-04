@@ -1,5 +1,5 @@
 import AreaNeedDrops from "./AreaNeedDrops.js";
-import { areaData } from "./itemTable.js";
+import { areaData } from "../utils/itemTable.js";
 
 // initialState: {pickedArea, dropMatId}
 

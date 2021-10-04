@@ -272,30 +272,3 @@ const customRoute = new CustomRoute({
   $target,
   initialState: [],
 });
-
-// const dataCtrl = () => {
-//   const bigData = [];
-//   Object.keys(database).forEach((dataType) => {
-//     database[dataType].forEach((category) => {
-//       category.items.forEach((item) => {
-//         bigData.push(item);
-//       });
-//     });
-//   });
-//   return bigData;
-// };
-
-// const bigData = dataCtrl();
-
-// const newData = bigData.map((itemA) => {
-//   const maketo = bigData.reduce((acc, itemB) => {
-//     if (itemB.material && itemB.material.includes(itemA.id)) {
-//       acc.push(itemB.id);
-//     }
-//     return acc;
-//   }, []);
-//   itemA.maketo = maketo;
-//   return itemA;
-// });
-
-// console.log(newData);

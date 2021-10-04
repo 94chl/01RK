@@ -74,6 +74,11 @@ export function pathFinder(route, needsNow, bagNow) {
     });
   }
 
+  if (needs.includes("WWD001")) {
+    alert("쌍칼은 시작무기로 미선택 시 획득할 수 없습니다.");
+    return [];
+  }
+
   const startPoint = Object.keys(mapInfo)
     .reduce((acc, areaId) => {
       if (mapInfo[areaId].point > 0) {

@@ -139,6 +139,7 @@ export const database = { weaponData, equipData, itemData };
 
 export const searchById = (itemId) => {
   const itemInfo = { id: itemId, dept: "", category: "", details: {} };
+  console.log(itemInfo);
   if (itemId[1] == "W") {
     itemInfo.dept = "weapon";
     itemInfo.category = idToCategory[itemInfo.dept][itemId[2]];

@@ -478,9 +478,10 @@ main {
           .areaBtnBox {
             display: flex;
             margin-left: auto;
+            background: $color1;
             .pickAreaBtn {
-              margin-right: 4px;
-              border-right: 1px solid $color1;
+              background: #fff;
+              margin-right: 1px;
               @include fasIcon(25px);
               border-radius: 0;
               &.picked {
@@ -488,7 +489,9 @@ main {
               }
             }
             .toggleDropsBtn {
+              background: #fff;
               @include fasIcon(25px);
+              border-radius: 0;
               .fa-angle-double-down {
                 display: block;
               }

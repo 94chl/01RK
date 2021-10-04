@@ -64,26 +64,33 @@ header {
     justify-content: space-between;
     position: relative;
     #logo {
-      width: 50px;
-      margin: 10px;
+      max-width: 120px;
       height: 50px;
       line-height: 50px;
-      margin: 10px;
+      margin: 10px 0;
+      img {
+        height: 100%;
+      }
     }
     #title {
       height: 50px;
+      min-width: 120px;
       line-height: 50px;
       margin: 10px 0;
       color: $color2;
       font-weight: bold;
       font-size: 2.5em;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.1em;
+      text-align: center;
     }
     #headerBtnBox {
-      padding: 0 5px;
       height: 50px;
+      min-width: 120px;
       line-height: 50px;
       margin: 10px 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
       button {
         @include fasIcon(30px);
         color: $color2;

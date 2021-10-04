@@ -45,28 +45,41 @@ header #headerBox {
 }
 
 header #headerBox #logo {
-  width: 50px;
-  margin: 10px;
+  max-width: 120px;
   height: 50px;
   line-height: 50px;
-  margin: 10px;
+  margin: 10px 0;
+}
+
+header #headerBox #logo img {
+  height: 100%;
 }
 
 header #headerBox #title {
   height: 50px;
+  min-width: 120px;
   line-height: 50px;
   margin: 10px 0;
   color: #ddfdf3;
   font-weight: bold;
   font-size: 2.5em;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
+  text-align: center;
 }
 
 header #headerBox #headerBtnBox {
-  padding: 0 5px;
   height: 50px;
+  min-width: 120px;
   line-height: 50px;
   margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header #headerBox #headerBtnBox button {

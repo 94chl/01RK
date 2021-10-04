@@ -5,7 +5,9 @@ export default function Header({ $target, pathFinder }) {
 
   this.render = () => {
     $header.innerHTML = `
-      <div id="logo">logo</div>
+      <div id="logo">
+        <img src="./img/ER_Logo_White.png" alt="logo" />
+      </div>
       <div id="title">01RK</div>
       <div id="headerBtnBox">
         <button id="headerStatusBtn">

@@ -620,9 +620,12 @@ main {
         }
 
         li {
-          height: 25px;
+          height: 30px;
           .initialWeaponBtn {
-            @include fasIcon(25px);
+            @include fasIcon(30px);
+            img {
+              height: 100%;
+            }
           }
         }
       }
@@ -651,6 +654,9 @@ main {
             @include fasIcon(25px);
             width: fit-content;
             overflow: hidden;
+            .empty {
+              color: #999;
+            }
           }
 
           .removeBtn {
@@ -692,6 +698,9 @@ main {
               right: 25px;
               height: fit-content;
               line-height: normal;
+            }
+            .empty {
+              color: #999;
             }
           }
           .removeBtn {

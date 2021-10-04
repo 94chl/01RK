@@ -806,20 +806,24 @@ main #areaBox #areaList > li:last-child .areaNeedDrops ul {
 }
 
 #bag #bagInventory #bagInitialWeapon #initialWeaponBox li {
-  height: 25px;
+  height: 30px;
 }
 
 #bag #bagInventory #bagInitialWeapon #initialWeaponBox li .initialWeaponBtn {
-  height: 25px;
-  line-height: 25px;
-  width: 25px;
+  height: 30px;
+  line-height: 30px;
+  width: 30px;
   text-align: center;
   border-radius: 5px;
 }
 
 #bag #bagInventory #bagInitialWeapon #initialWeaponBox li .initialWeaponBtn .fas {
-  line-height: 25px;
-  height: 25px;
+  line-height: 30px;
+  height: 30px;
+}
+
+#bag #bagInventory #bagInitialWeapon #initialWeaponBox li .initialWeaponBtn img {
+  height: 100%;
 }
 
 #bag #bagInventory .tabName {
@@ -865,6 +869,10 @@ main #areaBox #areaList > li:last-child .areaNeedDrops ul {
 #bag #bagInventory #bagEquip ul li .moveBtn .fas {
   line-height: 25px;
   height: 25px;
+}
+
+#bag #bagInventory #bagEquip ul li .moveBtn .empty {
+  color: #999;
 }
 
 #bag #bagInventory #bagEquip ul li .removeBtn {
@@ -931,6 +939,10 @@ main #areaBox #areaList > li:last-child .areaNeedDrops ul {
   height: -moz-fit-content;
   height: fit-content;
   line-height: normal;
+}
+
+#bag #bagInventory #bagItem ul li .moveBtn .empty {
+  color: #999;
 }
 
 #bag #bagInventory #bagItem ul li .removeBtn {

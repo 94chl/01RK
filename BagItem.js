@@ -24,7 +24,7 @@ export default function BagItem({ $target, initialState, onMove, onRemove }) {
             pocketNode = `
             <li data-pocket="${pocket}">
               <button class="moveBtn">
-                <span class="itemName">empty</span>
+                <span class="itemName empty">empty</span>
               </button>
               <div>
                 <button class="removeBtn">

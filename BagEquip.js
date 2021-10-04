@@ -24,7 +24,7 @@ export default function BagEquip({ $target, initialState, onMove, onRemove }) {
             equipNode = `<li 
             data-pocket="${sort}">
               <button class="moveBtn">
-                <span class="itemName">empty</span>
+                <span class="itemName empty">empty</span>
               </button>
               <button class="removeBtn">
                 <i class="fas fa-minus"></i>

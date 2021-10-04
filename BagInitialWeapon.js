@@ -27,8 +27,12 @@ export default function BagInitialWeapon({ $target, initialState, onClick }) {
     <ul id="initialWeaponBox" class="hide">
       ${initialWeapon
         .map(
-          (weapon) =>
-            `<li data-id="${weapon.id}" data-sort="${weapon.sort}"><button class="initialWeaponBtn">${weapon.name}</button></li>`
+          (weapon) => `
+          <li data-id="${weapon.id}" data-sort="${weapon.sort}">
+            <button class="initialWeaponBtn">
+              <img src="./img/WSicon/${weapon.sort}.png" alt="${weapon.sort}_icon"/>
+            </button>
+          </li>`
         )
         .join("")}
     </ul>`;

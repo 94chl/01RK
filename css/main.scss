@@ -479,8 +479,11 @@ main {
             display: flex;
             margin-left: auto;
             .pickAreaBtn {
+              margin-right: 4px;
+              border-right: 1px solid $color1;
               @include fasIcon(25px);
-              .pickedBtn {
+              border-radius: 0;
+              &.picked {
                 color: #ff0000;
               }
             }

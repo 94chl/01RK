@@ -617,11 +617,14 @@ main #areaBox #areaList > li .areaInfoBox .areaBtnBox {
 }
 
 main #areaBox #areaList > li .areaInfoBox .areaBtnBox .pickAreaBtn {
+  margin-right: 4px;
+  border-right: 1px solid #0adb96;
   height: 25px;
   line-height: 25px;
   width: 25px;
   text-align: center;
   border-radius: 5px;
+  border-radius: 0;
 }
 
 main #areaBox #areaList > li .areaInfoBox .areaBtnBox .pickAreaBtn .fas {
@@ -629,7 +632,7 @@ main #areaBox #areaList > li .areaInfoBox .areaBtnBox .pickAreaBtn .fas {
   height: 25px;
 }
 
-main #areaBox #areaList > li .areaInfoBox .areaBtnBox .pickAreaBtn .pickedBtn {
+main #areaBox #areaList > li .areaInfoBox .areaBtnBox .pickAreaBtn.picked {
   color: #ff0000;
 }
 

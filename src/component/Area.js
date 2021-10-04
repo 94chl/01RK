@@ -115,10 +115,10 @@ export default function Area({ $target, initialState, getDrop, routeCustom }) {
     // setState 쓰지 않기. 렌더링을 다시할 필요가 없다
     $areaBox.querySelectorAll(".pickAreaBtn").forEach((btn) => {
       btn.addEventListener("click", (e) => {
-        e.target.classList.toggle("pickedBtn");
         const picked = e.target.closest("li");
         const customRoute = [...this.state.pickedArea];
         picked.querySelector(".customRouteOrder").classList.toggle("picked");
+        picked.querySelector(".pickAreaBtn").classList.toggle("picked");
         if (customRoute.includes(picked.dataset.id)) {
           $areaBox
             .querySelectorAll(".customRouteOrder")

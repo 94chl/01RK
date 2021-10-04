@@ -53,7 +53,15 @@ export default function AreaNeedDrops({ $target, initialState, getDrop }) {
           count: parseInt($li.pickup),
           limit: parseInt($li.limit),
         };
+        document.querySelector("#headerBagBtn").classList.toggle("gotDrops");
         getDrop(dropInfo);
+        setTimeout(
+          () =>
+            document
+              .querySelector("#headerBagBtn")
+              .classList.toggle("gotDrops"),
+          1000
+        );
       });
     });
   };

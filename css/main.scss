@@ -40,6 +40,7 @@ label {
 
 button {
   border: none;
+  cursor: pointer;
 }
 
 body {
@@ -100,6 +101,15 @@ header {
         &.openedBtn {
           background: $color3;
           box-shadow: 0 0 1px 1px $color3 inset;
+        }
+        &#headerBagBtn {
+          transition: all 0.3s linear;
+          &.gotDrops {
+            background: $color5;
+            .fas {
+              color: $color4;
+            }
+          }
         }
       }
     }
@@ -539,6 +549,10 @@ main {
               overflow: hidden;
               .getDropBtn {
                 padding: 5px;
+                &:active {
+                  box-shadow: 1px 1px 1px 0 $color3 inset;
+                  border-radius: 5px;
+                }
               }
               &.neededDrops {
                 .getDropBtn {

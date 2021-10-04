@@ -14,6 +14,7 @@ label {
 
 button {
   border: none;
+  cursor: pointer;
 }
 
 body {
@@ -104,6 +105,19 @@ header #headerBox #headerBtnBox button.openedBtn {
   background: #255f4c;
   -webkit-box-shadow: 0 0 1px 1px #255f4c inset;
           box-shadow: 0 0 1px 1px #255f4c inset;
+}
+
+header #headerBox #headerBtnBox button#headerBagBtn {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+header #headerBox #headerBtnBox button#headerBagBtn.gotDrops {
+  background: #a06536;
+}
+
+header #headerBox #headerBtnBox button#headerBagBtn.gotDrops .fas {
+  color: #e9ad7c;
 }
 
 header #headerBox #allItemPath {
@@ -704,6 +718,12 @@ main #areaBox #areaList > li .areaNeedDrops ul li {
 
 main #areaBox #areaList > li .areaNeedDrops ul li .getDropBtn {
   padding: 5px;
+}
+
+main #areaBox #areaList > li .areaNeedDrops ul li .getDropBtn:active {
+  -webkit-box-shadow: 1px 1px 1px 0 #255f4c inset;
+          box-shadow: 1px 1px 1px 0 #255f4c inset;
+  border-radius: 5px;
 }
 
 main #areaBox #areaList > li .areaNeedDrops ul li.neededDrops .getDropBtn {

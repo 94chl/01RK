@@ -28,7 +28,7 @@ export default function BagInitialWeapon({ $target, initialState, onClick }) {
       ${initialWeapon
         .map(
           (weapon) => `
-          <li data-id="${weapon.id}" data-sort="${weapon.sort}">
+          <li data-id="${weapon.id}" data-sort="${weapon.sort}" data-name="${weapon.name}">
             <button class="initialWeaponBtn">
               <img src="./img/WSicon/${weapon.sort}.png" alt="${weapon.sort}_icon"/>
             </button>
@@ -43,11 +43,12 @@ export default function BagInitialWeapon({ $target, initialState, onClick }) {
         const clickedInfo = {
           id: $li.dataset.id,
           sort: $li.dataset.sort,
-          name: $li.innerText,
+          name: $li.dataset.name,
           count: 1,
           limit: 1,
           location: "weapon",
         };
+        console.log(clickedInfo);
         onClick(clickedInfo);
       });
     });

@@ -312,6 +312,7 @@ main #selectItemBox #selectDept label {
           box-shadow: 0 0 1px 1px #0adb96;
   border-radius: 5px;
   padding: 0 5px;
+  cursor: pointer;
 }
 
 main #selectItemBox #selectDept label.selected {
@@ -646,6 +647,7 @@ main #areaBox #areaList > li .customRouteOrder {
   line-height: 25px;
   text-align: center;
   font-style: italic;
+  color: #ff0000;
 }
 
 main #areaBox #areaList > li .areaInfoBox {

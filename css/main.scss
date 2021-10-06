@@ -257,6 +257,8 @@ main {
         box-shadow: 0 0 1px 1px $color1;
         border-radius: 5px;
         padding: 0 5px;
+        cursor: pointer;
+
         &.selected {
           background: $color3;
           color: $color2;
@@ -524,6 +526,7 @@ main {
           line-height: 25px;
           text-align: center;
           font-style: italic;
+          color: #ff0000;
         }
 
         .areaInfoBox {

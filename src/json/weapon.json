@@ -4,7 +4,7 @@
     "items": [{
         "id": "WWA001",
         "sort": "dagger",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1Ay7fJiCl7fen6XjFGVBgUyCKfCbmfj5Z=w1402-h684-iv1",
         "location": ["A002", "A006", "A015"],
         "tobe": ["BWA002", "BWT003", "GC006", "GC007", "GH003"],
         "pickup": 1,
@@ -14,7 +14,7 @@
       {
         "id": "WWA002",
         "sort": "dagger",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1lWBfne56JfjXz3LanPj7P7mDW4ior3dI=w1402-h684-iv1",
         "location": ["A003", "A011", "A015"],
         "tobe": ["GWA002", "GWA003", "GWI003", "GWJ002", "GM009"],
         "pickup": 1,
@@ -24,7 +24,7 @@
       {
         "id": "WWA003",
         "sort": "dagger",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1-thtb3zpwJfk7aOFG4b85EvrlvjTXiQu=w1402-h684-iv1",
         "location": ["A004", "A010", "A014"],
         "tobe": ["GWA001", "GWD001", "BWQ001", "BA010", "GT007"],
         "pickup": 1,
@@ -34,7 +34,7 @@
       {
         "id": "GWA001",
         "sort": "dagger",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1bE9U6MKVi3_uqSyQOHGj3NPXNQo9F8mW=w1402-h684-iv1",
         "location": false,
         "tobe": ["BWA001", "PWA003", "YWA001"],
         "pickup": 1,
@@ -48,7 +48,7 @@
       {
         "id": "GWA002",
         "sort": "dagger",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1nt_aJwmOUq578ojGyeIhWLk5RDZJyElI=w1402-h684-iv1",
         "location": false,
         "tobe": ["BWA002"],
         "pickup": 1,
@@ -61,6 +61,8 @@
       {
         "id": "GWA003",
         "sort": "dagger",
+        "img": "https://lh3.google.com/u/0/d/1iF5VPr7Qti8cjwd7zD_OBslME9j2uX6q=w1402-h684-iv1",
+        "location": false,
         "tobe": ["BWA003"],
         "pickup": 1,
         "limit": 1,
@@ -72,7 +74,7 @@
       {
         "id": "BWA001",
         "sort": "dagger",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1S8nWe2JSnCRak79hyrbcWYzJvtJZrOkS=w1402-h684-iv1",
         "location": false,
         "tobe": ["PWA001", "PWA002"],
         "pickup": 1,
@@ -87,7 +89,7 @@
       {
         "id": "BWA002",
         "sort": "dagger",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1MJOdXeYguCa6T3rS_AJ_kqBTWYpjGwnT=w1402-h684-iv1",
         "location": false,
         "tobe": ["PWA004"],
         "pickup": 1,
@@ -101,6 +103,8 @@
       {
         "id": "BWA003",
         "sort": "dagger",
+        "img": "https://lh3.google.com/u/0/d/1kGmAJm1bUrFz2SWnUgTN8OulULYMqLKX=w1402-h684-iv1",
+        "location": false,
         "tobe": ["PWA005"],
         "pickup": 1,
         "limit": 1,
@@ -113,7 +117,7 @@
       {
         "id": "PWA001",
         "sort": "dagger",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/15cyDHDmUS8AeFL0JlsBQnpHdsK8DCR0-=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -130,7 +134,7 @@
       {
         "id": "PWA002",
         "sort": "dagger",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/18SB7BHGZfOQSr6cdYO5NstMexwaSwbz8=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -146,7 +150,7 @@
       {
         "id": "PWA003",
         "sort": "dagger",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/16qUbkWwcXbfS6jClj-vMlhBqoqo04OQK=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -161,7 +165,7 @@
       {
         "id": "PWA004",
         "sort": "dagger",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/16LVafJcw-EGyvQB85HFhl3nX-Ov6-jvq=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -176,7 +180,7 @@
       {
         "id": "PWA005",
         "sort": "dagger",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1yoqlx66B7eJqzrBA7VTCldCXwkflNPgi=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -191,7 +195,7 @@
       {
         "id": "YWA001",
         "sort": "dagger",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1hHKiV3VV_fUSugrAFm83zltgYejmlxC0=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -211,7 +215,7 @@
     "items": [{
         "id": "WWB001",
         "sort": "twoHand",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1DRGR0m_QAjMozo4naJ92rro0yeltJpmm=w1402-h684-iv2",
         "location": ["A009", "A010", "A016"],
         "tobe": ["GWB001", "BWB001", "BWB004", "GWD001", "GA010"],
         "pickup": 1,
@@ -221,7 +225,7 @@
       {
         "id": "GWB001",
         "sort": "twoHand",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1eEqLKTSV3RQ3viYRDGqK5AXJnVDawylZ=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWB005", "YWB001"],
         "pickup": 1,
@@ -234,7 +238,7 @@
       {
         "id": "BWB001",
         "sort": "twoHand",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/18koAh_j4pHvbqDRettEqUYY0jR6PORLr=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWB002", "BWB003", "YWB002"],
         "pickup": 1,
@@ -247,7 +251,7 @@
       {
         "id": "BWB002",
         "sort": "twoHand",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1q-rTycWAZS2XP5CAlkpJ4DNSo2bfru_1=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWB004"],
         "pickup": 1,
@@ -261,7 +265,7 @@
       {
         "id": "BWB003",
         "sort": "twoHand",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1eaNbcOiPUMQx0OdlHp6EBMqVwXOKg5Vb=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWB005"],
         "pickup": 1,
@@ -274,7 +278,7 @@
       {
         "id": "BWB004",
         "sort": "twoHand",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1UcXbAgCAq2o7xPB9EzCJ8e4_YNCK-RZ0=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWB006", "PWB001"],
         "pickup": 1,
@@ -288,7 +292,7 @@
       {
         "id": "BWB005",
         "sort": "twoHand",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1pQHY01TWk_1PrzcFnJV0hHuxMxMxREhh=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWB002", "PWB003"],
         "pickup": 1,
@@ -302,7 +306,7 @@
       {
         "id": "BWB006",
         "sort": "twoHand",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1MMdikTxRlQbSJvzh1DBIlTI0w5N7Lqfy=w1402-h684-iv2",
         "location": false,
         "tobe": ["YWB003"],
         "pickup": 1,
@@ -316,7 +320,7 @@
       {
         "id": "PWB001",
         "sort": "twoHand",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1mRQfrpw8Ex2lHHE1zyI2qPC5ix770IkB=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -331,7 +335,7 @@
       {
         "id": "PWB002",
         "sort": "twoHand",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/16TyhRH_yTbhmhci5fvW5PkBi-iZUDjUZ=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -346,7 +350,7 @@
       {
         "id": "PWB003",
         "sort": "twoHand",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1eSt7z5Zu1PvcRzWByzVi4EHJmUHNVWel=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -362,7 +366,7 @@
       {
         "id": "PWB004",
         "sort": "twoHand",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1OmVb-Y-_ObBE8s6lhMIhOIO6DS2zEMxf=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -377,7 +381,7 @@
       {
         "id": "PWB005",
         "sort": "twoHand",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1xt5oYTz2Lj5uNkdd25nrcRlGGF5xXVrq=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -392,7 +396,7 @@
       {
         "id": "YWB001",
         "sort": "twoHand",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1GjswfrS2ZZOtD367EUOuwtPB2RcrtGR9=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -406,7 +410,7 @@
       {
         "id": "YWB002",
         "sort": "twoHand",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1JSV8adtC828qpj0kwHWzIrA5ZOxvh-yd=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -421,7 +425,7 @@
       {
         "id": "YWB003",
         "sort": "twoHand",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1uDaPZYevcLY9lRZdEOVAJjJVm-9XudMc=w1402-h684-iv3",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -442,7 +446,7 @@
     "items": [{
         "id": "WWC001",
         "sort": "axe",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1XNbfILvjATUPFy2_USjX0glQcHAxoFyx=w1402-h684-iv3",
         "location": ["A005", "A007", "A012", "A013"],
         "tobe": ["GWC001", "GM011"],
         "pickup": 1,
@@ -452,7 +456,7 @@
       {
         "id": "WWC002",
         "sort": "axe",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1nN70PUENStL1EdvxXZfVINS-IvzMVYf5=w1402-h684-iv2",
         "location": ["A005", "A008", "A013"],
         "tobe": ["GWC002", "BWQ003", "BT003"],
         "pickup": 1,
@@ -462,7 +466,7 @@
       {
         "id": "GWC001",
         "sort": "axe",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/113pliUMycqa5mXD2c0LKDCxPSovDUlQy=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWC002"],
         "pickup": 1,
@@ -476,7 +480,7 @@
       {
         "id": "GWC002",
         "sort": "axe",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/18KSfOGkjqIRTBigFc0NX1kU7H4PhUjV7=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWC001", "BWC003"],
         "pickup": 1,
@@ -489,7 +493,7 @@
       {
         "id": "BWC001",
         "sort": "axe",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1VxQG9aReBakGtYRsFaWrMER3t5HRIDbl=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWC004", "PWC005"],
         "pickup": 1,
@@ -503,7 +507,7 @@
       {
         "id": "BWC002",
         "sort": "axe",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1c_UMSgGVe44k4ikVqAeFwto62_czWM1E=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWC002", "PWC003"],
         "pickup": 1,
@@ -517,7 +521,7 @@
       {
         "id": "BWC003",
         "sort": "axe",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/14n-p5aTy9dblDX7YA4PH_SQWFqiR1Bar=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWC001", "YWC001"],
         "pickup": 1,
@@ -531,7 +535,7 @@
       {
         "id": "PWC001",
         "sort": "axe",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1DZf0lSQql4Gx6u76yMJRiiccJwMC-9iY=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -546,7 +550,7 @@
       {
         "id": "PWC002",
         "sort": "axe",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1g4t5WpK_DSnQ-hC6hWwmHrzFujsblkVO=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -561,7 +565,7 @@
       {
         "id": "PWC003",
         "sort": "axe",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/19Ct0YZTvBgrwBVRHgGaoNwrfAeUsB_kK=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -576,7 +580,7 @@
       {
         "id": "PWC004",
         "sort": "axe",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1x_RL13LgLQ-id8S8gARCv-bp0OXuQvlV=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -591,7 +595,7 @@
       {
         "id": "PWC005",
         "sort": "axe",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1CTPeAOW37Wdii_Vtmc8F6prhSvzu01Vi=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -607,7 +611,7 @@
       {
         "id": "YWC001",
         "sort": "axe",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1nbG8yI4IxgOPdNy_9VteCxj0Hoh00Iqk=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -627,7 +631,7 @@
     "items": [{
         "id": "WWD001",
         "sort": "dual",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1uAUvkCU9u0oSSVZKzJrD6r-eBkm79dXm=w1402-h684-iv1",
         "location": false,
         "tobe": ["BWD001", "BWD002", "PWD002", "YWD001"],
         "pickup": 1,
@@ -638,7 +642,7 @@
       }, {
         "id": "GWD001",
         "sort": "dual",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1K2yO6dvLniDlmYyMrMCJePj0pgQNKZVv=w1402-h684-iv1",
         "location": false,
         "tobe": ["PWD003"],
         "pickup": 1,
@@ -651,7 +655,7 @@
       {
         "id": "BWD001",
         "sort": "dual",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1YKznngSfpbhz_khb5Tsm8w0qUlPZwtMG=w1402-h684-iv1",
         "location": false,
         "tobe": ["PWD001"],
         "pickup": 1,
@@ -665,7 +669,7 @@
       {
         "id": "BWD002",
         "sort": "dual",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1Ih115VeQUjZMrRyGYDJSmyDcNil3dftd=w1402-h684-iv1",
         "location": false,
         "tobe": ["PWD004"],
         "pickup": 1,
@@ -678,7 +682,7 @@
       {
         "id": "PWD001",
         "sort": "dual",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1l1IQc-xDChzjsFXtNSY84hIo0fcf7uM8=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -694,7 +698,7 @@
       {
         "id": "PWD002",
         "sort": "dual",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1zbdhrl4yj8rCnWpAzlw7LHl6RxhUsipu=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -709,7 +713,7 @@
       {
         "id": "PWD003",
         "sort": "dual",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1W1cr7lHfDp_Q9SSxGZRo4SkWjciG2IHY=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -723,7 +727,7 @@
       {
         "id": "PWD004",
         "sort": "dual",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1QDGoAQ8O3vOiCbZcCr5iDrZ85KG609Nw=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -737,7 +741,7 @@
       {
         "id": "PWD005",
         "sort": "dual",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1y2s5FEXoplx900Pwdw6vhvd_bkSVlSRW=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -754,7 +758,7 @@
       {
         "id": "YWD001",
         "sort": "dual",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1ZvB7vJcxjgWyiqXs-Mu_aqDwS6L1e6PX=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -774,7 +778,7 @@
     "items": [{
         "id": "WWE001",
         "sort": "glove",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1OiS9ROCH3wXQgP5baI3QYOEGFOgidhQy=w1402-h684-iv2",
         "location": ["A007", "A012"],
         "tobe": ["GWA003", "GWE002"],
         "pickup": 1,
@@ -784,7 +788,7 @@
       {
         "id": "WWE002",
         "sort": "glove",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1G3HGtOE-6SgbO2DIceFot6ukit9jHFZH=w1402-h684-iv2",
         "location": ["A006", "A014"],
         "tobe": ["GWE001", "BWE001"],
         "pickup": 1,
@@ -794,12 +798,12 @@
       {
         "id": "GWE001",
         "sort": "glove",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1nqvNzrD_OI_vZj2VV1dEMfPUqwHQGGCS=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWE006", "PWE008", "YWE001"],
         "pickup": 1,
         "limit": 1,
-        "name": "글러브",
+        "name": "가죽 장갑",
         "stack": 1,
         "material": ["WWE002", "WM019"],
         "공격력": 18
@@ -807,7 +811,7 @@
       {
         "id": "GWE002",
         "sort": "glove",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1uXCMc2_qGvb4XDbCnZfHO75ZsozvMYWr=w1402-h684-iv3",
         "location": false,
         "tobe": ["BWE002", "BWE005"],
         "pickup": 1,
@@ -820,7 +824,7 @@
       {
         "id": "BWE001",
         "sort": "glove",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1WQ9-evt_PGqCAk_Ipq_WIsOlh8F5716j=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWE003", "BWE004"],
         "pickup": 1,
@@ -834,7 +838,7 @@
       {
         "id": "BWE002",
         "sort": "glove",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1igG7UqpizClEvSTj5IM1T4vdqpS0LwuC=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWE003"],
         "pickup": 1,
@@ -848,7 +852,7 @@
       {
         "id": "BWE003",
         "sort": "glove",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1O4J-mPijdqRf-M-wDp7_ilUMlsGxEf6G=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWE001", "PWE006"],
         "pickup": 1,
@@ -863,7 +867,7 @@
       {
         "id": "BWE004",
         "sort": "glove",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1uy4HlM4VtJt5VhDs69vjr-WHTB1x8ZC1=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWE002"],
         "pickup": 1,
@@ -878,7 +882,7 @@
       {
         "id": "BWE005",
         "sort": "glove",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1ocyEoOI9jq2T8qDD9lRxr_2RrsYXC6qP=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWE007"],
         "pickup": 1,
@@ -892,7 +896,7 @@
       {
         "id": "BWE006",
         "sort": "glove",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1xvJw836yOUfKzEBGjTQ6LTMfJlMaYmLg=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWE004", "PWE005"],
         "pickup": 1,
@@ -906,7 +910,7 @@
       {
         "id": "PWE001",
         "sort": "glove",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1twYJlpHijGh1vE9GotsTU0fCxHazWZy3=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -922,7 +926,7 @@
       {
         "id": "PWE002",
         "sort": "glove",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1jFQT4B-Nnxtu4aprc-cZLbSJvp7-50XK=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -937,7 +941,7 @@
       {
         "id": "PWE003",
         "sort": "glove",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1r1nbyBYwvgoRweQY2N80B77frPf2XXcS=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -952,7 +956,7 @@
       {
         "id": "PWE004",
         "sort": "glove",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1S7sEJ8bGndZM5FeYDWP7VkqryVBt80vG=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -967,7 +971,7 @@
       {
         "id": "PWE005",
         "sort": "glove",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1L1lCP2BjQUxpfIEAa2H6pYuVIgbRAEl_=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -983,7 +987,7 @@
       {
         "id": "PWE006",
         "sort": "glove",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1io41CIChwWEOwciReciALAs68VIjIwLz=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1000,7 +1004,7 @@
       {
         "id": "PWE007",
         "sort": "glove",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1M_GUWJL5wiUteDf2GL2cnfjJWVyOkEoW=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1015,7 +1019,7 @@
       {
         "id": "PWE008",
         "sort": "glove",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1_xUxJVxfOdhqvsTNkiCT2gJFnst-zXJ2=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1029,7 +1033,7 @@
       {
         "id": "YWE001",
         "sort": "glove",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1xB35jTHXws6KnzI5-kWN5IPLpMvplliB=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1048,7 +1052,7 @@
     "items": [{
         "id": "WWF001",
         "sort": "tonfa",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/19qVuSi26IHVs69BzJpeGSnLiK7khzzZk=w1402-h684-iv2",
         "location": ["A004", "A005", "A007", "A012", "A016"],
         "tobe": ["GWC002", "GWF001", "GWG001", "PWJ007", "PWK001", "GWL002", "GWQ001", "WWT001", "BWT005", "GA007", "GT004"],
         "pickup": 1,
@@ -1058,7 +1062,7 @@
       {
         "id": "GWF001",
         "sort": "tonfa",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1yYouoiWD0I-tMV3qglJJAkYyouc22PNb=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWF001", "BWF002", "PWF004"],
         "pickup": 1,
@@ -1072,7 +1076,7 @@
       {
         "id": "BWF001",
         "sort": "tonfa",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1SKkK7vFsdkcS-3k68JK9peYDEU2Y1GpH=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWF001", "YWF001"],
         "pickup": 1,
@@ -1086,7 +1090,7 @@
       {
         "id": "BWF002",
         "sort": "tonfa",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1VkOVab4_gvqo-D_sm055ClHzk8WSLrUn=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWF002", "PWF003"],
         "pickup": 1,
@@ -1100,7 +1104,7 @@
       {
         "id": "PWF001",
         "sort": "tonfa",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1z_HQ0XBLf7RKIhr1p4IpLDJzi0-gl2Oz=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1115,7 +1119,7 @@
       {
         "id": "PWF002",
         "sort": "tonfa",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/12bRPZKx_-3ud10HfIVPXFVBQzXfaU1U-=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1131,7 +1135,7 @@
       {
         "id": "PWF003",
         "sort": "tonfa",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1XHQPqvOVGlDUgL0wd8wvQhGo8iVA4LsX=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1146,7 +1150,7 @@
       {
         "id": "PWF004",
         "sort": "tonfa",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1ocjdX7yygCdrHXpRaJgPcpE3VRIEsji7=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1162,7 +1166,7 @@
       {
         "id": "YWF001",
         "sort": "tonfa",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/19gH9buffxKWLooESuZ61U-6scw3kJZaz=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1182,7 +1186,7 @@
     "items": [{
         "id": "WWG001",
         "sort": "bat",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1IKMo3vBEb9QpGH4KYMXXVcQFuFOqh1Fu=w1402-h684-iv2",
         "location": ["A004", "A005", "A010"],
         "tobe": ["BWC002", "PWF002", "GWG001", "BWG003", "BWG004", "GWP001", "GA008"],
         "pickup": 1,
@@ -1192,7 +1196,7 @@
       {
         "id": "WWG002",
         "sort": "bat",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1qtX7AoWC1Rg36alTfTYHHh0vRlKzsGWw=w1402-h684-iv2",
         "location": ["A000"],
         "tobe": ["GWA001", "GWF001", "BWJ004", "YWS001", "GC004", "GH002", "GS007", "GT011", "GF004"],
         "pickup": 1,
@@ -1202,7 +1206,7 @@
       {
         "id": "GWG001",
         "sort": "bat",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1YfThC7aMPHbTio1kfWUFqkftkN0E-AUW=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWG001", "BWG002", "PWG004", "YWG001"],
         "pickup": 1,
@@ -1215,7 +1219,7 @@
       {
         "id": "BWG001",
         "sort": "bat",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1hgoKzC8MbUXl0YZdRTTc8SXqiZOVXxbw=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWG002"],
         "pickup": 1,
@@ -1229,7 +1233,7 @@
       {
         "id": "BWG002",
         "sort": "bat",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1cYfI12a-zu_GnmS2IPfXDReGR-jO6Pbz=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWG003"],
         "pickup": 1,
@@ -1243,7 +1247,7 @@
       {
         "id": "BWG003",
         "sort": "bat",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1d-GwTyBrpIVthrts02ci5EpaGnUreXzO=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWG001"],
         "pickup": 1,
@@ -1258,7 +1262,7 @@
       {
         "id": "BWG004",
         "sort": "bat",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1_id1OHlXJdRzW9-F_OHWvO4v3n2mV0oH=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWG005"],
         "pickup": 1,
@@ -1272,7 +1276,7 @@
       {
         "id": "PWG001",
         "sort": "bat",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1YXDmo9OGf68TFWhcau_yhooXOEeaMRwI=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1290,7 +1294,7 @@
       {
         "id": "PWG002",
         "sort": "bat",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1k5wYrczd19WETKhrxILZyc740kuxJLHN=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1305,7 +1309,7 @@
       {
         "id": "PWG003",
         "sort": "bat",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1Zag2ExVEsWvjUPll7hanUFQwQPNoOLTY=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1320,7 +1324,7 @@
       {
         "id": "PWG004",
         "sort": "bat",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1ftRfPpvv8kV9JkHN9arQxxEWo86rhOM8=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1336,7 +1340,7 @@
       {
         "id": "PWG005",
         "sort": "bat",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1MlJVTGpfp_FXp4PA8xPxBCy4dA-WNIi4=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1350,7 +1354,7 @@
       {
         "id": "YWG001",
         "sort": "bat",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1kR0XlOg0GqV97dDop4KkkytuATHq8fvS=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1370,7 +1374,7 @@
     "items": [{
         "id": "WWH001",
         "sort": "whip",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1cE3bPU5jHsTIBe2IUzoBQ4hKDdRwCPCC=w1402-h684-iv2",
         "location": ["A008", "A015"],
         "tobe": ["GWH001", "GWH002"],
         "pickup": 1,
@@ -1380,7 +1384,7 @@
       {
         "id": "GWH001",
         "sort": "whip",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/15Hw94pDWetObJ6qe3jqFbiAGTQOdvy0J=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWH001", "YWH001"],
         "pickup": 1,
@@ -1394,7 +1398,7 @@
       {
         "id": "GWH002",
         "sort": "whip",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/140Qw57wF2WzCYeso_OUov-bvlPPO2elh=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWH002"],
         "pickup": 1,
@@ -1407,7 +1411,7 @@
       {
         "id": "BWH001",
         "sort": "whip",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1i2kAC7J63Nf--FQZ-gLl2CsVeUBLzlMK=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWH001"],
         "pickup": 1,
@@ -1421,7 +1425,7 @@
       {
         "id": "BWH002",
         "sort": "whip",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1xDyQv04koWwm42Y4ClMDFCTCPuFq6ihx=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWH002", "PWH003"],
         "pickup": 1,
@@ -1435,7 +1439,7 @@
       {
         "id": "PWH001",
         "sort": "whip",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/16fSLEXKFffBCUNUau5X6nNnrkemeb6Am=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1451,7 +1455,7 @@
       {
         "id": "PWH002",
         "sort": "whip",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1NT5WgGkCfANYqNtRiloL2XGOLKmhaFDI=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1467,7 +1471,7 @@
       {
         "id": "PWH003",
         "sort": "whip",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1ZFFSrumoEhhl5m7BUif3l_ghcWnBsILu=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1483,7 +1487,7 @@
       {
         "id": "YWH001",
         "sort": "whip",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1YSqoTqQew4YGIZXhWmvj3Dm8JZleAq92=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1503,7 +1507,7 @@
     "items": [{
         "id": "WWI001",
         "sort": "throw",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1g27_oykS-ttypHWlcZcN45v1-4XoY9rt=w1402-h684-iv2",
         "location": ["A008", "A012", "A016"],
         "tobe": ["GWI001", "BWI003", "BWP001", "GS004", "GT006"],
         "pickup": 1,
@@ -1513,7 +1517,7 @@
       {
         "id": "WWI002",
         "sort": "throw",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1UBia45v27Xh2pNU-fQMmXdfgEk85s3J_=w1402-h684-iv3",
         "location": ["A008", "A011"],
         "tobe": ["GWI003"],
         "pickup": 1,
@@ -1523,7 +1527,7 @@
       {
         "id": "GWI001",
         "sort": "throw",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1U54tKkJSAgf3wMuyVtpFAMuBXFzL9eWg=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWI002"],
         "pickup": 1,
@@ -1537,7 +1541,7 @@
       {
         "id": "GWI002",
         "sort": "throw",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1U0U07s_KNhPt1G5VolTsTVB5cYR8bc6j=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWI002", "PWI001"],
         "pickup": 1,
@@ -1551,7 +1555,7 @@
       {
         "id": "GWI003",
         "sort": "throw",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1Ym3Wri3npXXSYlExV-a4su8TQoH2Xura=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWI001", "PWI007"],
         "pickup": 1,
@@ -1564,7 +1568,7 @@
       {
         "id": "BWI001",
         "sort": "throw",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1GexT4Kr4qJOtcRCV9LYyH2tkp6p9PEY6=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWI003"],
         "pickup": 1,
@@ -1577,7 +1581,7 @@
       {
         "id": "BWI002",
         "sort": "throw",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1j1MHWJ3hknbH8RA2fFajHlktg-bhm3jf=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWI004"],
         "pickup": 1,
@@ -1591,7 +1595,7 @@
       {
         "id": "BWI003",
         "sort": "throw",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1ekpMFrse0Q8dU2NpqOgbIfnHY1GNKLSo=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWI001", "YWI001"],
         "pickup": 1,
@@ -1605,7 +1609,7 @@
       {
         "id": "BWI004",
         "sort": "throw",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/16GOqCx-HFqWmJjP6BFuBYohKayQMq2yP=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWI005"],
         "pickup": 1,
@@ -1618,7 +1622,7 @@
       {
         "id": "BWI005",
         "sort": "throw",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1xvLdZs5uu5f1ZRgSkAS8zUi232n9xu1Z=w1402-h684-iv1",
         "location": false,
         "tobe": ["PWI005"],
         "pickup": 1,
@@ -1632,7 +1636,7 @@
       {
         "id": "BWI006",
         "sort": "throw",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1e1Kd3K7GendBdKDAg_Mvrs8HRw6SOuA5=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWI008"],
         "pickup": 1,
@@ -1646,7 +1650,7 @@
       {
         "id": "PWI001",
         "sort": "throw",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1A7m4QTMxNT4biJp0TkChEtSYrdDzW1SZ=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1662,7 +1666,7 @@
       {
         "id": "PWI002",
         "sort": "throw",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1s5dbuvG-2G_INnOQ3Zt-sk7luo_qxWYt=w1402-h684-iv1",
         "location": false,
         "tobe": ["PWI006"],
         "pickup": 1,
@@ -1677,7 +1681,7 @@
       {
         "id": "PWI003",
         "sort": "throw",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1yKredaxND4iZCcD0xasifmDckoT6WzdY=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1693,7 +1697,7 @@
       {
         "id": "PWI004",
         "sort": "throw",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/14wU19S_pmkpmweGTeXleqn2H3Bo8PgZi=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1708,7 +1712,7 @@
       {
         "id": "PWI005",
         "sort": "throw",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/19ih9mn8j4mgCw3R_732vLrFpeadxbTEd=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1724,7 +1728,7 @@
       {
         "id": "PWI006",
         "sort": "throw",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1N3jttDZLvcP0mHGTwQTdPZy9ufBiPuUo=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1739,7 +1743,7 @@
       {
         "id": "PWI007",
         "sort": "throw",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1rHrGujn3Bu__8L96jysu-DjphuoT5J7t=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1754,7 +1758,7 @@
       {
         "id": "PWI008",
         "sort": "throw",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1eWVALkUYR9D0EHp2hgL4wAk7xIiPNSRy=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1771,7 +1775,7 @@
       {
         "id": "YWI001",
         "sort": "throw",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/11jll4sEd6MIKsb42Y4QOxkj_VVcAxorl=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1791,7 +1795,7 @@
     "items": [{
         "id": "WWJ001",
         "sort": "shuriken",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1yA_VbjPtUJGlMFSIbbVLEJcC4yUx7yfB=w1402-h684-iv2",
         "location": ["A006", "A009", "A015"],
         "tobe": ["GWA002", "GWH002", "GWJ003", "GWJ004", "BWR002", "BC004"],
         "pickup": 1,
@@ -1801,7 +1805,7 @@
       {
         "id": "WWJ002",
         "sort": "shuriken",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1eMY6nREH3FG3oy24vksh_T1ZNK-x1A3d=w1402-h684-iv2",
         "location": ["A003", "A014"],
         "tobe": ["GWJ002", "PWT001", "GA002"],
         "pickup": 1,
@@ -1811,7 +1815,7 @@
       {
         "id": "WWJ003",
         "sort": "shuriken",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1mItGqsV8wtMfrheh8MyBpjP4snWkwUbt=w1402-h684-iv2",
         "location": ["A008", "A009", "A015"],
         "tobe": ["BWJ001", "GM006"],
         "pickup": 1,
@@ -1821,7 +1825,7 @@
       {
         "id": "GWJ001",
         "sort": "shuriken",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1VKLLYTMNjzu1LyCVGZi2WXpdCopIDTSD=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWJ007"],
         "pickup": 1,
@@ -1836,7 +1840,7 @@
       {
         "id": "GWJ002",
         "sort": "shuriken",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1DPgYGAjEwgF3mJ6B2FjdkANetLIlr8NH=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWJ001", "PWJ001"],
         "pickup": 1,
@@ -1850,7 +1854,7 @@
       {
         "id": "GWJ003",
         "sort": "shuriken",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/14dWNmf5D4DMIVU3YDoVPS73esbsANJFw=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWJ003", "YWJ001"],
         "pickup": 1,
@@ -1863,7 +1867,7 @@
       {
         "id": "GWJ004",
         "sort": "shuriken",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1BkV2FpAbNJjVzlw3qxzHVSegzlkjC1HE=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWJ002"],
         "pickup": 1,
@@ -1877,7 +1881,7 @@
       {
         "id": "BWJ001",
         "sort": "shuriken",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1Y0mqu9l3bvijS9N4AR3cT1Q58EZ_ekJM=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWJ002", "PWJ008"],
         "pickup": 1,
@@ -1891,7 +1895,7 @@
       {
         "id": "BWJ002",
         "sort": "shuriken",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1I8vCJZ6rUt4yMUV6tmmv8oPGLVJz0ezu=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWJ004"],
         "pickup": 1,
@@ -1906,7 +1910,7 @@
       {
         "id": "BWJ003",
         "sort": "shuriken",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1VMRmebvIHOaEgiFWqICRnflJ5cvHstga=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWJ006"],
         "pickup": 1,
@@ -1919,7 +1923,7 @@
       {
         "id": "BWJ004",
         "sort": "shuriken",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1mH5Wnlrb9TenAKb54xeM3z-pza72iupx=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWJ003", "PWJ005"],
         "pickup": 1,
@@ -1934,7 +1938,7 @@
       {
         "id": "BWJ005",
         "sort": "shuriken",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/122QNN2NmD5ckbxZ-D6SH-npSJJEdkYaG=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWJ004"],
         "pickup": 1,
@@ -1948,7 +1952,7 @@
       {
         "id": "BWJ006",
         "sort": "shuriken",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/18fx6RW_TgG_uYbvm-gh9295Y7Kv3W_vZ=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWJ007"],
         "pickup": 1,
@@ -1962,7 +1966,7 @@
       {
         "id": "BWJ007",
         "sort": "shuriken",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/19PN1IUuLYv6CV3cOGuSFc-BHnXy23Fic=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWJ006"],
         "pickup": 1,
@@ -1977,7 +1981,7 @@
       {
         "id": "PWJ001",
         "sort": "shuriken",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1TSMnZoe5bSg-65M7xivBBUY_igwWUBXC=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1994,7 +1998,7 @@
       {
         "id": "PWJ002",
         "sort": "shuriken",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/11EdBkAfzKeFgFA-dHWomOTfs16QLQP1e=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2011,7 +2015,7 @@
       {
         "id": "PWJ003",
         "sort": "shuriken",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1q4iLvDwW8DClXVLc87vMC_AcEj2v_IT-=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2029,7 +2033,7 @@
       {
         "id": "PWJ004",
         "sort": "shuriken",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/17-Bd0LuUQZpdPmISM4EzOPLYBc-LXTYw=w1402-h684-iv2",
         "location": false,
         "tobe": ["YWJ002"],
         "pickup": 1,
@@ -2044,7 +2048,7 @@
       {
         "id": "PWJ005",
         "sort": "shuriken",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/16RDuqNtQDoXYY32azArTZV14ofO5m_eu=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2061,7 +2065,7 @@
       {
         "id": "PWJ006",
         "sort": "shuriken",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/16D-AOHciCdjjbNYI30xwlpsrY1m0bjJr=w1402-h684-iv3",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2078,7 +2082,7 @@
       {
         "id": "PWJ007",
         "sort": "shuriken",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1SEHDlYrSqa6Y8g9Ytgsrx2jprgWoeuko=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2093,7 +2097,7 @@
       {
         "id": "PWJ008",
         "sort": "shuriken",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1-tkqGCFuOyRuNnVBqYQs7S5Z9v590_Oa=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2108,7 +2112,7 @@
       {
         "id": "YWJ001",
         "sort": "shuriken",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1pLg5GUw0ByrQkUSTMW5a1OKDeb7W6zLc=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2124,7 +2128,7 @@
       {
         "id": "YWJ002",
         "sort": "shuriken",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1YfEvDrXtSERsv3GYuRyb829jN_XQQabP=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2146,7 +2150,7 @@
     "items": [{
         "id": "WWK001",
         "sort": "bow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1YtMAV6lsT3yHVo1mUofehoPnjT5x8rj4=w1402-h684-iv2",
         "location": ["A009", "A016"],
         "tobe": ["GWK001", "GWK002"],
         "pickup": 1,
@@ -2156,7 +2160,7 @@
       {
         "id": "GWK001",
         "sort": "bow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1MBDALLknJD3VKpUfTJm2hzcBXC1WdRMt=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWK002", "BWK005"],
         "pickup": 1,
@@ -2169,7 +2173,7 @@
       {
         "id": "GWK002",
         "sort": "bow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1guF3_-APJUOoSW4NjQVhVuMiDYesfg_r=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWK001", "BWK004", "BWK006", "YWK02"],
         "pickup": 1,
@@ -2182,7 +2186,7 @@
       {
         "id": "BWK001",
         "sort": "bow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1DIIcSe01VTbyLQ5zDNVns1B3wi9ScI06=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWK003"],
         "pickup": 1,
@@ -2196,7 +2200,7 @@
       {
         "id": "BWK002",
         "sort": "bow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1sMZZ8D7JY73Hib58Ci098-2XNopx8MNP=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWK003", "PWK006", "YWK001"],
         "pickup": 1,
@@ -2209,7 +2213,7 @@
       {
         "id": "BWK003",
         "sort": "bow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1yuAmhWX1HSkvPXWmJ_XQZ8JBF0gFJk-Y=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWK001"],
         "pickup": 1,
@@ -2223,7 +2227,7 @@
       {
         "id": "BWK004",
         "sort": "bow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1cMpM7-mqM2uv_u9VWJqEsaep6VhNltIV=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWK003", "PWK005"],
         "pickup": 1,
@@ -2237,7 +2241,7 @@
       {
         "id": "BWK005",
         "sort": "bow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1gOgjBGA4gFFJhbLrlADXNFsmZ6jgp6fj=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWK002"],
         "pickup": 1,
@@ -2250,7 +2254,7 @@
       {
         "id": "BWK006",
         "sort": "bow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1ZnRPFyfRLDWBv56j2Snd7STVaqVqnvxV=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWK004"],
         "pickup": 1,
@@ -2264,7 +2268,7 @@
       {
         "id": "PWK001",
         "sort": "bow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1Ae5EFW5ixCCkXxyDNVC5m1phAgQuBiTt=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2279,7 +2283,7 @@
       {
         "id": "PWK002",
         "sort": "bow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1lV3QbmXG5W9cm3LVPDmFQ0KsCUvY7eot=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2295,7 +2299,7 @@
       {
         "id": "PWK003",
         "sort": "bow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1RNAUS6LqlV9e-y4joozRJJqrRu82o9dH=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2312,7 +2316,7 @@
       {
         "id": "PWK004",
         "sort": "bow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1UYOaB-G9AS-mZnsrUgSnZEPB3uDAlDWd=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2328,7 +2332,7 @@
       {
         "id": "PWK005",
         "sort": "bow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1grgdo-ryKA49z84awQ6hpHLPPb3XZnCm=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2343,7 +2347,7 @@
       {
         "id": "PWK006",
         "sort": "bow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1Q48GeGlVxGzOIxMSyplUjLwTjn4MYew4=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2360,7 +2364,7 @@
       {
         "id": "YWK001",
         "sort": "bow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1Qb6tMesCvvKsQjfskcNEhw8XAAEaWEHc=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2375,7 +2379,7 @@
       {
         "id": "YWK02",
         "sort": "bow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1h86uzq3jECxyfj-cAqVgQyUypDKKdPx8=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2394,7 +2398,7 @@
     "items": [{
         "id": "WWL001",
         "sort": "crossbow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1jXz4vdx3_-ld_J_FTO2ryB5c4toS66u7=w1402-h684-iv2",
         "location": ["A009", "A012"],
         "tobe": ["GWL001", "GWL002", "GA012"],
         "pickup": 1,
@@ -2404,7 +2408,7 @@
       {
         "id": "GWL001",
         "sort": "crossbow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1t-WxGusC0fmrWCedx-k02TbMB8UcLnzr=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWL001", "BWL003"],
         "pickup": 1,
@@ -2417,7 +2421,7 @@
       {
         "id": "GWL002",
         "sort": "crossbow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1IP2L9M-pQtTpGnnv5g-jaUfhxs0uwsQu=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWL002", "BWL004", "YWL001"],
         "pickup": 1,
@@ -2430,7 +2434,7 @@
       {
         "id": "BWL001",
         "sort": "crossbow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1J5YNSiv54ofJxco6J6DFs5JDuaTaE8Yh=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWL004"],
         "pickup": 1,
@@ -2443,7 +2447,7 @@
       {
         "id": "BWL002",
         "sort": "crossbow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1rWciczqD6pA1az6F8hMQQgdCnEY7xh28=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWL003"],
         "pickup": 1,
@@ -2457,7 +2461,7 @@
       {
         "id": "BWL003",
         "sort": "crossbow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1NbuGFkRHgkr-ZKFpK1d-aNWCzGXka0kL=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWL002"],
         "pickup": 1,
@@ -2470,7 +2474,7 @@
       {
         "id": "BWL004",
         "sort": "crossbow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1kzNpDYiiZivtD4WBN5QrAY4NfyjqJd_w=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWL001"],
         "pickup": 1,
@@ -2483,7 +2487,7 @@
       {
         "id": "PWL001",
         "sort": "crossbow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1wzLgURMbEKttlw-aG6Zdk80qIehaM2F4=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2498,7 +2502,7 @@
       {
         "id": "PWL002",
         "sort": "crossbow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1UryCsqv8mP-jFi7hbFYI0kYAu6lkug4_=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2512,7 +2516,7 @@
       {
         "id": "PWL003",
         "sort": "crossbow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1t3Ypd-gtxZxz5JgH3l1nq3k3EI8iV05k=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2527,7 +2531,7 @@
       {
         "id": "PWL004",
         "sort": "crossbow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1Rmdy4HiAPIY72uXvnu_N8WQjyBo8vxU7=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2542,7 +2546,7 @@
       {
         "id": "YWL001",
         "sort": "crossbow",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1U7XACjoZ8Ryk97y4aGn4IHBLobQ4w3sS=w1402-h684-iv3",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2562,7 +2566,7 @@
     "items": [{
         "id": "WWM001",
         "sort": "pistol",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1CTbwc8mKSEl8taDnXQBZk9nBw3DNbjxZ=w1402-h684-iv1",
         "location": ["A008", "A013", "A014"],
         "tobe": ["GWM001", "GWM002", "BWM002", "BWM004", "GWU001", "GA011"],
         "pickup": 1,
@@ -2572,7 +2576,7 @@
       {
         "id": "GWM001",
         "sort": "pistol",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1dOr7TW-S9mhwSiQoYKSeiZ68JTzeoUaZ=w1402-h684-iv1",
         "location": false,
         "tobe": ["BWM002", "BWM003"],
         "pickup": 1,
@@ -2587,7 +2591,7 @@
       {
         "id": "GWM002",
         "sort": "pistol",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1azuda6w8xwREpb45jFRoIIRHaj6HBl2X=w1402-h684-iv1",
         "location": false,
         "tobe": ["BWM001", "PWM003", "YWM001"],
         "pickup": 1,
@@ -2601,7 +2605,7 @@
       {
         "id": "BWM001",
         "sort": "pistol",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/13p6f9QDGdetMC_hGZFUaW-AtYZ9iH_bN=w1402-h684-iv1",
         "location": false,
         "tobe": ["PWM002", "PWM005"],
         "pickup": 1,
@@ -2616,7 +2620,7 @@
       {
         "id": "BWM002",
         "sort": "pistol",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/11NGN0xwcVGTtpVTr40d-eZlOXFapecMk=w1402-h684-iv1",
         "location": false,
         "tobe": ["PWM001"],
         "pickup": 1,
@@ -2631,7 +2635,7 @@
       {
         "id": "BWM003",
         "sort": "pistol",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1BaRLL-Bu4jMuMVtDXIzmkMDVZSAYgw0b=w1402-h684-iv1",
         "location": false,
         "tobe": ["PWM004"],
         "pickup": 1,
@@ -2647,7 +2651,7 @@
       {
         "id": "BWM004",
         "sort": "pistol",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1XZo-YDZRFYCNwduHNEmiCwI3q_tPMwIn=w1402-h684-iv1",
         "location": false,
         "tobe": ["PWM006"],
         "pickup": 1,
@@ -2662,7 +2666,7 @@
       {
         "id": "PWM001",
         "sort": "pistol",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1XQBQGIpvGsEgED41Z1xG1nKJic6tLxbz=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2680,7 +2684,7 @@
       {
         "id": "PWM002",
         "sort": "pistol",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1_bXfVtpWwp4ibWC8jnl9Y-Dy8yFNsaEH=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2697,7 +2701,7 @@
       {
         "id": "PWM003",
         "sort": "pistol",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1Ez-GpGATKqqZG3w3pNOX-fG-2tmFB6w7=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2714,7 +2718,7 @@
       {
         "id": "PWM004",
         "sort": "pistol",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1ZHoZrVe4yc-k11Z6TlU7AJ6GXP_nNXTn=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2732,7 +2736,7 @@
       {
         "id": "PWM005",
         "sort": "pistol",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1KobhplL4n_XVbYuSRZQP2mKSIOE5F9lK=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2750,7 +2754,7 @@
       {
         "id": "PWM006",
         "sort": "pistol",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1004SaAvEUWoW94A8-s0qbJDYYUQVvi-d=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2767,7 +2771,7 @@
       {
         "id": "YWM001",
         "sort": "pistol",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1_M7xib7UsshWNj025A51FJbNd8HfIQtY=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2790,7 +2794,7 @@
     "items": [{
         "id": "WWN001",
         "sort": "rifle",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1orRlMARJ9ZmT_bfVBfc67WV82tigS1mC=w1402-h684-iv2",
         "location": ["A008", "A011", "A014"],
         "tobe": ["GWN001", "BWU003", "GA012"],
         "pickup": 1,
@@ -2800,7 +2804,7 @@
       {
         "id": "GWN001",
         "sort": "rifle",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1zQhFO1n8zJEae3f_NjbDSSxJ6vsb4mnR=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWN001", "BWN002", "PWN001", "YWN002"],
         "pickup": 1,
@@ -2815,7 +2819,7 @@
       {
         "id": "BWN001",
         "sort": "rifle",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1A2IIm24mD5KYKwPpA0til-TwkIBD2ZUB=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWN002", "PWN003"],
         "pickup": 1,
@@ -2830,7 +2834,7 @@
       {
         "id": "BWN002",
         "sort": "rifle",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/14WnyRnYZNqPDZW0OzfGKOEAAQMraVJiu=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWN004"],
         "pickup": 1,
@@ -2845,7 +2849,7 @@
       {
         "id": "PWN001",
         "sort": "rifle",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1qhO82V-HBN_C6elmqSECGiYcmrTYNMyB=w1402-h684-iv2",
         "location": false,
         "tobe": ["YWN001"],
         "pickup": 1,
@@ -2862,7 +2866,7 @@
       {
         "id": "PWN002",
         "sort": "rifle",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1i3hq6ziZ1RJleAk3zOeTJsYoNtYiMvfI=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2878,7 +2882,7 @@
       {
         "id": "PWN003",
         "sort": "rifle",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/17aym9bwQ8wyIDW8YrnaN2_R4oIYjNihM=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2895,7 +2899,7 @@
       {
         "id": "PWN004",
         "sort": "rifle",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/12Rl4L7egoJ6sSwOy5nz2W2eF0-HwaCvs=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2912,7 +2916,7 @@
       {
         "id": "YWN001",
         "sort": "rifle",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1lSuzfNIArmk0_ZFzKk9x8i-vhLg17oce=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2929,7 +2933,7 @@
       {
         "id": "YWN002",
         "sort": "rifle",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1VVwjF84-B04xtg6SBzDXnikTsIkxUHQt=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2950,7 +2954,7 @@
     "items": [{
         "id": "WWO001",
         "sort": "sniper",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1tGLcheDsZE29HQtBZGnv3aluf2mzzjBK=w1402-h684-iv2",
         "location": ["A010", "A012"],
         "tobe": ["GWO001"],
         "pickup": 1,
@@ -2960,7 +2964,7 @@
       {
         "id": "GWO001",
         "sort": "sniper",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1K1W0G4j_3CP7GYvvjrOV0fLxHAKme2MW=w1402-h684-iv3",
         "location": false,
         "tobe": ["BWO001", "BWO002", "BWO003", "YWO002"],
         "pickup": 1,
@@ -2974,7 +2978,7 @@
       {
         "id": "BWO001",
         "sort": "sniper",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1c0ZAsoXyB-ix7EJ3gGclqN8GSEMuy2J3=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWO001", "PWO002"],
         "pickup": 1,
@@ -2988,7 +2992,7 @@
       {
         "id": "BWO002",
         "sort": "sniper",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1WrRzQZysliaSrz0uP6Vx2fIUWcyywonL=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWO003", "YWO001"],
         "pickup": 1,
@@ -3003,7 +3007,7 @@
       {
         "id": "BWO003",
         "sort": "sniper",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/158BRFQp6YFbRAf5FgLPVje8_wOZzaSmb=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWO004"],
         "pickup": 1,
@@ -3018,7 +3022,7 @@
       {
         "id": "PWO001",
         "sort": "sniper",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1ug7bu9g2bDWerkez8D1CalNvBUHq754k=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3035,7 +3039,7 @@
       {
         "id": "PWO002",
         "sort": "sniper",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1QvcO522KPv0gL7Q-TGNRVTFZu5T9XFSX=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3051,7 +3055,7 @@
       {
         "id": "PWO003",
         "sort": "sniper",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1vDmQaM7VaJW3Ej0z19fblt-07uJnpCs1=w1402-h684-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3067,7 +3071,7 @@
       {
         "id": "PWO004",
         "sort": "sniper",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1KsNmh4LNY1XCb3slkkrGAIfOm5ikXn6M=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3084,7 +3088,7 @@
       {
         "id": "YWO001",
         "sort": "sniper",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/18eiqcpK427Vec-Lj7o3nHQgs7A5x5v3t=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3100,7 +3104,7 @@
       {
         "id": "YWO002",
         "sort": "sniper",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1gQnMPF3VOCcZprHJUSXvGr6w4Ar5os6V=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3121,7 +3125,7 @@
     "items": [{
         "id": "WWP001",
         "sort": "hammer",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/19us6vAJPcxC0YLC2oCKgcGfBKM18v9b_=w1402-h684-iv2",
         "location": ["A002", "A005", "A013"],
         "tobe": ["GWP001", "BWP003", "GM004", "GM010", "GM014"],
         "pickup": 1,
@@ -3131,7 +3135,7 @@
       {
         "id": "GWP001",
         "sort": "hammer",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1RTwfWfDmBVhThjIYaaLtBZTa56HYhoV2=w1402-h684-iv3",
         "location": false,
         "tobe": ["BWP001", "BWP002"],
         "pickup": 1,
@@ -3144,7 +3148,7 @@
       {
         "id": "BWP001",
         "sort": "hammer",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1zfIL09nOhCRrGxZGngHhxchnNe2e4LqP=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWP001", "PWP004"],
         "pickup": 1,
@@ -3157,7 +3161,7 @@
       {
         "id": "BWP002",
         "sort": "hammer",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1W2SCza8mE4CiobGgCRLnvyE5XkKIyqnI=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWP002", "PWP003", "YWP001"],
         "pickup": 1,
@@ -3170,7 +3174,7 @@
       {
         "id": "BWP003",
         "sort": "hammer",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1Jm9VYZUveKhsrTQk7cGR1p5_0VqfWn0U=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWP005"],
         "pickup": 1,
@@ -3185,7 +3189,7 @@
       {
         "id": "PWP001",
         "sort": "hammer",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1ppZQX4u0n7gW6kOGnWLfKgJ_W-mlEjIP=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3200,7 +3204,7 @@
       {
         "id": "PWP002",
         "sort": "hammer",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1iKS3CUPdu3Zdiauaf88kftzJC2AX8PBT=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3215,7 +3219,7 @@
       {
         "id": "PWP003",
         "sort": "hammer",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1CdZCnjpOr7dELLBT8b6EHfs6p6gmlIQy=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3230,7 +3234,7 @@
       {
         "id": "PWP004",
         "sort": "hammer",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/10aS5MPZyG9gwgUTv6hAieTfUzj2eKMrA=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3244,7 +3248,7 @@
       {
         "id": "PWP005",
         "sort": "hammer",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/18u6Ix7kDQZKyJb5PJXTwTtl6VRW437Z_=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3260,7 +3264,7 @@
       {
         "id": "YWP001",
         "sort": "hammer",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1bDMOAY01aNALP9xqX4raXesffIPggB5K=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3280,7 +3284,7 @@
     "items": [{
         "id": "WWQ001",
         "sort": "spear",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1Y4_GsHIDPj88qiz8jKcQvomWUgl9cHuq=w1402-h684-iv2",
         "location": ["A004", "A005", "A012"],
         "tobe": ["BWI006", "PWL002", "BWO001", "GWQ001", "BWQ002"],
         "pickup": 1,
@@ -3290,7 +3294,7 @@
       {
         "id": "GWQ001",
         "sort": "spear",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1pkN7abrlTlaBwpe8dtVOHi3vXaeYjEDE=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWQ001", "BWQ004", "YWQ001"],
         "pickup": 1,
@@ -3303,7 +3307,7 @@
       {
         "id": "BWQ001",
         "sort": "spear",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/149DRMq4pha0hsXh0H4FqhVRQcyiFMZ6B=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWQ003", "PWQ004"],
         "pickup": 1,
@@ -3316,7 +3320,7 @@
       {
         "id": "BWQ002",
         "sort": "spear",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1qi3WKSYjvH2P1vQeN9vSC6lgqDQCG8e1=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWQ003", "PWQ004", "YWQ002"],
         "pickup": 1,
@@ -3329,7 +3333,7 @@
       {
         "id": "BWQ003",
         "sort": "spear",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1azKTAJYLQ8EONcJxwv4e4ddHhys1uFOP=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWQ005", "PWQ006"],
         "pickup": 1,
@@ -3342,7 +3346,7 @@
       {
         "id": "BWQ004",
         "sort": "spear",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/19uHtALFqMP7c_Rg42leF1f45hzeNzTEy=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWQ001", "PWQ002"],
         "pickup": 1,
@@ -3356,7 +3360,7 @@
       {
         "id": "PWQ001",
         "sort": "spear",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/16LLFFtgls6uvyT8Ko1ZDd5NNwDQH-pds=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3371,7 +3375,7 @@
       {
         "id": "PWQ002",
         "sort": "spear",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1hYxzWgCIbZ5Tv3AEO6bt2-ZEEF5RFafl=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3386,7 +3390,7 @@
       {
         "id": "PWQ003",
         "sort": "spear",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1Mr0sPmOnjdjYGw5SCTtRDSmpeJzZfyDQ=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3400,7 +3404,7 @@
       {
         "id": "PWQ004",
         "sort": "spear",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1vdiClt-psgl3lmeF9w3IxT3ldN-Xkv5n=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3415,7 +3419,7 @@
       {
         "id": "PWQ005",
         "sort": "spear",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/16-To8g0XODrd3aH2Ufz5IGRs3MODPnBs=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3432,7 +3436,7 @@
       {
         "id": "PWQ006",
         "sort": "spear",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/10DPBociBpEveh7lAri9eeFRL-sS8x7QO=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3448,7 +3452,7 @@
       {
         "id": "YWQ001",
         "sort": "spear",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1BaeREh-qZopgzQeagysXwTYFQX18WT9K=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3462,7 +3466,7 @@
       {
         "id": "YWQ002",
         "sort": "spear",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1LIxtgoOa12SXpFCO4zCF-w0oK-MoDHgF=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3481,7 +3485,7 @@
     "items": [{
         "id": "WWR001",
         "sort": "nunchaku",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1PbVd4gi__Ej5kadoPnRYq1g5PS4-WiAL=w1402-h684-iv2",
         "location": ["A002", "A007", "A013"],
         "tobe": ["GWC001", "GWR001", "BC001", "BC002", "GH004", "GS002"],
         "pickup": 1,
@@ -3491,7 +3495,7 @@
       {
         "id": "GWR001",
         "sort": "nunchaku",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/12rZEe9Grl5zGaXhHVZE0GKpjejJDLIf9=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWR001", "BWR002"],
         "pickup": 1,
@@ -3504,7 +3508,7 @@
       {
         "id": "BWR001",
         "sort": "nunchaku",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1ht_6Ysst0Gz2TDpd-xPoclQjl8IoJU34=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWR001", "PWR003"],
         "pickup": 1,
@@ -3518,7 +3522,7 @@
       {
         "id": "BWR002",
         "sort": "nunchaku",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1gMtjBlc6KfN1GAo9ct5HU6P3N9IZzOzS=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWR002", "YWR001"],
         "pickup": 1,
@@ -3531,7 +3535,7 @@
       {
         "id": "PWR001",
         "sort": "nunchaku",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1jkrNMBmb38Y1hlcMtxLWsp7sj-WxYusO=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3546,7 +3550,7 @@
       {
         "id": "PWR002",
         "sort": "nunchaku",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/148tekO-OqvSSEBN4K4KpD3pVxDPC-4fk=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3560,7 +3564,7 @@
       {
         "id": "PWR003",
         "sort": "nunchaku",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1mK-Ex42Dirk7DeO4zOVvvOUszpUcliqP=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3577,7 +3581,7 @@
       {
         "id": "YWR001",
         "sort": "nunchaku",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1oAsPMUbfzPMfGsuBLc5UR3JElkL5QQ3E=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3596,7 +3600,7 @@
     "items": [{
         "id": "WWS001",
         "sort": "rapier",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1m8sFnxHP9IqxDq2DDITPAWaH6DF-ofpL=w1402-h684-iv2",
         "location": ["A002", "A006", "A014"],
         "tobe": ["GWJ001", "BWJ005", "GWS001", "BWS002", "GB002", "GF009"],
         "pickup": 1,
@@ -3606,7 +3610,7 @@
       {
         "id": "GWS001",
         "sort": "rapier",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1fF_luHcI9x2cnEcD4ikRUFBLD0MwMoXh=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWS001", "BWS002", "PWS001", "PWS005"],
         "pickup": 1,
@@ -3620,7 +3624,7 @@
       {
         "id": "BWS001",
         "sort": "rapier",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1ysmYZUTgDr2zOUSg2JFeihjsAUDUyK2p=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWS002", "PWS003", "PWS004"],
         "pickup": 1,
@@ -3636,7 +3640,7 @@
       {
         "id": "BWS002",
         "sort": "rapier",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1ziP8b8lSBosKtuhdjfxtDzEgYAAqkyIe=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWS006"],
         "pickup": 1,
@@ -3650,7 +3654,7 @@
       {
         "id": "PWS001",
         "sort": "rapier",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1nHjIAimHXhYkT6OyiP7cgVtZQht05jKO=w1402-h684-iv2",
         "location": false,
         "tobe": ["YWS001"],
         "pickup": 1,
@@ -3668,7 +3672,7 @@
       {
         "id": "PWS002",
         "sort": "rapier",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1m4XbUR1pcajP24Y09__aPDH4eJkCltm6=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3686,7 +3690,7 @@
       {
         "id": "PWS003",
         "sort": "rapier",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1KKoHFam6FdLwgFvqZ45dLboDWmAkaFKp=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3703,7 +3707,7 @@
       {
         "id": "PWS004",
         "sort": "rapier",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1OD6yaVs45ZfNt1ag3p6W-15F3p1qDUQb=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3719,7 +3723,7 @@
       {
         "id": "PWS005",
         "sort": "rapier",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/157fC57Kg-X-qzr7BPnGxtNupITNoSAUg=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3735,7 +3739,7 @@
       {
         "id": "PWS006",
         "sort": "rapier",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1sW_LTg5AJS8ZI5l21BNEFZl3dbI68oqR=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3751,7 +3755,7 @@
       {
         "id": "YWS001",
         "sort": "rapier",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1T4g1JX3nQcHIugsJmVFVApZcLJ6lg5Qg=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3775,7 +3779,7 @@
     "items": [{
         "id": "WWT001",
         "sort": "guitar",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1y8x0BXvTs-HlPNLOEINPEiyN3Lo4lBpM=w1402-h684-iv2",
         "location": false,
         "tobe": ["GWT001", "GWT002"],
         "pickup": 1,
@@ -3787,7 +3791,7 @@
       {
         "id": "GWT001",
         "sort": "guitar",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/17ySuG9Tnn0PoeyVjo8ti-fbzfoD_Eceu=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWT002", "BWT003"],
         "pickup": 1,
@@ -3801,7 +3805,7 @@
       {
         "id": "GWT002",
         "sort": "guitar",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1QG8PK_bpHz-FV0a0rRpUdzZx-nWKO-s7=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWT001", "BWT004", "BWT005", "BWT006"],
         "pickup": 1,
@@ -3816,7 +3820,7 @@
       {
         "id": "BWT001",
         "sort": "guitar",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1oXDkuODOJPymlrZTn9bOdWoq2IttGYwV=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWT001"],
         "pickup": 1,
@@ -3832,7 +3836,7 @@
       {
         "id": "BWT002",
         "sort": "guitar",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1ocxpe06gokvpIq_7ecneH2Jb5jWPuoER=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWT002"],
         "pickup": 1,
@@ -3847,7 +3851,7 @@
       {
         "id": "BWT003",
         "sort": "guitar",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/15XnTY6NZDhmBTfgIQTYYYJ1BEC2eAyUl=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWT003"],
         "pickup": 1,
@@ -3861,7 +3865,7 @@
       {
         "id": "BWT004",
         "sort": "guitar",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1-OhJ8SDHILoR-Z9NiMLipnP5AmQzIIa5=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWT004"],
         "pickup": 1,
@@ -3877,7 +3881,7 @@
       {
         "id": "BWT005",
         "sort": "guitar",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/11MdKxeBLNIrGzdbPeuZNY3bfp7EXgsD9=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWT005", "PWT006"],
         "pickup": 1,
@@ -3892,7 +3896,7 @@
       {
         "id": "BWT006",
         "sort": "guitar",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1iMuQm70J3fVr7wpVG0aKuKJ9mKjLwUmz=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWT007"],
         "pickup": 1,
@@ -3907,7 +3911,7 @@
       {
         "id": "PWT001",
         "sort": "guitar",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1aDKaa3-vjmwJ_iiU2g81i-50BqQwpElD=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3924,7 +3928,7 @@
       {
         "id": "PWT002",
         "sort": "guitar",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1-gUQs3nyHykWZY7zTaeAWiKyJ4M66b98=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3941,7 +3945,7 @@
       {
         "id": "PWT003",
         "sort": "guitar",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1o-fAFevY3hGrAHDchQBllyODUV4Qm3d5=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3956,7 +3960,7 @@
       {
         "id": "PWT004",
         "sort": "guitar",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1HMDGucjDY0TMhoovrJpNFhLK_l4E3_yj=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3972,7 +3976,7 @@
       {
         "id": "PWT005",
         "sort": "guitar",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1df89Wp2M9l_r5Hgqj9Cn-jQZEnPD-SlB=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3987,7 +3991,7 @@
       {
         "id": "PWT006",
         "sort": "guitar",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1TbwQYks94rBuGdX0mH-YySkaTjsYE1Nf=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -4002,7 +4006,7 @@
       {
         "id": "PWT007",
         "sort": "guitar",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1NnNKjdk3M7GS_Zt1RWJ_tv58yIMDPmMU=w1402-h684-iv3",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -4024,7 +4028,7 @@
     "items": [{
         "id": "WWU001",
         "sort": "camera",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1AX6l6JwCUJeXx8J3qXKhfiICHIRESI7j=w1402-h684-iv2",
         "location": false,
         "tobe": ["GWU001"],
         "pickup": 1,
@@ -4036,7 +4040,7 @@
       {
         "id": "GWU001",
         "sort": "camera",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/19CQDYgEnOcb_QH8mNT04YH1EdsdHkvV6=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWU001", "BWU003", "PWU004"],
         "pickup": 1,
@@ -4050,7 +4054,7 @@
       {
         "id": "BWU001",
         "sort": "camera",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1UI6oLiRADs4WYNX2jOY_miRbl9NE8bKI=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWU001"],
         "pickup": 1,
@@ -4064,7 +4068,7 @@
       {
         "id": "BWU002",
         "sort": "camera",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1b97RKm6h82NozYnrziw7rEipW_zzonky=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWU002"],
         "pickup": 1,
@@ -4079,7 +4083,7 @@
       {
         "id": "BWU003",
         "sort": "camera",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/170Bejf7gjc-YM-abikVaXU3fjZ6L11DD=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWU003"],
         "pickup": 1,
@@ -4094,7 +4098,7 @@
       {
         "id": "PWU001",
         "sort": "camera",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1_5qYr-9w6Ci9XD_o9HIb05_b6i0BsA31=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -4109,7 +4113,7 @@
       {
         "id": "PWU002",
         "sort": "camera",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1fKHwLtZnKeF1syZnvbL8YyqEnllrhFoK=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -4124,7 +4128,7 @@
       {
         "id": "PWU003",
         "sort": "camera",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1ASNYPcLIS_U0F8NetEd9Sd9qtJZ50eE7=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -4140,7 +4144,7 @@
       {
         "id": "PWU004",
         "sort": "camera",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1LbYwAdhkgOOwk8T6B84M6nihj3LS7JgR=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 1,

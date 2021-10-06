@@ -41,9 +41,6 @@ export default function SelectPreview({
           <img src="${this.state.cartInfo.img}" alt="${
       this.state.cartInfo.name
     }_img" />
-          <button>
-            <i class="fas fa-search-plus"></i>
-          </button>        
         </div>
         <ul id="itemOptions">
       ${itemInfoKeys
@@ -68,14 +65,14 @@ export default function SelectPreview({
             return `<li id="itemMaterial">
               <span class="attrKey">재료 : </span>
               <span class="attrValue">
-                <span data-id="${this.state.cartInfo[key][0]}" 
-                class="value${this.state.cartInfo[key][0][0]}">
+                <button data-id="${this.state.cartInfo[key][0]}" 
+                class="matInfoBtn value${this.state.cartInfo[key][0][0]}">
                   ${searchById(this.state.cartInfo[key][0]).name}
-                </span>,
-                <span data-id="${this.state.cartInfo[key][1]}" 
-                class="value${this.state.cartInfo[key][1][0]}">
+                </button>
+                <button data-id="${this.state.cartInfo[key][1]}" 
+                class="matInfoBtn value${this.state.cartInfo[key][1][0]}">
                   ${searchById(this.state.cartInfo[key][1]).name}
-                </span>
+                </button>
               </span>
             </li>`;
           } else if (index > 9 && index < itemInfoKeys.length - 4) {
@@ -96,7 +93,10 @@ export default function SelectPreview({
         })
         .join("")}
         </ul>
-        <div id="itemPathBox">
+        <div id="itemPreviewBtnBox">
+          <button class="undoInfoBtn">
+            <i class="fas fa-undo"></i>
+          </button>
           <button class="pathFinderBtn">
             <i class="fas fa-map-marked-alt"></i>
           </button>
@@ -115,6 +115,21 @@ export default function SelectPreview({
       </div>`;
 
     searchItemInfo(this.state);
+
+    $selectPreview.querySelectorAll(".matInfoBtn").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        this.setState({ ...this.state, cart: e.target.dataset.id });
+      });
+    });
+
+    $selectPreview
+      .querySelector(".undoInfoBtn")
+      .addEventListener("click", () => {
+        this.setState({
+          ...this.state,
+          cart: document.querySelector("#detailsList").value,
+        });
+      });
 
     $selectPreview
       .querySelector(".pathFinderBtn")

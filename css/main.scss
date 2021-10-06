@@ -2,15 +2,37 @@
   display: none;
 }
 
-.nowClicked .itemName {
-  font-style: italic;
-}
-
 $color1: #0adb96;
 $color2: #ddfdf3;
 $color3: #255f4c;
 $color4: #e9ad7c;
 $color5: #a06536;
+
+.valueW {
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+}
+.valueG {
+  border: 1px solid #0e970e;
+  background: #0e970e;
+  color: #fff;
+}
+.valueB {
+  border: 1px solid #0e3cb9;
+  background: #0e3cb9;
+  color: #fff;
+}
+.valueP {
+  border: 1px solid #7513c5;
+  background: #7513c5;
+  color: #ffee00;
+}
+.valueY {
+  border: 1px solid #ffee00;
+  background: #ffee00;
+  color: #ff0000;
+}
 
 @mixin active {
   display: block;
@@ -111,7 +133,7 @@ header {
           &.gotDrops {
             background: $color5;
             .fas {
-              color: $color4;
+              color: #ffff00;
             }
           }
         }
@@ -303,6 +325,18 @@ main {
         display: grid;
         grid-template-columns: minmax(70px, 25%) auto;
         gap: 5px;
+        position: relative;
+
+        #itemImg {
+          background: #fff;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          img {
+            height: fit-content;
+          }
+        }
+
         #itemOptions {
           li {
             min-height: 25px;
@@ -311,36 +345,34 @@ main {
             background: #fff;
             border-bottom: 2px solid $color2;
 
-            .valueW {
-              background: #fff;
-              color: #000;
+            &#itemName {
+              .attrValue {
+                border: none;
+                padding: 0 5px;
+              }
             }
-            .valueG {
-              background: #0e970e;
-              color: #fff;
-            }
-            .valueB {
-              background: #0e3cb9;
-              color: #fffd77;
-            }
-            .valueP {
-              background: #7513c5;
-              color: #fffd77;
-            }
-            .valueY {
-              background: #ffee00;
-              color: #ff0000;
+
+            &#itemMaterial {
+              .matInfoBtn {
+                padding: 0 5px;
+                background: #fff;
+                color: #000;
+                box-shadow: 1px 0 1px 0 #999;
+                box-sizing: border-box;
+                border-radius: 5px;
+              }
             }
           }
         }
       }
 
-      #itemPathBox {
+      #itemPreviewBtnBox {
         position: absolute;
         top: 0;
         right: 0;
         height: 25px;
 
+        .undoInfoBtn,
         .pathFinderBtn {
           @include fasIcon(25px);
         }
@@ -408,20 +440,18 @@ main {
         background: #fff;
         border-radius: 5px;
         margin: 5px;
-        #targetItemName {
+        #targetItemImg {
           text-align: center;
           overflow: hidden;
+          background: #fff;
+          border-radius: 5px;
+          border-width: 3px;
+          box-sizing: border-box;
         }
         #targetItemBtnBox {
-          display: flex;
-          justify-content: space-evenly;
-          padding: 5px;
+          text-align: center;
           .targetItemsRemoveBtn {
             color: #ff0000;
-          }
-
-          .targetItemsInfoBtn {
-            color: $color1;
           }
         }
       }
@@ -554,7 +584,7 @@ main {
               .getDropBtn {
                 padding: 5px;
                 &:active {
-                  box-shadow: 1px 1px 1px 0 $color3 inset;
+                  box-shadow: 0px 0px 2px 1px #999 inset;
                   border-radius: 5px;
                 }
               }
@@ -671,6 +701,7 @@ main {
             @include fasIcon(30px);
             img {
               height: 100%;
+              width: fit-content;
             }
           }
         }
@@ -696,10 +727,22 @@ main {
           position: relative;
           background: #fff;
           border-radius: 5px;
+
+          &.nowClicked {
+            background: $color2;
+            box-shadow: 0 0 1px 1px $color1 inset;
+          }
+
           .moveBtn {
             @include fasIcon(25px);
-            width: fit-content;
+            width: 100%;
             overflow: hidden;
+
+            img {
+              height: 100%;
+              width: fit-content;
+            }
+
             .empty {
               color: #999;
             }
@@ -730,18 +773,29 @@ main {
           height: 25px;
           background: #fff;
           border-radius: 5px;
+
+          &.nowClicked {
+            background: $color2;
+            box-shadow: 0 0 1px 1px $color1 inset;
+          }
+
           .moveBtn {
-            @include fasIcon(25px);
+            height: 25px;
             width: 100%;
-            text-align: left;
+            text-align: center;
             position: relative;
+
+            img {
+              height: 100%;
+              width: fit-content;
+            }
             .itemCount {
-              color: #00eeff;
+              color: $color3;
               font-size: 0.5em;
               font-weight: bold;
               position: absolute;
-              top: 0px;
-              right: 25px;
+              top: 0;
+              left: 0;
               height: fit-content;
               line-height: normal;
             }
@@ -753,8 +807,8 @@ main {
             position: absolute;
             top: 0;
             right: 0;
-            color: red;
-            @include fasIcon(25px);
+            color: #ff0000;
+            @include fasIcon(15px);
           }
         }
       }
@@ -776,6 +830,13 @@ main {
       margin-bottom: 5px;
       li {
         .assembleBtn {
+          margin: 5px;
+          height: 25px;
+          line-height: 25px;
+          padding: 0 5px;
+          background: #fff;
+          border-radius: 5px;
+          box-shadow: 1px 1px 3px 1px #999;
         }
       }
     }

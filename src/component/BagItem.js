@@ -36,14 +36,18 @@ export default function BagItem({ $target, initialState, onMove, onRemove }) {
             pocketNode = `<li 
             data-id="${this.state[pocket].id}" 
             data-sort="${this.state[pocket].sort}" 
+            data-name="${this.state[pocket].name}" 
+            data-img="${this.state[pocket].img}" 
             data-count="${this.state[pocket].count}" 
             data-limit="${this.state[pocket].limit}" 
             data-pocket="${pocket}">
               <button class="moveBtn">
-                <span class="itemName">${this.state[pocket].name}</span>
-                <span class="itemCount">(x${
+                <img src="${this.state[pocket].img}" alt="${
+              this.state[pocket].name
+            }_img" class="itemImg"/>
+                <span class="itemCount">x${
                   this.state[pocket].count ? this.state[pocket].count : 1
-                })</span>
+                }</span>
               </button>
               <button class="removeBtn">
                 <i class="fas fa-minus"></i>
@@ -58,6 +62,7 @@ export default function BagItem({ $target, initialState, onMove, onRemove }) {
     $bagItem.querySelectorAll(".moveBtn").forEach((e) => {
       e.addEventListener("click", (clicked) => {
         const $li = clicked.target.closest("li");
+
         if (document.querySelector(".nowClicked")) {
           document.querySelector(".nowClicked").classList.remove("nowClicked");
         } else {
@@ -67,7 +72,8 @@ export default function BagItem({ $target, initialState, onMove, onRemove }) {
         const clickedInfo = {
           id: $li.dataset.id,
           sort: $li.dataset.sort,
-          name: $li.querySelector(".itemName").innerText,
+          name: $li.dataset.name,
+          img: $li.dataset.img,
           count: parseInt($li.dataset.count),
           limit: parseInt($li.dataset.limit),
           location: $li.dataset.pocket,
@@ -82,7 +88,8 @@ export default function BagItem({ $target, initialState, onMove, onRemove }) {
         const clickedInfo = {
           id: $li.dataset.id,
           sort: $li.dataset.sort,
-          name: $li.querySelector(".itemName").innerText,
+          name: $li.dataset.name,
+          img: $li.dataset.img,
           count: parseInt($li.dataset.count),
           limit: parseInt($li.dataset.limit),
           location: $li.dataset.pocket,

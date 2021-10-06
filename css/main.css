@@ -2,8 +2,34 @@
   display: none;
 }
 
-.nowClicked .itemName {
-  font-style: italic;
+.valueW {
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+}
+
+.valueG {
+  border: 1px solid #0e970e;
+  background: #0e970e;
+  color: #fff;
+}
+
+.valueB {
+  border: 1px solid #0e3cb9;
+  background: #0e3cb9;
+  color: #fff;
+}
+
+.valueP {
+  border: 1px solid #7513c5;
+  background: #7513c5;
+  color: #ffee00;
+}
+
+.valueY {
+  border: 1px solid #ffee00;
+  background: #ffee00;
+  color: #ff0000;
 }
 
 div,
@@ -121,7 +147,7 @@ header #headerBox #headerBtnBox button#headerBagBtn.gotDrops {
 }
 
 header #headerBox #headerBtnBox button#headerBagBtn.gotDrops .fas {
-  color: #e9ad7c;
+  color: #ffff00;
 }
 
 header #headerBox #allItemPath {
@@ -358,6 +384,24 @@ main #selectItemBox #selectPreview #itemPreview {
   -ms-grid-columns: minmax(70px, 25%) auto;
       grid-template-columns: minmax(70px, 25%) auto;
   gap: 5px;
+  position: relative;
+}
+
+main #selectItemBox #selectPreview #itemPreview #itemImg {
+  background: #fff;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #selectItemBox #selectPreview #itemPreview #itemImg img {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 main #selectItemBox #selectPreview #itemPreview #itemOptions li {
@@ -368,39 +412,31 @@ main #selectItemBox #selectPreview #itemPreview #itemOptions li {
   border-bottom: 2px solid #ddfdf3;
 }
 
-main #selectItemBox #selectPreview #itemPreview #itemOptions li .valueW {
+main #selectItemBox #selectPreview #itemPreview #itemOptions li#itemName .attrValue {
+  border: none;
+  padding: 0 5px;
+}
+
+main #selectItemBox #selectPreview #itemPreview #itemOptions li#itemMaterial .matInfoBtn {
+  padding: 0 5px;
   background: #fff;
   color: #000;
+  -webkit-box-shadow: 1px 0 1px 0 #999;
+          box-shadow: 1px 0 1px 0 #999;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
 }
 
-main #selectItemBox #selectPreview #itemPreview #itemOptions li .valueG {
-  background: #0e970e;
-  color: #fff;
-}
-
-main #selectItemBox #selectPreview #itemPreview #itemOptions li .valueB {
-  background: #0e3cb9;
-  color: #fffd77;
-}
-
-main #selectItemBox #selectPreview #itemPreview #itemOptions li .valueP {
-  background: #7513c5;
-  color: #fffd77;
-}
-
-main #selectItemBox #selectPreview #itemPreview #itemOptions li .valueY {
-  background: #ffee00;
-  color: #ff0000;
-}
-
-main #selectItemBox #selectPreview #itemPathBox {
+main #selectItemBox #selectPreview #itemPreviewBtnBox {
   position: absolute;
   top: 0;
   right: 0;
   height: 25px;
 }
 
-main #selectItemBox #selectPreview #itemPathBox .pathFinderBtn {
+main #selectItemBox #selectPreview #itemPreviewBtnBox .undoInfoBtn,
+main #selectItemBox #selectPreview #itemPreviewBtnBox .pathFinderBtn {
   height: 25px;
   line-height: 25px;
   width: 25px;
@@ -408,7 +444,8 @@ main #selectItemBox #selectPreview #itemPathBox .pathFinderBtn {
   border-radius: 5px;
 }
 
-main #selectItemBox #selectPreview #itemPathBox .pathFinderBtn .fas {
+main #selectItemBox #selectPreview #itemPreviewBtnBox .undoInfoBtn .fas,
+main #selectItemBox #selectPreview #itemPreviewBtnBox .pathFinderBtn .fas {
   line-height: 25px;
   height: 25px;
 }
@@ -490,27 +527,22 @@ main #targetItems #targetItemBox > li {
   margin: 5px;
 }
 
-main #targetItems #targetItemBox > li #targetItemName {
+main #targetItems #targetItemBox > li #targetItemImg {
   text-align: center;
   overflow: hidden;
+  background: #fff;
+  border-radius: 5px;
+  border-width: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 main #targetItems #targetItemBox > li #targetItemBtnBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 5px;
+  text-align: center;
 }
 
 main #targetItems #targetItemBox > li #targetItemBtnBox .targetItemsRemoveBtn {
   color: #ff0000;
-}
-
-main #targetItems #targetItemBox > li #targetItemBtnBox .targetItemsInfoBtn {
-  color: #0adb96;
 }
 
 main #targetItems #targetItemsRemoveAllBtnBox {
@@ -726,8 +758,8 @@ main #areaBox #areaList > li .areaNeedDrops ul li .getDropBtn {
 }
 
 main #areaBox #areaList > li .areaNeedDrops ul li .getDropBtn:active {
-  -webkit-box-shadow: 1px 1px 1px 0 #255f4c inset;
-          box-shadow: 1px 1px 1px 0 #255f4c inset;
+  -webkit-box-shadow: 0px 0px 2px 1px #999 inset;
+          box-shadow: 0px 0px 2px 1px #999 inset;
   border-radius: 5px;
 }
 
@@ -881,6 +913,9 @@ main #areaBox #areaList > li:last-child .areaNeedDrops ul {
 
 #bag #bagInventory #bagInitialWeapon #initialWeaponBox li .initialWeaponBtn img {
   height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 #bag #bagInventory .tabName {
@@ -911,21 +946,32 @@ main #areaBox #areaList > li:last-child .areaNeedDrops ul {
   border-radius: 5px;
 }
 
+#bag #bagInventory #bagEquip ul li.nowClicked {
+  background: #ddfdf3;
+  -webkit-box-shadow: 0 0 1px 1px #0adb96 inset;
+          box-shadow: 0 0 1px 1px #0adb96 inset;
+}
+
 #bag #bagInventory #bagEquip ul li .moveBtn {
   height: 25px;
   line-height: 25px;
   width: 25px;
   text-align: center;
   border-radius: 5px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
   overflow: hidden;
 }
 
 #bag #bagInventory #bagEquip ul li .moveBtn .fas {
   line-height: 25px;
   height: 25px;
+}
+
+#bag #bagInventory #bagEquip ul li .moveBtn img {
+  height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 #bag #bagInventory #bagEquip ul li .moveBtn .empty {
@@ -969,29 +1015,33 @@ main #areaBox #areaList > li:last-child .areaNeedDrops ul {
   border-radius: 5px;
 }
 
+#bag #bagInventory #bagItem ul li.nowClicked {
+  background: #ddfdf3;
+  -webkit-box-shadow: 0 0 1px 1px #0adb96 inset;
+          box-shadow: 0 0 1px 1px #0adb96 inset;
+}
+
 #bag #bagInventory #bagItem ul li .moveBtn {
   height: 25px;
-  line-height: 25px;
-  width: 25px;
-  text-align: center;
-  border-radius: 5px;
   width: 100%;
-  text-align: left;
+  text-align: center;
   position: relative;
 }
 
-#bag #bagInventory #bagItem ul li .moveBtn .fas {
-  line-height: 25px;
-  height: 25px;
+#bag #bagInventory #bagItem ul li .moveBtn img {
+  height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 #bag #bagInventory #bagItem ul li .moveBtn .itemCount {
-  color: #00eeff;
+  color: #255f4c;
   font-size: 0.5em;
   font-weight: bold;
   position: absolute;
-  top: 0px;
-  right: 25px;
+  top: 0;
+  left: 0;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -1006,17 +1056,17 @@ main #areaBox #areaList > li:last-child .areaNeedDrops ul {
   position: absolute;
   top: 0;
   right: 0;
-  color: red;
-  height: 25px;
-  line-height: 25px;
-  width: 25px;
+  color: #ff0000;
+  height: 15px;
+  line-height: 15px;
+  width: 15px;
   text-align: center;
   border-radius: 5px;
 }
 
 #bag #bagInventory #bagItem ul li .removeBtn .fas {
-  line-height: 25px;
-  height: 25px;
+  line-height: 15px;
+  height: 15px;
 }
 
 #bag #bagAssembles .tabName {
@@ -1035,5 +1085,16 @@ main #areaBox #areaList > li:last-child .areaNeedDrops ul {
   background: #e9ad7c;
   border-radius: 5px;
   margin-bottom: 5px;
+}
+
+#bag #bagAssembles ul li .assembleBtn {
+  margin: 5px;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 5px;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 3px 1px #999;
+          box-shadow: 1px 1px 3px 1px #999;
 }
 /*# sourceMappingURL=main.css.map */

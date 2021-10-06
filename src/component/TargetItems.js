@@ -33,13 +33,14 @@ export default function TargetItems({
           .map(
             (item, index) =>
               `<li data-id="${item.id}${index}">
-                <div id="targetItemName">${item.name}</div>
-                <div id="targetItemBtnBox">
-                  <button class="targetItemsRemoveBtn">
-                    <i class="fas fa-minus"></i>
-                  </button>
+                <div id="targetItemImg" class="value${item.id[0]}">
                   <button class="targetItemsInfoBtn">
-                    <i class="fas fa-info-circle"></i>
+                    <img src="${item.img}" alt="${item.name}_img" />
+                  </button>
+                </div>
+                <div id="targetItemBtnBox">
+                  <button class="targetItemsRemoveBtn">                    
+                    <i class="fas fa-times"></i>
                   </button>
                 </div>
               </li>`

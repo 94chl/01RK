@@ -22,6 +22,7 @@ export default function AreaNeedDrops({ $target, initialState, getDrop }) {
           if (this.state.dropMatId[dropId])
             return `<li 
             data-id="${dropId}" 
+            data-img="${dropInfo.img}"
             data-sort="${dropInfo.sort}"  
             data-pickup="${dropInfo.pickup}"
             data-limit="${dropInfo.limit}"
@@ -32,6 +33,7 @@ export default function AreaNeedDrops({ $target, initialState, getDrop }) {
           else {
             return `<li 
             data-id="${dropId}" 
+            data-img="${dropInfo.img}"
             data-sort="${dropInfo.sort}"  
             data-pickup="${dropInfo.pickup}"
             data-limit="${dropInfo.limit}"
@@ -50,6 +52,7 @@ export default function AreaNeedDrops({ $target, initialState, getDrop }) {
           id: $li.id,
           sort: $li.sort,
           name: btn.target.innerHTML,
+          img: $li.img,
           count: parseInt($li.pickup),
           limit: parseInt($li.limit),
         };

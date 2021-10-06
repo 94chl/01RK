@@ -24,7 +24,7 @@ export default function BagEquip({ $target, initialState, onMove, onRemove }) {
             equipNode = `<li 
             data-pocket="${sort}">
               <button class="moveBtn">
-                <span class="itemName empty">empty</span>
+                <span class="itemImg empty">empty</span>
               </button>
               <button class="removeBtn">
                 <i class="fas fa-minus"></i>
@@ -34,10 +34,13 @@ export default function BagEquip({ $target, initialState, onMove, onRemove }) {
             equipNode = `<li 
             data-id="${this.state[sort].id}" 
             data-sort="${this.state[sort].sort}" 
+            data-name="${this.state[sort].name}" 
+            data-img="${this.state[sort].img}"
+            data-sort="${this.state[sort].sort}" 
             data-count="1" 
             data-pocket="${sort}">
-              <button class="moveBtn">
-                <span class="itemName">${this.state[sort].name}</span>
+              <button class="moveBtn">                
+                <img src="${this.state[sort].img}" alt="${this.state[sort].img}_img" class="itemImg"/>
               </button>
               <button class="removeBtn">
                 <i class="fas fa-minus"></i>
@@ -61,7 +64,8 @@ export default function BagEquip({ $target, initialState, onMove, onRemove }) {
         const clickedInfo = {
           id: $li.dataset.id,
           sort: $li.dataset.sort,
-          name: $li.querySelector(".itemName").innerText,
+          name: $li.dataset.name,
+          img: $li.dataset.img,
           count: 1,
           limit: 1,
           location: $li.dataset.pocket,
@@ -76,7 +80,8 @@ export default function BagEquip({ $target, initialState, onMove, onRemove }) {
         const clickedInfo = {
           id: $li.dataset.id,
           sort: $li.dataset.sort,
-          name: $li.querySelector(".itemName").innerText,
+          name: $li.dataset.name,
+          img: $li.dataset.img,
           count: 1,
           limit: 1,
           location: $li.dataset.pocket,

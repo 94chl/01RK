@@ -1833,7 +1833,7 @@
         "sort": "accessory",
         "img": "https://lh3.google.com/u/0/d/1JuKALblSCZH-euvnPKDu7QfKDDMAu060=w1402-h253-iv1",
         "location": ["A005", "A011", "A015"],
-        "tobe": ["BC003", "GA004", "GA011", "PA005"],
+        "tobe": ["BC003", "GA004", "GA011", "BA002"],
         "pickup": 1,
         "limit": 1,
         "name": "리본"

@@ -3,9 +3,9 @@
     "items": [{
         "id": "WM001",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1BdFZE4Ng7mIzxYGoszAr-T_x2sL-l1LX=w1402-h253-iv1",
         "location": ["A003", "A009", "A010"],
-        "tobe": ["GWI002", "WWU001", "GA003", "GM013", "BF025", "GD003", "GD004"],
+        "tobe": ["GWI002", "WWU001", "GA003", "GM013", "BF021", "GD003", "GD004"],
         "pickup": 2,
         "limit": 3,
         "name": "유리병"
@@ -13,7 +13,7 @@
       {
         "id": "WM002",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1K2vf1zTaOyqb1tyj7dkYm6JbsMcw5muX=w1402-h253-iv1",
         "location": ["A000"],
         "tobe": ["PWT004", "GH005", "BS006", "GA003", "GM006", "GM012", "BM001"],
         "pickup": 2,
@@ -23,7 +23,7 @@
       {
         "id": "WM003",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1afMzEr42nXIBNps2YqrHHBxOhjVJx7C-=w1402-h253-iv1",
         "location": ["A005", "A010", "A013"],
         "tobe": ["BWA003", "BWE003", "GC003", "GB001", "GF005"],
         "pickup": 1,
@@ -33,7 +33,7 @@
       {
         "id": "WM004",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1bCjMJEieZiNGiF2SbPpb1q9kiGnqJcQ_=w1402-h253-iv1",
         "location": ["A002", "A010", "A016"],
         "tobe": ["BWI001", "BWI004", "GWK002", "BWL001", "GC008", "PH004"],
         "pickup": 1,
@@ -43,7 +43,7 @@
       {
         "id": "WM005",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1uqkmpIy-oUGunwb20T3ngLgDzMXinvcg=w1402-h253-iv1",
         "location": ["A006", "A008", "A010", "A014"],
         "tobe": ["GWR001", "GS003", "GM001", "GM010", "BM003", "BT001"],
         "pickup": 1,
@@ -53,7 +53,7 @@
       {
         "id": "WM006",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1Zg0dz3yONUwaXP04-E2C5nQk1mEHrCQL=w1402-h253-iv1",
         "location": ["A002", "A008", "A010", "A015"],
         "tobe": ["GWB001", "BWK006", "PA002", "GM003", "GM007", "GM012", "GD001", "BD002"],
         "pickup": 1,
@@ -63,7 +63,7 @@
       {
         "id": "WM007",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1ZWdcZ-LKFkpa68VLbUIaaRT38tvQ_OoG=w1402-h253-iv1",
         "location": ["A006", "A011", "A015"],
         "tobe": ["BWB006", "PWC001", "PWF003", "PWH002", "BWL002", "BWM001", "GWO001", "PWS002", "GA005"],
         "pickup": 1,
@@ -73,7 +73,7 @@
       {
         "id": "WM008",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1iDnMnZXL9nnOSOuk2lyAA85JP3frVjl9=w1402-h253-iv1",
         "location": ["A002", "A004", "A013"],
         "tobe": ["BWF001", "GWH001", "BWJ003", "BWK003", "BC009", "BH003", "GA010"],
         "pickup": 1,
@@ -83,7 +83,7 @@
       {
         "id": "WM009",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1tNnpzaOhu0gAgcVbuGQ_ExTE3x6jPdha=w1402-h253-iv1",
         "location": ["A003", "A008", "A010"],
         "tobe": ["GM005", "GM008", "BT005"],
         "pickup": 1,
@@ -93,7 +93,7 @@
       {
         "id": "WM010",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1XgjTNbKBO3OstHjHIOms7QvM4iQVd617=w1402-h253-iv1",
         "location": ["A006", "A008", "A015"],
         "tobe": ["PWJ003", "GF009", "GD004", "GD005", "GD008"],
         "pickup": 1,
@@ -103,7 +103,7 @@
       {
         "id": "WM011",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1_zCLu79yM0OXXaJk5jB9IIaS-7KA4nS5=w1402-h253-iv1",
         "location": ["A003", "A008", "A011", "A016"],
         "tobe": ["BWB002", "GWI002", "BWK002", "GWM001", "BWT006", "GM002", "GM003"],
         "pickup": 1,
@@ -113,7 +113,7 @@
       {
         "id": "WM012",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1uQzW6uu24ZSCT4UBWsSVo6ShEUXjsRtJ=w1402-h253-iv1",
         "location": ["A003", "A004", "A014"],
         "tobe": ["GC006", "GC009", "GS005", "GA004"],
         "pickup": 1,
@@ -123,7 +123,7 @@
       {
         "id": "WM013",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1z9tzGCeJIkFZXH-JqK5SNDoIdFmsgMbw=w1402-h253-iv1",
         "location": ["A004", "A005", "A012", "A013"],
         "tobe": ["BWB003", "GM004", "GM011"],
         "pickup": 1,
@@ -133,7 +133,7 @@
       {
         "id": "WM014",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/14s0jgmg6mApjL3uMPUEgU0DCf0wF_F8M=w1402-h253-iv1",
         "location": ["A002", "A006", "A008"],
         "tobe": ["GB004", "GS001", "BM004", "GT005"],
         "pickup": 1,
@@ -143,7 +143,7 @@
       {
         "id": "WM015",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1o0-bsGfhA0QXAwSYoSuRDz_YkCoym3hz=w1402-h253-iv1",
         "location": ["A004", "A009", "A016"],
         "tobe": ["GM007", "GM009", "GM013"],
         "pickup": 1,
@@ -153,7 +153,7 @@
       {
         "id": "WM016",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1vOA2PjqPslTlSXpyuVYAkjXPVi1nel6t=w1402-h253-iv1",
         "location": ["A007", "A012", "A014"],
         "tobe": ["GWE002", "GWS001", "GM001", "GT002"],
         "pickup": 3,
@@ -163,7 +163,7 @@
       {
         "id": "WM017",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/18QoLzahRYkjCFV-kAMWw9j-ODRebOncP=w1402-h253-iv1",
         "location": ["A003", "A013", "A015"],
         "tobe": ["GT006", "GF002", "BD010"],
         "pickup": 1,
@@ -173,7 +173,7 @@
       {
         "id": "WM018",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1bkSxcE009z3IMnRoZwK1OlxjfXdcqpkY=w1402-h253-iv1",
         "location": ["A004", "A007", "A016"],
         "tobe": ["BWE004", "GWI001", "BWK004", "GWN001", "GT003", "GT008", "GT010", "BT004"],
         "pickup": 1,
@@ -183,7 +183,7 @@
       {
         "id": "WM019",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1bqt8VDhij4rAfMdibLruJAfAZJri7QAC=w1402-h253-iv1",
         "location": ["A000"],
         "tobe": ["GWE001", "GWM002", "BWN002", "BWP002", "GC001", "GC002", "GB001", "GB003", "BB001", "BS003", "GA007"],
         "pickup": 1,
@@ -193,7 +193,7 @@
       {
         "id": "WM020",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1EiDdB6ZHDikfSFvIGWZ2u1QPMKUq-cc8=w1402-h253-iv1",
         "location": ["A003", "A008", "A016"],
         "tobe": ["PWD001", "BWG001", "BWI005", "BWK001", "BWR001", "PB001", "PS004", "GA009", "GT001"],
         "pickup": 1,
@@ -203,7 +203,7 @@
       {
         "id": "WM021",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/19EEdkaHO0McgjTe-OceY7Rc5A2dIdxAl=w1402-h253-iv1",
         "location": ["A009", "A011", "A013", "A014"],
         "tobe": ["GWJ003", "GWK001", "GWL001", "BWN001", "WWT001", "GM008", "GM014", "GT003", "BT002"],
         "pickup": 1,
@@ -213,7 +213,7 @@
       {
         "id": "GM001",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1eiBDmLQtLhH9pmQvdESR4yxjmyVKDRc0=w1402-h253-iv1",
         "location": false,
         "tobe": ["BWB004", "BWC003", "BWE001", "BWG004", "BWJ007", "BWL003", "PWM004", "PWN002", "BWQ002", "BC005", "BB005", "BS002"],
         "pickup": 2,
@@ -225,7 +225,7 @@
       {
         "id": "GM002",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/13aZxKeXBU0d4uBBvDDA7wkZ437F4mv-y=w1402-h253-iv1",
         "location": false,
         "tobe": ["PWE006", "BWG003", "PWL001", "BC010", "GS006", "BT007"],
         "pickup": 2,
@@ -237,9 +237,9 @@
       {
         "id": "GM003",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1eVdsfYxUF6hvhnPk3dZonL5mVCvCjXmh=w1402-h253-iv1",
         "location": false,
-        "tobe": ["YWN001", "BF001", "BF013", "BF015", "BF017", "BF025"],
+        "tobe": ["YWN001", "BF001", "BF013", "BF015", "BF017", "BF022"],
         "pickup": 3,
         "limit": 3,
         "name": "뜨거운 오일",
@@ -249,7 +249,7 @@
       {
         "id": "GM004",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1p2tglyS9lD4lBOnTR_LUw2TDhjVlxa2T=w1402-h253-iv1",
         "location": false,
         "tobe": ["BWB005", "PWC002", "PWE003", "BWT001", "BC008", "PH005", "PB006"],
         "pickup": 1,
@@ -261,7 +261,7 @@
       {
         "id": "GM005",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/11daICr1vbXsvZ1OindILXEdqMx5leR9t=w1402-h253-iv1",
         "location": false,
         "tobe": ["BWH002", "BWI003", "GWT002", "BM005"],
         "pickup": 1,
@@ -273,7 +273,7 @@
       {
         "id": "GM006",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1L5h1W1Mk1-nBQU3g1Egg_UMFGcpHFptQ=w1402-h253-iv1",
         "location": false,
         "tobe": ["PWE007", "BWF002", "BWI002", "PWJ006", "PWO004", "PWQ001", "PWT006", "PT002"],
         "pickup": 1,
@@ -285,7 +285,7 @@
       {
         "id": "GM007",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/19_TRT9XqHqEBnd6wNxN5BkkrtN58bQ21=w1402-h253-iv1",
         "location": false,
         "tobe": ["PWA002", "PWD004", "BWE006", "PWG003", "PWR001", "PWT003", "PS006", "BM002"],
         "pickup": 1,
@@ -297,7 +297,7 @@
       {
         "id": "GM008",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1ttUPGNm4CEao-k3pU0FDbI57aioFxaEw=w1402-h253-iv1",
         "location": false,
         "tobe": ["PWG002", "BWO003", "PWS003", "PH003", "PB011", "BM003", "BM006"],
         "pickup": 1,
@@ -309,7 +309,7 @@
       {
         "id": "GM009",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1oD9xrx1sfvoNqQhV7awg-9DalxHVXHc9=w1402-h253-iv1",
         "location": false,
         "tobe": ["PWB005", "BWD001", "PWF001", "BWM003", "PWO001", "BWT004", "PB013", "BA006", "BM006"],
         "pickup": 1,
@@ -321,7 +321,7 @@
       {
         "id": "GM010",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1RdSozpVQ-qpbl-slNQ_z0_hbaE8Xy4Qd=w1402-h253-iv1",
         "location": false,
         "tobe": ["BWB001", "BWL004", "PWO003", "PWQ006", "BC007", "BB001", "BB003", "BA004"],
         "pickup": 2,
@@ -333,7 +333,7 @@
       {
         "id": "GM011",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1BzljigxEQAl-imqGfC1cjwEMpw53KnDk=w1402-h253-iv1",
         "location": false,
         "tobe": ["PWC003", "PWH003", "PWI005", "PWJ002", "PWK002", "PWM006", "BWO002", "GWT001", "PWU001", "PC007", "BH004", "PH006", "BB002"],
         "pickup": 1,
@@ -345,7 +345,7 @@
       {
         "id": "GM012",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1XQSAN2tsDuLQdGztsfXkyUybufXeyQVq=w1402-h253-iv1",
         "location": false,
         "tobe": ["BWK005", "PWP001", "BF003", "BF004", "BF010", "BF018"],
         "pickup": 3,
@@ -357,7 +357,7 @@
       {
         "id": "GM013",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1tjRl-o5QELoqUQbSfwLJoJ-OzwVaKIyh=w1402-h253-iv1",
         "location": false,
         "tobe": ["BA015"],
         "pickup": 3,
@@ -369,7 +369,7 @@
       {
         "id": "GM014",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1T4nPDgwx_zkhG93jqDQy79cUhx2PTYgv=w1402-h253-iv1",
         "location": false,
         "tobe": ["BB006"],
         "pickup": 3,
@@ -381,9 +381,9 @@
       {
         "id": "BM001",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1Rc8Z1kNYiHq7AxFojR6Eriog7wSL1tXL=w1402-h253-iv1",
         "location": false,
-        "tobe": ["PWD002", "PWK006", "YWO001", "PWP004", "PWQ003", "PB009", "PB010", "PA003", "PA005", "YA003", "BD011"],
+        "tobe": ["PWD002", "PWK006", "YWO001", "PWP004", "PWQ003", "PB009", "PB010", "BA005", "PA003", "YA003", "BD011"],
         "pickup": 1,
         "limit": 3,
         "name": "문스톤",
@@ -393,7 +393,7 @@
       {
         "id": "BM002",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/12P6lW3SknqwHbBpQ-5Ea9BGt0h6jI7zp=w1402-h253-iv1",
         "location": false,
         "tobe": ["BWJ005", "PWJ005", "BA008"],
         "pickup": 1,
@@ -405,7 +405,7 @@
       {
         "id": "BM003",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1eiD-ju2fk2hQCInReMw1fI3KAA-Ev98a=w1402-h253-iv1",
         "location": false,
         "tobe": ["PWA003", "PWC005", "PWN001", "PWR002", "PS005", "BA014"],
         "pickup": 1,
@@ -417,7 +417,7 @@
       {
         "id": "BM004",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1k-lzKjkexC57wcu5QADD3N5SJXnaFG6S=w1402-h253-iv1",
         "location": false,
         "tobe": ["PWG005", "PWN003", "PC001", "YB002"],
         "pickup": 1,
@@ -429,7 +429,7 @@
       {
         "id": "BM005",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1nMARJmviqqaf0wVxloEn3FDKIexKS7YE=w1402-h253-iv1",
         "location": false,
         "tobe": ["PWD003", "PWJ001", "PWM003", "PWP003", "PWQ002"],
         "pickup": 1,
@@ -441,7 +441,7 @@
       {
         "id": "BM006",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1DhiauT9CvNsc7IL6uWkq9ChI85A2J7ff=w1402-h253-iv1",
         "location": false,
         "tobe": ["PWU004", "PB004", "PS007", "YT002"],
         "pickup": 1,
@@ -453,9 +453,9 @@
       {
         "id": "BM007",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1jai1w6D6dfuNarT6ytM-URMPc6AVqLY_=w1402-h253-iv1",
         "location": ["A002", "A008", "A011"],
-        "tobe": ["PWS005", "PC003", "PH001", "PB003", "PB012", "PS002", "PA004", "YA003", "BT002", "BD012"],
+        "tobe": ["PWS005", "PC003", "PH001", "PB003", "PB012", "PS002", "PA004", "YA003", "BT002", "BF027"],
         "pickup": 1,
         "limit": 3,
         "name": "미스릴"
@@ -463,7 +463,7 @@
       {
         "id": "BM008",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/15NvN9WmHXtp6ihSa0dmdwGeY3lluwnp9=w1402-h253-iv1",
         "location": ["A002", "A004", "A005", "A008", "A015"],
         "tobe": ["YWB003", "PWJ008", "PWM001", "PWS004", "PWT005", "YC002", "YH004", "BM001", "PM002"],
         "pickup": 1,
@@ -473,7 +473,7 @@
       {
         "id": "BM009",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1cjFqIxouRXxw6MEKh8SQ3HaLUz0lB5sO=w1402-h253-iv1",
         "location": ["A007", "A012", "A014", "A006"],
         "tobe": ["PA001", "PA002", "PM002"],
         "pickup": 1,
@@ -483,7 +483,7 @@
       {
         "id": "PM001",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1YfrCYrU0AN00y2_U1TIjy4koir14vsc6=w1402-h253-iv1",
         "location": ["A000"],
         "tobe": ["YWA001", "YWB002", "YWF001", "YWG001", "YWH001", "YWI001", "YWJ001", "YWK001", "YWK02", "YWL001", "YWM001", "YWN002", "YWP001", "YWQ002", "YWR001", "YC003", "YC004", "YH002", "YH003", "YB003", "YB004", "YS003", "YS004", "YA001", "YA002", "YT001"],
         "pickup": 1,
@@ -493,7 +493,7 @@
       {
         "id": "PM002",
         "sort": "material",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1CCjIqDTFgfJOPf4U8Tp9b_UQyvlND9HH=w1402-h253-iv1",
         "location": false,
         "tobe": ["YWD001"],
         "pickup": 1,
@@ -509,7 +509,7 @@
     "items": [{
         "id": "WT001",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1QAWyZ-HrnNJESHAaIZ_DELIz_56h3iwO=w1402-h253-iv2",
         "location": ["A003", "A006", "A007", "A010", "A011", "A015", "A016"],
         "tobe": ["WWU001", "GT009", "GT010", "GT011"],
         "pickup": 1,
@@ -519,7 +519,7 @@
       {
         "id": "WT002",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/17XbUrYpZHMOALQnbgHZji5sOcr6wqikU=w1402-h253-iv2",
         "location": ["A005", "A010", "A012", "A013", "A016"],
         "tobe": ["GS007", "GT004", "GT005"],
         "pickup": 2,
@@ -529,7 +529,7 @@
       {
         "id": "WT003",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1nS0Em42MqkieLkxNZSabtacN8EHqNpqt=w1402-h253-iv2",
         "location": ["A005", "A007", "A013"],
         "tobe": ["GT001", "GT002", "GT007", "GT008"],
         "pickup": 2,
@@ -539,6 +539,8 @@
       {
         "id": "GT001",
         "sort": "trap",
+        "img": "https://lh3.google.com/u/0/d/1EA9XY4L0ruCiVnGRNusXO2JiiBXUTD7V=w1402-h253-iv2",
+        "location": false,
         "material": ["WT003", "WM020"],
         "tobe": ["PWA004", "PWH001", "PH008", "BB004", "PT001"],
         "pickup": 2,
@@ -549,7 +551,7 @@
       {
         "id": "GT002",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/15nTSJZBjUkkzSLL-j1c9tRnnf-_SH7iN=w1402-h253-iv2",
         "location": false,
         "tobe": ["PH009", "BT006", "YT001"],
         "pickup": 2,
@@ -561,7 +563,7 @@
       {
         "id": "GT003",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1pbVGyo7-OO4OgmGYkYGrjU5Yl2zH7-9v=w1402-h253-iv2",
         "location": false,
         "tobe": ["BWM004", "BT001"],
         "pickup": 1,
@@ -573,7 +575,7 @@
       {
         "id": "GT004",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/14upaBzZ04CcaREAQIXBoHdnmStBVLReQ=w1402-h253-iv2",
         "location": false,
         "tobe": ["BT003"],
         "pickup": 2,
@@ -585,7 +587,7 @@
       {
         "id": "GT005",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1yqrOB76-N_QELp5k7Q5CO3SHtwZiSBwy=w1402-h253-iv2",
         "location": false,
         "tobe": ["BT004"],
         "pickup": 2,
@@ -597,7 +599,7 @@
       {
         "id": "GT006",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1qRZ2oFcp1xf0-fH7rCcfSaJIKCkG327p=w1402-h253-iv2",
         "location": false,
         "tobe": ["PC002"],
         "pickup": 3,
@@ -609,7 +611,7 @@
       {
         "id": "GT007",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1411LCsmTez2BN_9jXfjgf3CISakFa43O=w1402-h253-iv2",
         "location": false,
         "tobe": ["BT006", "PT003"],
         "pickup": 1,
@@ -621,7 +623,7 @@
       {
         "id": "GT008",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1RcHPbwCGo7CD6zT0hFPBz2lE76QJ9DdE=w1402-h253-iv3",
         "location": false,
         "tobe": ["BT007", "PT004"],
         "pickup": 1,
@@ -633,7 +635,7 @@
       {
         "id": "GT009",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1LPcrOi90g85ZrfpI4fgyDLz5-_4LbssG=w1402-h253-iv2",
         "location": false,
         "tobe": ["PWO002"],
         "pickup": 3,
@@ -645,7 +647,7 @@
       {
         "id": "GT010",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1BCBRpmyvIVWKHUiefEiTnUdFnPGHtKJ3=w1402-h253-iv3",
         "location": false,
         "tobe": ["BT005"],
         "pickup": 3,
@@ -657,7 +659,7 @@
       {
         "id": "GT011",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1x89pwQIFSafSxBk8mlaFAsBTQtJ_x4uI=w1402-h253-iv2",
         "location": false,
         "tobe": ["BWU001"],
         "pickup": 2,
@@ -669,7 +671,7 @@
       {
         "id": "BT001",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/15r8fmjlwY0P9FgwW2F-f7-L0ymUiSitr=w1402-h253-iv2",
         "location": false,
         "tobe": ["PWI002", "YWJ002", "PWL004", "PT001", "PT002", "YT002"],
         "pickup": 1,
@@ -681,7 +683,7 @@
       {
         "id": "BT002",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1-qfeBp42fW5XRQmJrQIBLfkBLaPwizDF=w1402-h253-iv3",
         "location": false,
         "tobe": ["PWE008", "PWF004"],
         "pickup": 2,
@@ -693,7 +695,7 @@
       {
         "id": "BT003",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1xTOFSHJaQ-Rz6mUXj983MGD8C7_fLvXX=w1402-h253-iv2",
         "location": false,
         "tobe": ["PT003"],
         "pickup": 2,
@@ -705,7 +707,7 @@
       {
         "id": "BT004",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1OEExu0PgulUIEvkC8racUldluSUu9jz_=w1402-h253-iv2",
         "location": false,
         "tobe": ["PT004"],
         "pickup": 2,
@@ -717,7 +719,7 @@
       {
         "id": "BT005",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1u0prigdv1deYIvs0jK_XU0KPSVZnxfMd=w1402-h253-iv2",
         "location": false,
         "tobe": ["PWM005"],
         "pickup": 2,
@@ -729,7 +731,7 @@
       {
         "id": "BT006",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/19cMd3JZ-xPeJ1HC_ecH-CZVq7012jQhk=w1402-h253-iv2",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -741,7 +743,7 @@
       {
         "id": "BT007",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1POX6ZbiIKYMS3fvISPWtEKcvLIQEgWpx=w1402-h253-iv3",
         "location": false,
         "tobe": ["PWI007"],
         "pickup": 2,
@@ -753,7 +755,7 @@
       {
         "id": "PT001",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1TheAXkZ_WvwdmcuwloiwYzd2v2V80gle=w1402-h253-iv2",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -765,7 +767,7 @@
       {
         "id": "PT002",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/12EX86pARkU-P5J7dQImP9394_TNjj1eh=w1402-h253-iv2",
         "location": false,
         "tobe": false,
         "pickup": 3,
@@ -777,7 +779,7 @@
       {
         "id": "PT003",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1j-sGnQ6stha_tiJ8-BnO1GBZVp1aXyU0=w1402-h253-iv2",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -789,7 +791,7 @@
       {
         "id": "PT004",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1LFeCKAujXuD72wZ-9zabJcxlmA7v4WCu=w1402-h253-iv2",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -801,7 +803,7 @@
       {
         "id": "YT001",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1wWgP2LLqVj6aBgY3Kps5-h7QUjZQsOTL=w1402-h253-iv2",
         "location": false,
         "tobe": false,
         "pickup": 3,
@@ -813,7 +815,7 @@
       {
         "id": "YT002",
         "sort": "trap",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1ikq6Nw7Efz4VY-JMGyLMUVpyj3peu1aU=w1402-h253-iv2",
         "location": false,
         "tobe": false,
         "pickup": 3,
@@ -829,7 +831,7 @@
     "items": [{
         "id": "WF001",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1yUTxb4eBSMpgsmgChcKnweFMyx2uQl1m=w1402-h253-iv1",
         "location": ["A002", "A004", "A005"],
         "tobe": ["GF016", "BF001", "BF003", "BF012", "BF025"],
         "pickup": 2,
@@ -839,7 +841,7 @@
       {
         "id": "WF002",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1umqdynjyuZwm4UWY5imkC6BTc5t4PItI=w1402-h253-iv1",
         "location": ["A010", "A011", "A013"],
         "tobe": ["GF001", "GF002", "GF017", "BF009", "BF010", "BF015"],
         "pickup": 2,
@@ -849,7 +851,7 @@
       {
         "id": "WF003",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1sBMQ3gh02IdI_zuZAvqVUUTAPTH-WEbG=w1402-h253-iv1",
         "location": ["A005", "A007", "A012"],
         "tobe": ["GF006", "BF004"],
         "pickup": 2,
@@ -859,7 +861,7 @@
       {
         "id": "WF004",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1y_DvLx8aUTLEEg6omZQ52NdmgUGxr6zv=w1402-h253-iv1",
         "location": ["A006", "A011", "A014"],
         "tobe": ["GF018", "GD002", "GD007"],
         "pickup": 2,
@@ -869,7 +871,7 @@
       {
         "id": "WF005",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1BbbJqAn-xJoRjLGgFxAOL9Ga81tFBuJN=w1402-h253-iv1",
         "location": ["A002", "A004", "A007"],
         "tobe": ["GF003", "GF012", "GF020", "BF008"],
         "pickup": 1,
@@ -879,7 +881,7 @@
       {
         "id": "WF007",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/180oAkY10VN8i1hjNW_O8BXo5A1R3d0-2=w1402-h253-iv1",
         "location": ["A009", "A006", "A015"],
         "tobe": ["GF003", "GF006", "GF008", "GF013", "GF014", "GF018", "GF021", "BF011", "BF024"],
         "pickup": 1,
@@ -889,9 +891,9 @@
       {
         "id": "WF008",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1YYk8RsdmFe2g6yl50XOThynLBu96B48-=w1402-h253-iv1",
         "location": ["A000"],
-        "tobe": ["GF012", "GF014", "BF018", "BF025"],
+        "tobe": ["GF012", "GF014", "BF018", "BF022"],
         "pickup": 1,
         "limit": 5,
         "name": "고기"
@@ -899,7 +901,7 @@
       {
         "id": "WF009",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1s1ORq4Z6s8-jdjbQR5FU2N4Kb7k2If0k=w1402-h253-iv1",
         "location": ["A007", "A012", "A016"],
         "tobe": ["GF017", "GF021", "BF014", "BF017", "BF026"],
         "pickup": 1,
@@ -909,7 +911,7 @@
       {
         "id": "WF010",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/11wy1u-Y0ynO6_NiH7siz5VSp7ejjOHUX=w1402-h253-iv1",
         "location": ["A004", "A008", "A010"],
         "tobe": ["BF005", "BF007", "BF013"],
         "pickup": 1,
@@ -919,7 +921,7 @@
       {
         "id": "WF011",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1KEYGPyiFlWlitRLSWmMRuQZQ0L2ciTb3=w1402-h253-iv1",
         "location": ["A004", "A005", "A012"],
         "tobe": ["GF005", "GF010", "BF023", "BD008"],
         "pickup": 1,
@@ -929,7 +931,7 @@
       {
         "id": "WF012",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1x-2lfMiABQMGpJQ-PP_0TQO_VNN09oVX=w1402-h253-iv1",
         "location": ["A003", "A011", "A016"],
         "tobe": ["GF008", "GF024", "BF019", "GD013", "BD006"],
         "pickup": 1,
@@ -939,7 +941,7 @@
       {
         "id": "GF001",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1vRa_tJueIRQ34KDVlG2-ir6tBT7RBZdw=w1402-h253-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -951,7 +953,7 @@
       {
         "id": "GF002",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1qwZxGk4X6h7C0qgGzwf6bwK01o3UP_L2=w1402-h253-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -963,7 +965,7 @@
       {
         "id": "GF003",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1voTbwcyotPk-BMVK-FYRqnPiSYOPLofV=w1402-h253-iv1",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -975,7 +977,7 @@
       {
         "id": "GF004",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1dr8un0iaoRQ9bv6LCQexrzx-nh4_mJI1=w1402-h253-iv1",
         "location": false,
         "tobe": ["BF012", "BF019", "BF024", "BF025"],
         "pickup": 1,
@@ -987,7 +989,7 @@
       {
         "id": "GF005",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1qcX8S4f3yfXAAq6NjlD-2MLMOKf1K_s6=w1402-h253-iv1",
         "location": false,
         "tobe": ["BF006"],
         "pickup": 2,
@@ -999,7 +1001,7 @@
       {
         "id": "GF006",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1PQX8aqjo93WYD8la0upfrs-fG_feP3fT=w1402-h253-iv1",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1011,7 +1013,7 @@
       {
         "id": "GF008",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1MTPTzAkzGLnBFOrVOtTUQLfulTSt3sJq=w1402-h253-iv1",
         "location": false,
         "tobe": ["BF020"],
         "pickup": 1,
@@ -1023,7 +1025,7 @@
       {
         "id": "GF009",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1wr4BgE74Bfg5uNtIczeOf8ijxrzzIbeq=w1402-h253-iv1",
         "location": false,
         "tobe": ["BF006"],
         "pickup": 1,
@@ -1035,9 +1037,9 @@
       {
         "id": "GF010",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1_95FL-RVzmEg5GCi81b-PqgFQbieKgoI=w1402-h253-iv1",
         "location": false,
-        "tobe": ["BF025"],
+        "tobe": ["BF021"],
         "pickup": 2,
         "limit": 5,
         "name": "난초",
@@ -1047,7 +1049,7 @@
       {
         "id": "GF012",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1EWe54s1KelB_ZHop5LqFFiZvQO6TZqkN=w1402-h253-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1059,7 +1061,7 @@
       {
         "id": "GF013",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1Khhr2SDVC8PhkqxvBPFZ_Rqm-BJsED0f=w1402-h253-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1071,7 +1073,7 @@
       {
         "id": "GF014",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/11dvZlAf7gkHp0tk5eD0wGqnLBNVMCUp1=w1402-h253-iv1",
         "location": false,
         "tobe": ["PF002"],
         "pickup": 1,
@@ -1083,19 +1085,19 @@
       {
         "id": "GF016",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1vrVeICheebaHoP2bejTLpIHlZFfmUoPo=w1402-h253-iv1",
         "location": false,
         "tobe": false,
         "pickup": 2,
         "limit": 5,
-        "name": "감자스프",
+        "name": "감자 수프",
         "stack": 1,
         "material": ["WF001", "WD007"]
       },
       {
         "id": "GF017",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1lxJe7C7GNAoioqIYj2ahvCDcrmFMXXwI=w1402-h253-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1107,7 +1109,7 @@
       {
         "id": "GF018",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1osti9cWM7R5H2PA5IEITXtyOHA-DkEHN=w1402-h253-iv1",
         "location": false,
         "tobe": ["BF026"],
         "pickup": 2,
@@ -1119,7 +1121,7 @@
       {
         "id": "GF020",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1JThQgUMEziRXvY-gefi2tG_8no0T-IE8=w1402-h253-iv1",
         "location": false,
         "tobe": false,
         "pickup": 3,
@@ -1131,7 +1133,7 @@
       {
         "id": "GF021",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1Wg_Qw-2yD3Jbv8UltbPONF3LoetOHwP8=w1402-h253-iv1",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1143,7 +1145,7 @@
       {
         "id": "GF024",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1nL_QW_JNbwmjfRKvUDAlXPPirkv4_50X=w1402-h253-iv1",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1155,7 +1157,7 @@
       {
         "id": "BF001",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1nFEp1xQegMxaV5TnQurQBNvpYBhfTcmb=w1402-h253-iv1",
         "location": false,
         "tobe": ["PF001", "PF002"],
         "pickup": 1,
@@ -1167,7 +1169,7 @@
       {
         "id": "BF002",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1Mv-NytQKTCprI0cg4Mhx25BRFTncUeO2=w1402-h253-iv1",
         "location": ["A000"],
         "tobe": false,
         "pickup": 2,
@@ -1177,7 +1179,7 @@
       {
         "id": "BF003",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1w-60YlcPyi4IMdXVqQc5s_pZ1_svWfZX=w1402-h253-iv1",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1189,7 +1191,7 @@
       {
         "id": "BF004",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1wU8LFk_k-iSzXEl_V39tujkIEvklLOia=w1402-h253-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1201,7 +1203,7 @@
       {
         "id": "BF005",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1yvfR4c7uZR1EgJbEV9WFW1yiSiFA6MjG=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1213,7 +1215,7 @@
       {
         "id": "BF006",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/15k_e03P9yiN6txjJ6g_JRnZIoWvTuSRf=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1225,7 +1227,7 @@
       {
         "id": "BF007",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1yscyxTRaBjfEjFTQOPeq27ap766ejl_0=w1402-h253-iv1",
         "location": false,
         "tobe": ["BF008"],
         "pickup": 2,
@@ -1237,7 +1239,7 @@
       {
         "id": "BF008",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1YQF4-GR37HigLWkXSYstPYqPBfAc6Qp6=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1249,7 +1251,7 @@
       {
         "id": "BF009",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1F_TzE4amRtCDcbnmN2iMGtXyHKcT8pmF=w1402-h253-iv1",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1261,7 +1263,7 @@
       {
         "id": "BF010",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/14QSC8XbBlzaBXfWkrL-eL2ucBzlc5r-z=w1402-h253-iv1",
         "location": false,
         "tobe": false,
         "pickup": 3,
@@ -1273,7 +1275,7 @@
       {
         "id": "BF011",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1fo9hSGZ2fd4tFWPGkgAo-dNNxTZ9nbeO=w1402-h253-iv1",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1285,7 +1287,7 @@
       {
         "id": "BF012",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1F146rVZmQRxe9pP3P6YQz-Ldb36y-7dh=w1402-h253-iv1",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1297,7 +1299,7 @@
       {
         "id": "BF013",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1PokJT8RCZP0AOW_KFsQuOI1dvk6YQWKG=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1309,7 +1311,7 @@
       {
         "id": "BF014",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/14eAq8hh4AtjiaWSfa2T2pjNGSP_Dh7ck=w1402-h253-iv1",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1321,7 +1323,7 @@
       {
         "id": "BF015",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1kDhcNrrbhy_BU_nGPpZexS-cnpOQxtEt=w1402-h684-iv2",
         "location": false,
         "tobe": ["PF001"],
         "pickup": 1,
@@ -1333,7 +1335,7 @@
       {
         "id": "BF017",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1-SaIlUJ9PeDat052KB-JpVA07bL2q9sk=w1402-h253-iv1",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1345,7 +1347,7 @@
       {
         "id": "BF018",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/18XSul6RBMvJ8I437YTywKDVhphDKTNqg=w1402-h253-iv1",
         "location": false,
         "tobe": false,
         "pickup": 4,
@@ -1357,7 +1359,7 @@
       {
         "id": "BF019",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1qgLNgXjrcQkb3yOvfoJ_WQH4mLpZ64WH=w1402-h253-iv1",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1369,7 +1371,7 @@
       {
         "id": "BF020",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1PBjtUBv9qjAu5lXn8Ap6czmhIF8GljDp=w1402-h253-iv1",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1379,9 +1381,33 @@
         "material": ["GF008", "WA006"]
       },
       {
+        "id": "BF021",
+        "sort": "food",
+        "img": "https://lh3.google.com/u/0/d/1OkWPPhHnEq8tDpHYa02Jp-9gaxQ_bHlC=w1402-h253-iv1",
+        "location": false,
+        "tobe": false,
+        "pickup": 2,
+        "limit": 5,
+        "name": "힐링 포션",
+        "stack": 1,
+        "material": ["GF010", "WM001"]
+      },
+      {
+        "id": "BF022",
+        "sort": "food",
+        "img": "https://lh3.google.com/u/0/d/13lF133lJP5Y01mzDWYNNFCkpHobbvuls=w1402-h253-iv1",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 5,
+        "name": "후라이드 치킨",
+        "stack": 1,
+        "material": ["WF008", "GM003"]
+      },
+      {
         "id": "BF023",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1lryPW1B6PqlwgILYJhHQn-bPH1Lxca85=w1402-h253-iv1",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1393,7 +1419,7 @@
       {
         "id": "BF024",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1bq-YG_BgFOuzxe8k4JZGsnSarIeslJu2=w1402-h253-iv1",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1405,7 +1431,7 @@
       {
         "id": "BF025",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1fQ4-O9FLU8k6KVhdt8ZfzJ7YzquzRa3J=w1402-h253-iv1",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1415,33 +1441,9 @@
         "material": ["GF004", "WF001"]
       },
       {
-        "id": "BF025",
-        "sort": "food",
-        "img": "",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 5,
-        "name": "후라이드 치킨",
-        "stack": 1,
-        "material": ["WF008", "GM003"]
-      },
-      {
-        "id": "BF025",
-        "sort": "food",
-        "img": "",
-        "location": false,
-        "tobe": false,
-        "pickup": 2,
-        "limit": 5,
-        "name": "힐링 포션",
-        "stack": 1,
-        "material": ["GF010", "WM001"]
-      },
-      {
         "id": "BF026",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1fE2fMF-ij7B_MiJNfgHjf3teT5njAR74=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1451,9 +1453,20 @@
         "material": ["GF018", "WF009"]
       },
       {
-        "id": "PF001",
+        "id": "BF027",
         "sort": "food",
         "img": "",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 5,
+        "name": "성수",
+        "material": ["BM007", "WD002"]
+      },
+      {
+        "id": "PF001",
+        "sort": "food",
+        "img": "https://lh3.google.com/u/0/d/1EYbif0fO9-MwzZPcQVp8RvxAWhZK4r3q=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1465,7 +1478,7 @@
       {
         "id": "PF002",
         "sort": "food",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/188z8ChGsYDGgy1yaNVMWjCLzy_8uB-fJ=w1402-h684-iv3",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1481,7 +1494,7 @@
     "items": [{
         "id": "WD001",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1IzIioV3GXF5jyDCI3hcZDWjuf-0_9Zoi=w1402-h684-iv2",
         "location": ["A002", "A003", "A012"],
         "tobe": ["GF001", "GF020", "GD009", "GD011", "GD014", "BD004"],
         "pickup": 2,
@@ -1491,9 +1504,9 @@
       {
         "id": "WD002",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1PbX7TO3Fa0M11FB-aYqxNvoi_XStkvRF=w1402-h684-iv2",
         "location": ["A005", "A007", "A009", "A012", "A014"],
-        "tobe": ["GM005", "BM002", "GD001", "GD003", "GD005", "GD014", "GD015", "BD011", "BD012"],
+        "tobe": ["GM005", "BM002", "GD001", "GD003", "GD005", "GD014", "GD015", "BD011", "BF027"],
         "pickup": 3,
         "limit": 5,
         "name": "물"
@@ -1501,7 +1514,7 @@
       {
         "id": "WD003",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1t6I5jAKvxhsxKlmsN1jF7ZajDAyck2Dt=w1402-h684-iv2",
         "location": ["A006", "A007", "A014"],
         "tobe": ["PWE004", "PA001", "GF024", "GD006", "GD015", "GD016", "BD001"],
         "pickup": 2,
@@ -1511,7 +1524,7 @@
       {
         "id": "WD004",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1Lpc9FL56owwwCBUOLhpQAxg11qc0zASy=w1402-h684-iv2",
         "location": ["A009", "A011", "A014"],
         "tobe": ["GD007", "GD012", "GD016", "GD017", "BD009"],
         "pickup": 1,
@@ -1521,7 +1534,7 @@
       {
         "id": "WD005",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1Fs9YUZ4V7TZydZ8mu_8WvwE61HxDuzUi=w1402-h684-iv2",
         "location": ["A007", "A010", "A011"],
         "tobe": ["GF013", "GD006", "GD008", "GD010", "BD007"],
         "pickup": 1,
@@ -1531,7 +1544,7 @@
       {
         "id": "WD006",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1MqGwWTqbXJKRBjlwyOMbpBvDVABxX7Jm=w1402-h684-iv2",
         "location": ["A011", "A013", "A014"],
         "tobe": ["BM005", "GD002", "GD009", "GD012"],
         "pickup": 1,
@@ -1541,7 +1554,7 @@
       {
         "id": "WD007",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1wBu4BtuoIRiWL1aD1zD5o3OFzR1ACwqD=w1402-h684-iv2",
         "location": ["A003", "A006", "A009"],
         "tobe": ["GF004", "GF016", "GD010", "GD011", "GD013", "GD017", "BD003"],
         "pickup": 2,
@@ -1551,7 +1564,7 @@
       {
         "id": "GD001",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1WE8rBEEbqrkyQy0Qa7TiVL5ZgGJB8aNK=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWI004", "BH002", "BF007", "BF009", "BF014", "BF023", "BD001", "BD004", "BD006", "BD007"],
         "pickup": 3,
@@ -1563,7 +1576,7 @@
       {
         "id": "GD002",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1H5Pa57w84kfZ9f0PdHCEb2laDO6khxgk=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 3,
@@ -1575,7 +1588,7 @@
       {
         "id": "GD003",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/10cj5Y7gQbsX78OLpizgcesq7s5LjbDvS=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1587,7 +1600,7 @@
       {
         "id": "GD004",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1S1tkM5r3mNeYuk6CEywPvEfdgItqLdDH=w1402-h684-iv2",
         "location": false,
         "tobe": ["BD002", "BD005", "BD008"],
         "pickup": 1,
@@ -1599,7 +1612,7 @@
       {
         "id": "GD005",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/13y5XwsXOrA0vtZIUP6Dqd9cIBR_kHA6b=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1611,7 +1624,7 @@
       {
         "id": "GD006",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1POooZfMgXvaqSJHPBzdmu6-KvVhhlTI8=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1623,7 +1636,7 @@
       {
         "id": "GD007",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1Htura-5-W6wDuIHL26bs7syfdtywIEmQ=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 4,
@@ -1635,7 +1648,7 @@
       {
         "id": "GD008",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1YCQ-aUXL5Mq7q2FZgXlKVqg7Eb68eqSp=w1402-h684-iv2",
         "location": false,
         "tobe": ["BF011", "BD003"],
         "pickup": 2,
@@ -1647,7 +1660,7 @@
       {
         "id": "GD009",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1lvokuO9nEE3mDMn3RmW-tDo3kziVfNPI=w1402-h684-iv2",
         "location": false,
         "tobe": ["PWI004", "BD009", "BD010"],
         "pickup": 3,
@@ -1659,7 +1672,7 @@
       {
         "id": "GD010",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1uT_vmeaRaBxPYH5iTRkZR2ovffqpZbgC=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1671,7 +1684,7 @@
       {
         "id": "GD011",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1IO71XiXM41VKb5fFay3MqpHTs2q7f8aE=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1683,7 +1696,7 @@
       {
         "id": "GD012",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1Hn2YIDB2p_L_C_FKD_rqkFfOQUCXSOfM=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 3,
@@ -1695,7 +1708,7 @@
       {
         "id": "GD013",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1HfKcbCXKcKMNUpNIjiMZQcWeIfIGKD5F=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 3,
@@ -1707,7 +1720,7 @@
       {
         "id": "GD014",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1MePHy5YmmRZ3Gtgng3j4Sp6NbiY1aYU_=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1719,7 +1732,7 @@
       {
         "id": "GD015",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1OsYFlBam3Mt7Hl7v4lxmh9_oq_wrdy_j=w1402-h684-iv2",
         "location": false,
         "tobe": ["BF005"],
         "pickup": 2,
@@ -1731,7 +1744,7 @@
       {
         "id": "GD016",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1g8-lGZBqhtC2x4Q8aymDc8c2q4v8Ovzi=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1743,7 +1756,7 @@
       {
         "id": "GD017",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/18p9lLw45mUxdMDGBz15k86vvEsPINyXH=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1755,7 +1768,7 @@
       {
         "id": "BD001",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1NV0W-UGLPd_X_UwcCuUhY0EDhP996qes=w1402-h684-iv2",
         "location": false,
         "tobe": ["PC012", "PA003"],
         "pickup": 2,
@@ -1767,7 +1780,7 @@
       {
         "id": "BD002",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/12LOX1v0-HnwNyd31snVum6c0kTQDPdfr=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 3,
@@ -1779,7 +1792,7 @@
       {
         "id": "BD003",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1nkAFQPncPn4oLRNfZBu7m8DvavrJUqcz=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 4,
@@ -1791,7 +1804,7 @@
       {
         "id": "BD004",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1rP6fJe8S7JdEviuv3LwhW9UT7YYtGdBk=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1803,7 +1816,7 @@
       {
         "id": "BD005",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1ZdGWoJeB9uxQazQF5t8hXK-wMir4Y7ip=w1402-h684-iv2",
         "location": false,
         "tobe": ["PC013"],
         "pickup": 5,
@@ -1815,7 +1828,7 @@
       {
         "id": "BD006",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1azvziT8wxi_PWPSW7RyNEHLwWKuDq2Vn=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 4,
@@ -1827,7 +1840,7 @@
       {
         "id": "BD007",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1wAtm9BG2AxeumbCmkAILncQwrqLoqSVq=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1839,7 +1852,7 @@
       {
         "id": "BD008",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1Ed8SwmVo9CFPqK-FxS03nbmEIcMMrb5r=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 3,
@@ -1851,7 +1864,7 @@
       {
         "id": "BD009",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1nIpnpV_htY-obVorIVSFE8kTilFo2s_j=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 5,
@@ -1863,7 +1876,7 @@
       {
         "id": "BD010",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1KRBXqznBmlVUiq7zKPrkJqMxbw6th8Ke=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1875,7 +1888,7 @@
       {
         "id": "BD011",
         "sort": "drink",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1KLw4643Ct_uGKvLlkLuoIMEnhrUQU4bu=w1402-h684-iv2",
         "location": false,
         "tobe": false,
         "pickup": 2,
@@ -1883,17 +1896,6 @@
         "name": "셀레네의 눈물",
         "stack": 1,
         "material": ["BM001", "WD002"]
-      },
-      {
-        "id": "BD012",
-        "sort": "food",
-        "img": "",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 5,
-        "name": "성수",
-        "material": ["BM007", "WD002"]
       }
     ]
   }

@@ -4,6 +4,7 @@
     "items": [{
         "id": "WWA001",
         "sort": "dagger",
+        "img": "",
         "location": ["A002", "A006", "A015"],
         "tobe": ["BWA002", "BWT003", "GC006", "GC007", "GH003"],
         "pickup": 1,
@@ -13,6 +14,7 @@
       {
         "id": "WWA002",
         "sort": "dagger",
+        "img": "",
         "location": ["A003", "A011", "A015"],
         "tobe": ["GWA002", "GWA003", "GWI003", "GWJ002", "GM009"],
         "pickup": 1,
@@ -22,6 +24,7 @@
       {
         "id": "WWA003",
         "sort": "dagger",
+        "img": "",
         "location": ["A004", "A010", "A014"],
         "tobe": ["GWA001", "GWD001", "BWQ001", "BA010", "GT007"],
         "pickup": 1,
@@ -31,6 +34,7 @@
       {
         "id": "GWA001",
         "sort": "dagger",
+        "img": "",
         "location": false,
         "tobe": ["BWA001", "PWA003", "YWA001"],
         "pickup": 1,
@@ -44,6 +48,7 @@
       {
         "id": "GWA002",
         "sort": "dagger",
+        "img": "",
         "location": false,
         "tobe": ["BWA002"],
         "pickup": 1,
@@ -67,6 +72,7 @@
       {
         "id": "BWA001",
         "sort": "dagger",
+        "img": "",
         "location": false,
         "tobe": ["PWA001", "PWA002"],
         "pickup": 1,
@@ -81,6 +87,7 @@
       {
         "id": "BWA002",
         "sort": "dagger",
+        "img": "",
         "location": false,
         "tobe": ["PWA004"],
         "pickup": 1,
@@ -106,6 +113,7 @@
       {
         "id": "PWA001",
         "sort": "dagger",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -122,6 +130,7 @@
       {
         "id": "PWA002",
         "sort": "dagger",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -137,6 +146,7 @@
       {
         "id": "PWA003",
         "sort": "dagger",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -151,6 +161,7 @@
       {
         "id": "PWA004",
         "sort": "dagger",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -165,6 +176,7 @@
       {
         "id": "PWA005",
         "sort": "dagger",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -179,6 +191,7 @@
       {
         "id": "YWA001",
         "sort": "dagger",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -198,6 +211,7 @@
     "items": [{
         "id": "WWB001",
         "sort": "twoHand",
+        "img": "",
         "location": ["A009", "A010", "A016"],
         "tobe": ["GWB001", "BWB001", "BWB004", "GWD001", "GA010"],
         "pickup": 1,
@@ -207,6 +221,7 @@
       {
         "id": "GWB001",
         "sort": "twoHand",
+        "img": "",
         "location": false,
         "tobe": ["BWB005", "YWB001"],
         "pickup": 1,
@@ -219,6 +234,7 @@
       {
         "id": "BWB001",
         "sort": "twoHand",
+        "img": "",
         "location": false,
         "tobe": ["BWB002", "BWB003", "YWB002"],
         "pickup": 1,
@@ -231,6 +247,7 @@
       {
         "id": "BWB002",
         "sort": "twoHand",
+        "img": "",
         "location": false,
         "tobe": ["PWB004"],
         "pickup": 1,
@@ -244,6 +261,7 @@
       {
         "id": "BWB003",
         "sort": "twoHand",
+        "img": "",
         "location": false,
         "tobe": ["PWB005"],
         "pickup": 1,
@@ -256,6 +274,7 @@
       {
         "id": "BWB004",
         "sort": "twoHand",
+        "img": "",
         "location": false,
         "tobe": ["BWB006", "PWB001"],
         "pickup": 1,
@@ -269,6 +288,7 @@
       {
         "id": "BWB005",
         "sort": "twoHand",
+        "img": "",
         "location": false,
         "tobe": ["PWB002", "PWB003"],
         "pickup": 1,
@@ -282,6 +302,7 @@
       {
         "id": "BWB006",
         "sort": "twoHand",
+        "img": "",
         "location": false,
         "tobe": ["YWB003"],
         "pickup": 1,
@@ -295,6 +316,7 @@
       {
         "id": "PWB001",
         "sort": "twoHand",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -309,6 +331,7 @@
       {
         "id": "PWB002",
         "sort": "twoHand",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -323,6 +346,7 @@
       {
         "id": "PWB003",
         "sort": "twoHand",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -338,6 +362,7 @@
       {
         "id": "PWB004",
         "sort": "twoHand",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -352,6 +377,7 @@
       {
         "id": "PWB005",
         "sort": "twoHand",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -366,6 +392,7 @@
       {
         "id": "YWB001",
         "sort": "twoHand",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -379,6 +406,7 @@
       {
         "id": "YWB002",
         "sort": "twoHand",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -393,6 +421,7 @@
       {
         "id": "YWB003",
         "sort": "twoHand",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -413,6 +442,7 @@
     "items": [{
         "id": "WWC001",
         "sort": "axe",
+        "img": "",
         "location": ["A005", "A007", "A012", "A013"],
         "tobe": ["GWC001", "GM011"],
         "pickup": 1,
@@ -422,6 +452,7 @@
       {
         "id": "WWC002",
         "sort": "axe",
+        "img": "",
         "location": ["A005", "A008", "A013"],
         "tobe": ["GWC002", "BWQ003", "BT003"],
         "pickup": 1,
@@ -431,6 +462,7 @@
       {
         "id": "GWC001",
         "sort": "axe",
+        "img": "",
         "location": false,
         "tobe": ["BWC002"],
         "pickup": 1,
@@ -444,6 +476,7 @@
       {
         "id": "GWC002",
         "sort": "axe",
+        "img": "",
         "location": false,
         "tobe": ["BWC001", "BWC003"],
         "pickup": 1,
@@ -456,6 +489,7 @@
       {
         "id": "BWC001",
         "sort": "axe",
+        "img": "",
         "location": false,
         "tobe": ["PWC004", "PWC005"],
         "pickup": 1,
@@ -469,6 +503,7 @@
       {
         "id": "BWC002",
         "sort": "axe",
+        "img": "",
         "location": false,
         "tobe": ["PWC002", "PWC003"],
         "pickup": 1,
@@ -482,6 +517,7 @@
       {
         "id": "BWC003",
         "sort": "axe",
+        "img": "",
         "location": false,
         "tobe": ["PWC001", "YWC001"],
         "pickup": 1,
@@ -495,6 +531,7 @@
       {
         "id": "PWC001",
         "sort": "axe",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -509,6 +546,7 @@
       {
         "id": "PWC002",
         "sort": "axe",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -523,6 +561,7 @@
       {
         "id": "PWC003",
         "sort": "axe",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -537,6 +576,7 @@
       {
         "id": "PWC004",
         "sort": "axe",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -551,6 +591,7 @@
       {
         "id": "PWC005",
         "sort": "axe",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -566,6 +607,7 @@
       {
         "id": "YWC001",
         "sort": "axe",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -585,6 +627,7 @@
     "items": [{
         "id": "WWD001",
         "sort": "dual",
+        "img": "",
         "location": false,
         "tobe": ["BWD001", "BWD002", "PWD002", "YWD001"],
         "pickup": 1,
@@ -595,6 +638,7 @@
       }, {
         "id": "GWD001",
         "sort": "dual",
+        "img": "",
         "location": false,
         "tobe": ["PWD003"],
         "pickup": 1,
@@ -607,6 +651,7 @@
       {
         "id": "BWD001",
         "sort": "dual",
+        "img": "",
         "location": false,
         "tobe": ["PWD001"],
         "pickup": 1,
@@ -620,6 +665,7 @@
       {
         "id": "BWD002",
         "sort": "dual",
+        "img": "",
         "location": false,
         "tobe": ["PWD004"],
         "pickup": 1,
@@ -632,6 +678,7 @@
       {
         "id": "PWD001",
         "sort": "dual",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -647,6 +694,7 @@
       {
         "id": "PWD002",
         "sort": "dual",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -661,6 +709,7 @@
       {
         "id": "PWD003",
         "sort": "dual",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -674,6 +723,7 @@
       {
         "id": "PWD004",
         "sort": "dual",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -687,6 +737,7 @@
       {
         "id": "PWD005",
         "sort": "dual",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -703,6 +754,7 @@
       {
         "id": "YWD001",
         "sort": "dual",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -722,6 +774,7 @@
     "items": [{
         "id": "WWE001",
         "sort": "glove",
+        "img": "",
         "location": ["A007", "A012"],
         "tobe": ["GWA003", "GWE002"],
         "pickup": 1,
@@ -731,6 +784,7 @@
       {
         "id": "WWE002",
         "sort": "glove",
+        "img": "",
         "location": ["A006", "A014"],
         "tobe": ["GWE001", "BWE001"],
         "pickup": 1,
@@ -740,6 +794,7 @@
       {
         "id": "GWE001",
         "sort": "glove",
+        "img": "",
         "location": false,
         "tobe": ["BWE006", "PWE008", "YWE001"],
         "pickup": 1,
@@ -752,6 +807,7 @@
       {
         "id": "GWE002",
         "sort": "glove",
+        "img": "",
         "location": false,
         "tobe": ["BWE002", "BWE005"],
         "pickup": 1,
@@ -764,6 +820,7 @@
       {
         "id": "BWE001",
         "sort": "glove",
+        "img": "",
         "location": false,
         "tobe": ["BWE003", "BWE004"],
         "pickup": 1,
@@ -777,6 +834,7 @@
       {
         "id": "BWE002",
         "sort": "glove",
+        "img": "",
         "location": false,
         "tobe": ["PWE003"],
         "pickup": 1,
@@ -790,6 +848,7 @@
       {
         "id": "BWE003",
         "sort": "glove",
+        "img": "",
         "location": false,
         "tobe": ["PWE001", "PWE006"],
         "pickup": 1,
@@ -804,6 +863,7 @@
       {
         "id": "BWE004",
         "sort": "glove",
+        "img": "",
         "location": false,
         "tobe": ["PWE002"],
         "pickup": 1,
@@ -818,6 +878,7 @@
       {
         "id": "BWE005",
         "sort": "glove",
+        "img": "",
         "location": false,
         "tobe": ["PWE007"],
         "pickup": 1,
@@ -831,6 +892,7 @@
       {
         "id": "BWE006",
         "sort": "glove",
+        "img": "",
         "location": false,
         "tobe": ["PWE004", "PWE005"],
         "pickup": 1,
@@ -844,6 +906,7 @@
       {
         "id": "PWE001",
         "sort": "glove",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -859,6 +922,7 @@
       {
         "id": "PWE002",
         "sort": "glove",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -873,6 +937,7 @@
       {
         "id": "PWE003",
         "sort": "glove",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -887,6 +952,7 @@
       {
         "id": "PWE004",
         "sort": "glove",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -901,6 +967,7 @@
       {
         "id": "PWE005",
         "sort": "glove",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -916,6 +983,7 @@
       {
         "id": "PWE006",
         "sort": "glove",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -932,6 +1000,7 @@
       {
         "id": "PWE007",
         "sort": "glove",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -946,6 +1015,7 @@
       {
         "id": "PWE008",
         "sort": "glove",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -959,6 +1029,7 @@
       {
         "id": "YWE001",
         "sort": "glove",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -977,6 +1048,7 @@
     "items": [{
         "id": "WWF001",
         "sort": "tonfa",
+        "img": "",
         "location": ["A004", "A005", "A007", "A012", "A016"],
         "tobe": ["GWC002", "GWF001", "GWG001", "PWJ007", "PWK001", "GWL002", "GWQ001", "WWT001", "BWT005", "GA007", "GT004"],
         "pickup": 1,
@@ -986,6 +1058,7 @@
       {
         "id": "GWF001",
         "sort": "tonfa",
+        "img": "",
         "location": false,
         "tobe": ["BWF001", "BWF002", "PWF004"],
         "pickup": 1,
@@ -999,6 +1072,7 @@
       {
         "id": "BWF001",
         "sort": "tonfa",
+        "img": "",
         "location": false,
         "tobe": ["PWF001", "YWF001"],
         "pickup": 1,
@@ -1012,6 +1086,7 @@
       {
         "id": "BWF002",
         "sort": "tonfa",
+        "img": "",
         "location": false,
         "tobe": ["PWF002", "PWF003"],
         "pickup": 1,
@@ -1025,6 +1100,7 @@
       {
         "id": "PWF001",
         "sort": "tonfa",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1039,6 +1115,7 @@
       {
         "id": "PWF002",
         "sort": "tonfa",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1054,6 +1131,7 @@
       {
         "id": "PWF003",
         "sort": "tonfa",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1068,6 +1146,7 @@
       {
         "id": "PWF004",
         "sort": "tonfa",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1083,6 +1162,7 @@
       {
         "id": "YWF001",
         "sort": "tonfa",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1102,6 +1182,7 @@
     "items": [{
         "id": "WWG001",
         "sort": "bat",
+        "img": "",
         "location": ["A004", "A005", "A010"],
         "tobe": ["BWC002", "PWF002", "GWG001", "BWG003", "BWG004", "GWP001", "GA008"],
         "pickup": 1,
@@ -1111,6 +1192,7 @@
       {
         "id": "WWG002",
         "sort": "bat",
+        "img": "",
         "location": ["A000"],
         "tobe": ["GWA001", "GWF001", "BWJ004", "YWS001", "GC004", "GH002", "GS007", "GT011", "GF004"],
         "pickup": 1,
@@ -1120,6 +1202,7 @@
       {
         "id": "GWG001",
         "sort": "bat",
+        "img": "",
         "location": false,
         "tobe": ["BWG001", "BWG002", "PWG004", "YWG001"],
         "pickup": 1,
@@ -1132,6 +1215,7 @@
       {
         "id": "BWG001",
         "sort": "bat",
+        "img": "",
         "location": false,
         "tobe": ["PWG002"],
         "pickup": 1,
@@ -1145,6 +1229,7 @@
       {
         "id": "BWG002",
         "sort": "bat",
+        "img": "",
         "location": false,
         "tobe": ["PWG003"],
         "pickup": 1,
@@ -1158,6 +1243,7 @@
       {
         "id": "BWG003",
         "sort": "bat",
+        "img": "",
         "location": false,
         "tobe": ["PWG001"],
         "pickup": 1,
@@ -1172,6 +1258,7 @@
       {
         "id": "BWG004",
         "sort": "bat",
+        "img": "",
         "location": false,
         "tobe": ["PWG005"],
         "pickup": 1,
@@ -1185,6 +1272,7 @@
       {
         "id": "PWG001",
         "sort": "bat",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1202,6 +1290,7 @@
       {
         "id": "PWG002",
         "sort": "bat",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1216,6 +1305,7 @@
       {
         "id": "PWG003",
         "sort": "bat",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1230,6 +1320,7 @@
       {
         "id": "PWG004",
         "sort": "bat",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1245,6 +1336,7 @@
       {
         "id": "PWG005",
         "sort": "bat",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1258,6 +1350,7 @@
       {
         "id": "YWG001",
         "sort": "bat",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1277,6 +1370,7 @@
     "items": [{
         "id": "WWH001",
         "sort": "whip",
+        "img": "",
         "location": ["A008", "A015"],
         "tobe": ["GWH001", "GWH002"],
         "pickup": 1,
@@ -1286,6 +1380,7 @@
       {
         "id": "GWH001",
         "sort": "whip",
+        "img": "",
         "location": false,
         "tobe": ["BWH001", "YWH001"],
         "pickup": 1,
@@ -1299,6 +1394,7 @@
       {
         "id": "GWH002",
         "sort": "whip",
+        "img": "",
         "location": false,
         "tobe": ["BWH002"],
         "pickup": 1,
@@ -1311,6 +1407,7 @@
       {
         "id": "BWH001",
         "sort": "whip",
+        "img": "",
         "location": false,
         "tobe": ["PWH001"],
         "pickup": 1,
@@ -1324,6 +1421,7 @@
       {
         "id": "BWH002",
         "sort": "whip",
+        "img": "",
         "location": false,
         "tobe": ["PWH002", "PWH003"],
         "pickup": 1,
@@ -1337,6 +1435,7 @@
       {
         "id": "PWH001",
         "sort": "whip",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1352,6 +1451,7 @@
       {
         "id": "PWH002",
         "sort": "whip",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1367,6 +1467,7 @@
       {
         "id": "PWH003",
         "sort": "whip",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1382,6 +1483,7 @@
       {
         "id": "YWH001",
         "sort": "whip",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1401,6 +1503,7 @@
     "items": [{
         "id": "WWI001",
         "sort": "throw",
+        "img": "",
         "location": ["A008", "A012", "A016"],
         "tobe": ["GWI001", "BWI003", "BWP001", "GS004", "GT006"],
         "pickup": 1,
@@ -1410,6 +1513,7 @@
       {
         "id": "WWI002",
         "sort": "throw",
+        "img": "",
         "location": ["A008", "A011"],
         "tobe": ["GWI003"],
         "pickup": 1,
@@ -1419,6 +1523,7 @@
       {
         "id": "GWI001",
         "sort": "throw",
+        "img": "",
         "location": false,
         "tobe": ["PWI002"],
         "pickup": 1,
@@ -1432,6 +1537,7 @@
       {
         "id": "GWI002",
         "sort": "throw",
+        "img": "",
         "location": false,
         "tobe": ["BWI002", "PWI001"],
         "pickup": 1,
@@ -1445,6 +1551,7 @@
       {
         "id": "GWI003",
         "sort": "throw",
+        "img": "",
         "location": false,
         "tobe": ["BWI001", "PWI007"],
         "pickup": 1,
@@ -1457,6 +1564,7 @@
       {
         "id": "BWI001",
         "sort": "throw",
+        "img": "",
         "location": false,
         "tobe": ["PWI003"],
         "pickup": 1,
@@ -1469,6 +1577,7 @@
       {
         "id": "BWI002",
         "sort": "throw",
+        "img": "",
         "location": false,
         "tobe": ["PWI004"],
         "pickup": 1,
@@ -1482,6 +1591,7 @@
       {
         "id": "BWI003",
         "sort": "throw",
+        "img": "",
         "location": false,
         "tobe": ["PWI001", "YWI001"],
         "pickup": 1,
@@ -1495,6 +1605,7 @@
       {
         "id": "BWI004",
         "sort": "throw",
+        "img": "",
         "location": false,
         "tobe": ["BWI005"],
         "pickup": 1,
@@ -1507,6 +1618,7 @@
       {
         "id": "BWI005",
         "sort": "throw",
+        "img": "",
         "location": false,
         "tobe": ["PWI005"],
         "pickup": 1,
@@ -1520,6 +1632,7 @@
       {
         "id": "BWI006",
         "sort": "throw",
+        "img": "",
         "location": false,
         "tobe": ["PWI008"],
         "pickup": 1,
@@ -1533,6 +1646,7 @@
       {
         "id": "PWI001",
         "sort": "throw",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1548,6 +1662,7 @@
       {
         "id": "PWI002",
         "sort": "throw",
+        "img": "",
         "location": false,
         "tobe": ["PWI006"],
         "pickup": 1,
@@ -1562,6 +1677,7 @@
       {
         "id": "PWI003",
         "sort": "throw",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1577,6 +1693,7 @@
       {
         "id": "PWI004",
         "sort": "throw",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1591,6 +1708,7 @@
       {
         "id": "PWI005",
         "sort": "throw",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1606,6 +1724,7 @@
       {
         "id": "PWI006",
         "sort": "throw",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1620,6 +1739,7 @@
       {
         "id": "PWI007",
         "sort": "throw",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1634,6 +1754,7 @@
       {
         "id": "PWI008",
         "sort": "throw",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1650,6 +1771,7 @@
       {
         "id": "YWI001",
         "sort": "throw",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1669,6 +1791,7 @@
     "items": [{
         "id": "WWJ001",
         "sort": "shuriken",
+        "img": "",
         "location": ["A006", "A009", "A015"],
         "tobe": ["GWA002", "GWH002", "GWJ003", "GWJ004", "BWR002", "BC004"],
         "pickup": 1,
@@ -1678,6 +1801,7 @@
       {
         "id": "WWJ002",
         "sort": "shuriken",
+        "img": "",
         "location": ["A003", "A014"],
         "tobe": ["GWJ002", "PWT001", "GA002"],
         "pickup": 1,
@@ -1687,6 +1811,7 @@
       {
         "id": "WWJ003",
         "sort": "shuriken",
+        "img": "",
         "location": ["A008", "A009", "A015"],
         "tobe": ["BWJ001", "GM006"],
         "pickup": 1,
@@ -1696,6 +1821,7 @@
       {
         "id": "GWJ001",
         "sort": "shuriken",
+        "img": "",
         "location": false,
         "tobe": ["BWJ007"],
         "pickup": 1,
@@ -1710,6 +1836,7 @@
       {
         "id": "GWJ002",
         "sort": "shuriken",
+        "img": "",
         "location": false,
         "tobe": ["BWJ001", "PWJ001"],
         "pickup": 1,
@@ -1723,6 +1850,7 @@
       {
         "id": "GWJ003",
         "sort": "shuriken",
+        "img": "",
         "location": false,
         "tobe": ["BWJ003", "YWJ001"],
         "pickup": 1,
@@ -1735,6 +1863,7 @@
       {
         "id": "GWJ004",
         "sort": "shuriken",
+        "img": "",
         "location": false,
         "tobe": ["BWJ002"],
         "pickup": 1,
@@ -1748,6 +1877,7 @@
       {
         "id": "BWJ001",
         "sort": "shuriken",
+        "img": "",
         "location": false,
         "tobe": ["PWJ002", "PWJ008"],
         "pickup": 1,
@@ -1761,6 +1891,7 @@
       {
         "id": "BWJ002",
         "sort": "shuriken",
+        "img": "",
         "location": false,
         "tobe": ["BWJ004"],
         "pickup": 1,
@@ -1775,6 +1906,7 @@
       {
         "id": "BWJ003",
         "sort": "shuriken",
+        "img": "",
         "location": false,
         "tobe": ["BWJ006"],
         "pickup": 1,
@@ -1787,6 +1919,7 @@
       {
         "id": "BWJ004",
         "sort": "shuriken",
+        "img": "",
         "location": false,
         "tobe": ["PWJ003", "PWJ005"],
         "pickup": 1,
@@ -1801,6 +1934,7 @@
       {
         "id": "BWJ005",
         "sort": "shuriken",
+        "img": "",
         "location": false,
         "tobe": ["PWJ004"],
         "pickup": 1,
@@ -1814,6 +1948,7 @@
       {
         "id": "BWJ006",
         "sort": "shuriken",
+        "img": "",
         "location": false,
         "tobe": ["PWJ007"],
         "pickup": 1,
@@ -1827,6 +1962,7 @@
       {
         "id": "BWJ007",
         "sort": "shuriken",
+        "img": "",
         "location": false,
         "tobe": ["PWJ006"],
         "pickup": 1,
@@ -1841,6 +1977,7 @@
       {
         "id": "PWJ001",
         "sort": "shuriken",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1857,6 +1994,7 @@
       {
         "id": "PWJ002",
         "sort": "shuriken",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1873,6 +2011,7 @@
       {
         "id": "PWJ003",
         "sort": "shuriken",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1890,6 +2029,7 @@
       {
         "id": "PWJ004",
         "sort": "shuriken",
+        "img": "",
         "location": false,
         "tobe": ["YWJ002"],
         "pickup": 1,
@@ -1904,6 +2044,7 @@
       {
         "id": "PWJ005",
         "sort": "shuriken",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1920,6 +2061,7 @@
       {
         "id": "PWJ006",
         "sort": "shuriken",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1936,6 +2078,7 @@
       {
         "id": "PWJ007",
         "sort": "shuriken",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1950,6 +2093,7 @@
       {
         "id": "PWJ008",
         "sort": "shuriken",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1964,6 +2108,7 @@
       {
         "id": "YWJ001",
         "sort": "shuriken",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -1979,6 +2124,7 @@
       {
         "id": "YWJ002",
         "sort": "shuriken",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2000,6 +2146,7 @@
     "items": [{
         "id": "WWK001",
         "sort": "bow",
+        "img": "",
         "location": ["A009", "A016"],
         "tobe": ["GWK001", "GWK002"],
         "pickup": 1,
@@ -2009,6 +2156,7 @@
       {
         "id": "GWK001",
         "sort": "bow",
+        "img": "",
         "location": false,
         "tobe": ["BWK002", "BWK005"],
         "pickup": 1,
@@ -2021,6 +2169,7 @@
       {
         "id": "GWK002",
         "sort": "bow",
+        "img": "",
         "location": false,
         "tobe": ["BWK001", "BWK004", "BWK006", "YWK02"],
         "pickup": 1,
@@ -2033,6 +2182,7 @@
       {
         "id": "BWK001",
         "sort": "bow",
+        "img": "",
         "location": false,
         "tobe": ["PWK003"],
         "pickup": 1,
@@ -2046,6 +2196,7 @@
       {
         "id": "BWK002",
         "sort": "bow",
+        "img": "",
         "location": false,
         "tobe": ["PWK003", "PWK006", "YWK001"],
         "pickup": 1,
@@ -2058,6 +2209,7 @@
       {
         "id": "BWK003",
         "sort": "bow",
+        "img": "",
         "location": false,
         "tobe": ["PWK001"],
         "pickup": 1,
@@ -2071,6 +2223,7 @@
       {
         "id": "BWK004",
         "sort": "bow",
+        "img": "",
         "location": false,
         "tobe": ["BWK003", "PWK005"],
         "pickup": 1,
@@ -2084,6 +2237,7 @@
       {
         "id": "BWK005",
         "sort": "bow",
+        "img": "",
         "location": false,
         "tobe": ["PWK002"],
         "pickup": 1,
@@ -2096,6 +2250,7 @@
       {
         "id": "BWK006",
         "sort": "bow",
+        "img": "",
         "location": false,
         "tobe": ["PWK004"],
         "pickup": 1,
@@ -2109,6 +2264,7 @@
       {
         "id": "PWK001",
         "sort": "bow",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2123,6 +2279,7 @@
       {
         "id": "PWK002",
         "sort": "bow",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2138,6 +2295,7 @@
       {
         "id": "PWK003",
         "sort": "bow",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2154,6 +2312,7 @@
       {
         "id": "PWK004",
         "sort": "bow",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2169,6 +2328,7 @@
       {
         "id": "PWK005",
         "sort": "bow",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2183,6 +2343,7 @@
       {
         "id": "PWK006",
         "sort": "bow",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2199,6 +2360,7 @@
       {
         "id": "YWK001",
         "sort": "bow",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2213,6 +2375,7 @@
       {
         "id": "YWK02",
         "sort": "bow",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2231,6 +2394,7 @@
     "items": [{
         "id": "WWL001",
         "sort": "crossbow",
+        "img": "",
         "location": ["A009", "A012"],
         "tobe": ["GWL001", "GWL002", "GA012"],
         "pickup": 1,
@@ -2240,6 +2404,7 @@
       {
         "id": "GWL001",
         "sort": "crossbow",
+        "img": "",
         "location": false,
         "tobe": ["BWL001", "BWL003"],
         "pickup": 1,
@@ -2252,6 +2417,7 @@
       {
         "id": "GWL002",
         "sort": "crossbow",
+        "img": "",
         "location": false,
         "tobe": ["BWL002", "BWL004", "YWL001"],
         "pickup": 1,
@@ -2264,6 +2430,7 @@
       {
         "id": "BWL001",
         "sort": "crossbow",
+        "img": "",
         "location": false,
         "tobe": ["PWL004"],
         "pickup": 1,
@@ -2276,6 +2443,7 @@
       {
         "id": "BWL002",
         "sort": "crossbow",
+        "img": "",
         "location": false,
         "tobe": ["PWL003"],
         "pickup": 1,
@@ -2289,6 +2457,7 @@
       {
         "id": "BWL003",
         "sort": "crossbow",
+        "img": "",
         "location": false,
         "tobe": ["PWL002"],
         "pickup": 1,
@@ -2301,6 +2470,7 @@
       {
         "id": "BWL004",
         "sort": "crossbow",
+        "img": "",
         "location": false,
         "tobe": ["PWL001"],
         "pickup": 1,
@@ -2313,6 +2483,7 @@
       {
         "id": "PWL001",
         "sort": "crossbow",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2327,6 +2498,7 @@
       {
         "id": "PWL002",
         "sort": "crossbow",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2340,6 +2512,7 @@
       {
         "id": "PWL003",
         "sort": "crossbow",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2354,6 +2527,7 @@
       {
         "id": "PWL004",
         "sort": "crossbow",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2368,6 +2542,7 @@
       {
         "id": "YWL001",
         "sort": "crossbow",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2387,6 +2562,7 @@
     "items": [{
         "id": "WWM001",
         "sort": "pistol",
+        "img": "",
         "location": ["A008", "A013", "A014"],
         "tobe": ["GWM001", "GWM002", "BWM002", "BWM004", "GWU001", "GA011"],
         "pickup": 1,
@@ -2396,6 +2572,7 @@
       {
         "id": "GWM001",
         "sort": "pistol",
+        "img": "",
         "location": false,
         "tobe": ["BWM002", "BWM003"],
         "pickup": 1,
@@ -2410,6 +2587,7 @@
       {
         "id": "GWM002",
         "sort": "pistol",
+        "img": "",
         "location": false,
         "tobe": ["BWM001", "PWM003", "YWM001"],
         "pickup": 1,
@@ -2423,6 +2601,7 @@
       {
         "id": "BWM001",
         "sort": "pistol",
+        "img": "",
         "location": false,
         "tobe": ["PWM002", "PWM005"],
         "pickup": 1,
@@ -2437,6 +2616,7 @@
       {
         "id": "BWM002",
         "sort": "pistol",
+        "img": "",
         "location": false,
         "tobe": ["PWM001"],
         "pickup": 1,
@@ -2451,6 +2631,7 @@
       {
         "id": "BWM003",
         "sort": "pistol",
+        "img": "",
         "location": false,
         "tobe": ["PWM004"],
         "pickup": 1,
@@ -2466,6 +2647,7 @@
       {
         "id": "BWM004",
         "sort": "pistol",
+        "img": "",
         "location": false,
         "tobe": ["PWM006"],
         "pickup": 1,
@@ -2480,6 +2662,7 @@
       {
         "id": "PWM001",
         "sort": "pistol",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2497,6 +2680,7 @@
       {
         "id": "PWM002",
         "sort": "pistol",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2513,6 +2697,7 @@
       {
         "id": "PWM003",
         "sort": "pistol",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2529,6 +2714,7 @@
       {
         "id": "PWM004",
         "sort": "pistol",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2546,6 +2732,7 @@
       {
         "id": "PWM005",
         "sort": "pistol",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2563,6 +2750,7 @@
       {
         "id": "PWM006",
         "sort": "pistol",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2579,6 +2767,7 @@
       {
         "id": "YWM001",
         "sort": "pistol",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2601,6 +2790,7 @@
     "items": [{
         "id": "WWN001",
         "sort": "rifle",
+        "img": "",
         "location": ["A008", "A011", "A014"],
         "tobe": ["GWN001", "BWU003", "GA012"],
         "pickup": 1,
@@ -2610,6 +2800,7 @@
       {
         "id": "GWN001",
         "sort": "rifle",
+        "img": "",
         "location": false,
         "tobe": ["BWN001", "BWN002", "PWN001", "YWN002"],
         "pickup": 1,
@@ -2624,6 +2815,7 @@
       {
         "id": "BWN001",
         "sort": "rifle",
+        "img": "",
         "location": false,
         "tobe": ["PWN002", "PWN003"],
         "pickup": 1,
@@ -2638,6 +2830,7 @@
       {
         "id": "BWN002",
         "sort": "rifle",
+        "img": "",
         "location": false,
         "tobe": ["PWN004"],
         "pickup": 1,
@@ -2652,6 +2845,7 @@
       {
         "id": "PWN001",
         "sort": "rifle",
+        "img": "",
         "location": false,
         "tobe": ["YWN001"],
         "pickup": 1,
@@ -2668,6 +2862,7 @@
       {
         "id": "PWN002",
         "sort": "rifle",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2683,6 +2878,7 @@
       {
         "id": "PWN003",
         "sort": "rifle",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2699,6 +2895,7 @@
       {
         "id": "PWN004",
         "sort": "rifle",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2715,6 +2912,7 @@
       {
         "id": "YWN001",
         "sort": "rifle",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2731,6 +2929,7 @@
       {
         "id": "YWN002",
         "sort": "rifle",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2751,6 +2950,7 @@
     "items": [{
         "id": "WWO001",
         "sort": "sniper",
+        "img": "",
         "location": ["A010", "A012"],
         "tobe": ["GWO001"],
         "pickup": 1,
@@ -2760,6 +2960,7 @@
       {
         "id": "GWO001",
         "sort": "sniper",
+        "img": "",
         "location": false,
         "tobe": ["BWO001", "BWO002", "BWO003", "YWO002"],
         "pickup": 1,
@@ -2773,6 +2974,7 @@
       {
         "id": "BWO001",
         "sort": "sniper",
+        "img": "",
         "location": false,
         "tobe": ["PWO001", "PWO002"],
         "pickup": 1,
@@ -2786,6 +2988,7 @@
       {
         "id": "BWO002",
         "sort": "sniper",
+        "img": "",
         "location": false,
         "tobe": ["PWO003", "YWO001"],
         "pickup": 1,
@@ -2800,6 +3003,7 @@
       {
         "id": "BWO003",
         "sort": "sniper",
+        "img": "",
         "location": false,
         "tobe": ["PWO004"],
         "pickup": 1,
@@ -2814,6 +3018,7 @@
       {
         "id": "PWO001",
         "sort": "sniper",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2830,6 +3035,7 @@
       {
         "id": "PWO002",
         "sort": "sniper",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2845,6 +3051,7 @@
       {
         "id": "PWO003",
         "sort": "sniper",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2860,6 +3067,7 @@
       {
         "id": "PWO004",
         "sort": "sniper",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2876,6 +3084,7 @@
       {
         "id": "YWO001",
         "sort": "sniper",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2891,6 +3100,7 @@
       {
         "id": "YWO002",
         "sort": "sniper",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2911,6 +3121,7 @@
     "items": [{
         "id": "WWP001",
         "sort": "hammer",
+        "img": "",
         "location": ["A002", "A005", "A013"],
         "tobe": ["GWP001", "BWP003", "GM004", "GM010", "GM014"],
         "pickup": 1,
@@ -2920,6 +3131,7 @@
       {
         "id": "GWP001",
         "sort": "hammer",
+        "img": "",
         "location": false,
         "tobe": ["BWP001", "BWP002"],
         "pickup": 1,
@@ -2932,6 +3144,7 @@
       {
         "id": "BWP001",
         "sort": "hammer",
+        "img": "",
         "location": false,
         "tobe": ["PWP001", "PWP004"],
         "pickup": 1,
@@ -2944,6 +3157,7 @@
       {
         "id": "BWP002",
         "sort": "hammer",
+        "img": "",
         "location": false,
         "tobe": ["PWP002", "PWP003", "YWP001"],
         "pickup": 1,
@@ -2956,6 +3170,7 @@
       {
         "id": "BWP003",
         "sort": "hammer",
+        "img": "",
         "location": false,
         "tobe": ["PWP005"],
         "pickup": 1,
@@ -2970,6 +3185,7 @@
       {
         "id": "PWP001",
         "sort": "hammer",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2984,6 +3200,7 @@
       {
         "id": "PWP002",
         "sort": "hammer",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -2998,6 +3215,7 @@
       {
         "id": "PWP003",
         "sort": "hammer",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3012,6 +3230,7 @@
       {
         "id": "PWP004",
         "sort": "hammer",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3025,6 +3244,7 @@
       {
         "id": "PWP005",
         "sort": "hammer",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3040,6 +3260,7 @@
       {
         "id": "YWP001",
         "sort": "hammer",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3059,6 +3280,7 @@
     "items": [{
         "id": "WWQ001",
         "sort": "spear",
+        "img": "",
         "location": ["A004", "A005", "A012"],
         "tobe": ["BWI006", "PWL002", "BWO001", "GWQ001", "BWQ002"],
         "pickup": 1,
@@ -3068,6 +3290,7 @@
       {
         "id": "GWQ001",
         "sort": "spear",
+        "img": "",
         "location": false,
         "tobe": ["BWQ001", "BWQ004", "YWQ001"],
         "pickup": 1,
@@ -3080,6 +3303,7 @@
       {
         "id": "BWQ001",
         "sort": "spear",
+        "img": "",
         "location": false,
         "tobe": ["PWQ003", "PWQ004"],
         "pickup": 1,
@@ -3092,6 +3316,7 @@
       {
         "id": "BWQ002",
         "sort": "spear",
+        "img": "",
         "location": false,
         "tobe": ["BWQ003", "PWQ004", "YWQ002"],
         "pickup": 1,
@@ -3104,6 +3329,7 @@
       {
         "id": "BWQ003",
         "sort": "spear",
+        "img": "",
         "location": false,
         "tobe": ["PWQ005", "PWQ006"],
         "pickup": 1,
@@ -3116,6 +3342,7 @@
       {
         "id": "BWQ004",
         "sort": "spear",
+        "img": "",
         "location": false,
         "tobe": ["PWQ001", "PWQ002"],
         "pickup": 1,
@@ -3129,6 +3356,7 @@
       {
         "id": "PWQ001",
         "sort": "spear",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3143,6 +3371,7 @@
       {
         "id": "PWQ002",
         "sort": "spear",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3157,6 +3386,7 @@
       {
         "id": "PWQ003",
         "sort": "spear",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3170,6 +3400,7 @@
       {
         "id": "PWQ004",
         "sort": "spear",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3184,6 +3415,7 @@
       {
         "id": "PWQ005",
         "sort": "spear",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3200,6 +3432,7 @@
       {
         "id": "PWQ006",
         "sort": "spear",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3215,6 +3448,7 @@
       {
         "id": "YWQ001",
         "sort": "spear",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3228,6 +3462,7 @@
       {
         "id": "YWQ002",
         "sort": "spear",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3246,6 +3481,7 @@
     "items": [{
         "id": "WWR001",
         "sort": "nunchaku",
+        "img": "",
         "location": ["A002", "A007", "A013"],
         "tobe": ["GWC001", "GWR001", "BC001", "BC002", "GH004", "GS002"],
         "pickup": 1,
@@ -3255,6 +3491,7 @@
       {
         "id": "GWR001",
         "sort": "nunchaku",
+        "img": "",
         "location": false,
         "tobe": ["BWR001", "BWR002"],
         "pickup": 1,
@@ -3267,6 +3504,7 @@
       {
         "id": "BWR001",
         "sort": "nunchaku",
+        "img": "",
         "location": false,
         "tobe": ["PWR001", "PWR003"],
         "pickup": 1,
@@ -3280,6 +3518,7 @@
       {
         "id": "BWR002",
         "sort": "nunchaku",
+        "img": "",
         "location": false,
         "tobe": ["PWR002", "YWR001"],
         "pickup": 1,
@@ -3292,6 +3531,7 @@
       {
         "id": "PWR001",
         "sort": "nunchaku",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3306,6 +3546,7 @@
       {
         "id": "PWR002",
         "sort": "nunchaku",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3319,6 +3560,7 @@
       {
         "id": "PWR003",
         "sort": "nunchaku",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3335,6 +3577,7 @@
       {
         "id": "YWR001",
         "sort": "nunchaku",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3353,6 +3596,7 @@
     "items": [{
         "id": "WWS001",
         "sort": "rapier",
+        "img": "",
         "location": ["A002", "A006", "A014"],
         "tobe": ["GWJ001", "BWJ005", "GWS001", "BWS002", "GB002", "GF009"],
         "pickup": 1,
@@ -3362,6 +3606,7 @@
       {
         "id": "GWS001",
         "sort": "rapier",
+        "img": "",
         "location": false,
         "tobe": ["BWS001", "BWS002", "PWS001", "PWS005"],
         "pickup": 1,
@@ -3375,6 +3620,7 @@
       {
         "id": "BWS001",
         "sort": "rapier",
+        "img": "",
         "location": false,
         "tobe": ["PWS002", "PWS003", "PWS004"],
         "pickup": 1,
@@ -3390,6 +3636,7 @@
       {
         "id": "BWS002",
         "sort": "rapier",
+        "img": "",
         "location": false,
         "tobe": ["PWS006"],
         "pickup": 1,
@@ -3403,6 +3650,7 @@
       {
         "id": "PWS001",
         "sort": "rapier",
+        "img": "",
         "location": false,
         "tobe": ["YWS001"],
         "pickup": 1,
@@ -3420,6 +3668,7 @@
       {
         "id": "PWS002",
         "sort": "rapier",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3437,6 +3686,7 @@
       {
         "id": "PWS003",
         "sort": "rapier",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3453,6 +3703,7 @@
       {
         "id": "PWS004",
         "sort": "rapier",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3468,6 +3719,7 @@
       {
         "id": "PWS005",
         "sort": "rapier",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3483,6 +3735,7 @@
       {
         "id": "PWS006",
         "sort": "rapier",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3498,6 +3751,7 @@
       {
         "id": "YWS001",
         "sort": "rapier",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3521,6 +3775,7 @@
     "items": [{
         "id": "WWT001",
         "sort": "guitar",
+        "img": "",
         "location": false,
         "tobe": ["GWT001", "GWT002"],
         "pickup": 1,
@@ -3532,6 +3787,7 @@
       {
         "id": "GWT001",
         "sort": "guitar",
+        "img": "",
         "location": false,
         "tobe": ["BWT002", "BWT003"],
         "pickup": 1,
@@ -3545,6 +3801,7 @@
       {
         "id": "GWT002",
         "sort": "guitar",
+        "img": "",
         "location": false,
         "tobe": ["BWT001", "BWT004", "BWT005", "BWT006"],
         "pickup": 1,
@@ -3559,6 +3816,7 @@
       {
         "id": "BWT001",
         "sort": "guitar",
+        "img": "",
         "location": false,
         "tobe": ["PWT001"],
         "pickup": 1,
@@ -3574,6 +3832,7 @@
       {
         "id": "BWT002",
         "sort": "guitar",
+        "img": "",
         "location": false,
         "tobe": ["PWT002"],
         "pickup": 1,
@@ -3588,6 +3847,7 @@
       {
         "id": "BWT003",
         "sort": "guitar",
+        "img": "",
         "location": false,
         "tobe": ["PWT003"],
         "pickup": 1,
@@ -3601,6 +3861,7 @@
       {
         "id": "BWT004",
         "sort": "guitar",
+        "img": "",
         "location": false,
         "tobe": ["PWT004"],
         "pickup": 1,
@@ -3616,6 +3877,7 @@
       {
         "id": "BWT005",
         "sort": "guitar",
+        "img": "",
         "location": false,
         "tobe": ["PWT005", "PWT006"],
         "pickup": 1,
@@ -3630,6 +3892,7 @@
       {
         "id": "BWT006",
         "sort": "guitar",
+        "img": "",
         "location": false,
         "tobe": ["PWT007"],
         "pickup": 1,
@@ -3644,6 +3907,7 @@
       {
         "id": "PWT001",
         "sort": "guitar",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3660,6 +3924,7 @@
       {
         "id": "PWT002",
         "sort": "guitar",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3676,6 +3941,7 @@
       {
         "id": "PWT003",
         "sort": "guitar",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3690,6 +3956,7 @@
       {
         "id": "PWT004",
         "sort": "guitar",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3705,6 +3972,7 @@
       {
         "id": "PWT005",
         "sort": "guitar",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3719,6 +3987,7 @@
       {
         "id": "PWT006",
         "sort": "guitar",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3733,6 +4002,7 @@
       {
         "id": "PWT007",
         "sort": "guitar",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3754,6 +4024,7 @@
     "items": [{
         "id": "WWU001",
         "sort": "camera",
+        "img": "",
         "location": false,
         "tobe": ["GWU001"],
         "pickup": 1,
@@ -3765,6 +4036,7 @@
       {
         "id": "GWU001",
         "sort": "camera",
+        "img": "",
         "location": false,
         "tobe": ["BWU001", "BWU003", "PWU004"],
         "pickup": 1,
@@ -3778,6 +4050,7 @@
       {
         "id": "BWU001",
         "sort": "camera",
+        "img": "",
         "location": false,
         "tobe": ["PWU001"],
         "pickup": 1,
@@ -3791,6 +4064,7 @@
       {
         "id": "BWU002",
         "sort": "camera",
+        "img": "",
         "location": false,
         "tobe": ["PWU002"],
         "pickup": 1,
@@ -3805,6 +4079,7 @@
       {
         "id": "BWU003",
         "sort": "camera",
+        "img": "",
         "location": false,
         "tobe": ["PWU003"],
         "pickup": 1,
@@ -3819,6 +4094,7 @@
       {
         "id": "PWU001",
         "sort": "camera",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3833,6 +4109,7 @@
       {
         "id": "PWU002",
         "sort": "camera",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3847,6 +4124,7 @@
       {
         "id": "PWU003",
         "sort": "camera",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3862,6 +4140,7 @@
       {
         "id": "PWU004",
         "sort": "camera",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,

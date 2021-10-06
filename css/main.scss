@@ -38,6 +38,10 @@ label {
   overflow: hidden;
 }
 
+img {
+  width: 100%;
+}
+
 button {
   border: none;
   cursor: pointer;
@@ -297,8 +301,8 @@ main {
 
       #itemPreview {
         display: grid;
-        grid-template-columns: 70px auto;
-
+        grid-template-columns: minmax(70px, 25%) auto;
+        gap: 5px;
         #itemOptions {
           li {
             min-height: 25px;

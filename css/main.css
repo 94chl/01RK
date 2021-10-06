@@ -12,6 +12,10 @@ label {
   overflow: hidden;
 }
 
+img {
+  width: 100%;
+}
+
 button {
   border: none;
   cursor: pointer;
@@ -351,8 +355,9 @@ main #selectItemBox #selectPreview.hide {
 main #selectItemBox #selectPreview #itemPreview {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 70px auto;
-      grid-template-columns: 70px auto;
+  -ms-grid-columns: minmax(70px, 25%) auto;
+      grid-template-columns: minmax(70px, 25%) auto;
+  gap: 5px;
 }
 
 main #selectItemBox #selectPreview #itemPreview #itemOptions li {

@@ -38,7 +38,12 @@ export default function SelectPreview({
     $selectPreview.innerHTML = `
       <div data-id="${this.state.cart}" id="itemPreview">
         <div id="itemImg">
-          <img src="" alt="" /> image
+          <img src="${this.state.cartInfo.img}" alt="${
+      this.state.cartInfo.name
+    }_img" />
+          <button>
+            <i class="fas fa-search-plus"></i>
+          </button>        
         </div>
         <ul id="itemOptions">
       ${itemInfoKeys
@@ -73,7 +78,7 @@ export default function SelectPreview({
                 </span>
               </span>
             </li>`;
-          } else if (index > 8 && index < itemInfoKeys.length - 4) {
+          } else if (index > 9 && index < itemInfoKeys.length - 4) {
             return `
               <li>
                 <span class="attrKey">${key} : </span>

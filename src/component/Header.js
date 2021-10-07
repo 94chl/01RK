@@ -3,6 +3,10 @@ export default function Header({ $target, pathFinder }) {
   $header.setAttribute("id", "headerBox");
   $target.appendChild($header);
 
+  // <button id="headerStatusBtn">
+  //   <i class="fas fa-user"></i>
+  // </button>
+
   this.render = () => {
     $header.innerHTML = `
       <div id="logo">
@@ -10,9 +14,6 @@ export default function Header({ $target, pathFinder }) {
       </div>
       <div id="title">01RK</div>
       <div id="headerBtnBox">
-        <button id="headerStatusBtn">
-          <i class="fas fa-user"></i>
-        </button>
         <button id="headerBagBtn">
           <i class="fas fa-suitcase"></i>
         </button>

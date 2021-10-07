@@ -851,7 +851,7 @@ main {
   }
 }
 
-footer {
+#footerBox {
   background: $color1;
   border-radius: 5px;
   padding: 5px 10px;
@@ -859,5 +859,10 @@ footer {
   div {
     color: $color2;
     font-size: 0.5em;
+    img {
+      height: 20px;
+      width: min-content;
+      border-radius: 5px;
+    }
   }
 }

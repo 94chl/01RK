@@ -1111,14 +1111,22 @@ main #areaBox #areaList > li:last-child .areaNeedDrops ul {
           box-shadow: 1px 1px 3px 1px #999;
 }
 
-footer {
+#footerBox {
   background: #0adb96;
   border-radius: 5px;
   padding: 5px 10px;
 }
 
-footer div {
+#footerBox div {
   color: #ddfdf3;
   font-size: 0.5em;
+}
+
+#footerBox div img {
+  height: 20px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=main.css.map */

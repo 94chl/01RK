@@ -49,10 +49,21 @@ button {
 
 body {
   min-width: 360px;
-  width: 360px;
   margin: 0 auto;
   background: #ffffff;
   position: relative;
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 721px) {
+  body {
+    width: 720px;
+  }
 }
 
 header {
@@ -1098,5 +1109,16 @@ main #areaBox #areaList > li:last-child .areaNeedDrops ul {
   border-radius: 5px;
   -webkit-box-shadow: 1px 1px 3px 1px #999;
           box-shadow: 1px 1px 3px 1px #999;
+}
+
+footer {
+  background: #0adb96;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+footer div {
+  color: #ddfdf3;
+  font-size: 0.5em;
 }
 /*# sourceMappingURL=main.css.map */

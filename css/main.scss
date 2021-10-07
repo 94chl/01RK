@@ -71,10 +71,15 @@ button {
 
 body {
   min-width: 360px;
-  width: 360px;
   margin: 0 auto;
   background: #ffffff;
   position: relative;
+  @media screen and (max-width: 720px) {
+    width: 360px;
+  }
+  @media screen and (min-width: 721px) {
+    width: 720px;
+  }
 }
 
 header {
@@ -847,4 +852,12 @@ main {
 }
 
 footer {
+  background: $color1;
+  border-radius: 5px;
+  padding: 5px 10px;
+
+  div {
+    color: $color2;
+    font-size: 0.5em;
+  }
 }

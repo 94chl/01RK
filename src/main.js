@@ -8,6 +8,7 @@ import { disassembleWD } from "./utils/disassemble.js";
 import Area from "./component/Area.js";
 import { pathFinder } from "./utils/pathFinder.js";
 import CustomRoute from "./component/CustomRoute.js";
+import Footer from "./component/Footer.js";
 
 const $target = document.querySelector("#app");
 let needsIdArrayNow = [];
@@ -288,3 +289,5 @@ const customRoute = new CustomRoute({
   $target,
   initialState: [],
 });
+
+new Footer({ $target: document.querySelector("#footer") });

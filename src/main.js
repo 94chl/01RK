@@ -111,7 +111,7 @@ const selectItem = new SelectItem({
 const targetItems = new TargetItems({
   $target,
   initialState: {
-    targetItem: JSON.parse(sessionStorage.getItem("targetItems", [])),
+    targetItem: JSON.parse(sessionStorage.getItem("targetItems")) || [],
   },
   onRemove: (targetId) => {
     const bagInfo = JSON.parse(JSON.stringify(targetItems.state));

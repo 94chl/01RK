@@ -22,8 +22,6 @@ export default function BagInventory({
 
   this.setState = (nextState, targetState) => {
     this.state = nextState;
-    console.log(nextState);
-    console.log(targetState);
     if (targetState === "equip") {
       bagEquip.setState(this.state.equip);
     } else if (targetState === "inventory") {
@@ -38,7 +36,6 @@ export default function BagInventory({
     $target: $bagInventory,
     initialState,
     onClick: (clickedInfo) => {
-      console.log(clickedInfo);
       if (this.state.equip.weapon.id) {
         if (!window.confirm("현재 장착 중인 무기가 사라집니다. 진행할까요?")) {
           return;
@@ -61,18 +58,15 @@ export default function BagInventory({
     $target: $bagInventory,
     initialState: this.state.equip,
     onMove: (clickedInfo) => {
-      console.log(clickedInfo);
       // 우선 선택된 아이템이 없다면, 현 아이템이 우선항목이 된다
       if (!moveItems.from.id) {
         // 빈 항목이 선택되었을 때, 무효처리
         if (!clickedInfo.id)
           document.querySelector(".nowClicked").classList.remove("nowClicked");
         moveItems.from = clickedInfo;
-        console.log(moveItems);
         return;
       }
 
-      console.log(moveItems);
       moveItems.to = clickedInfo;
       const nextInventory = { ...this.state };
       if (moveItems.from.location.slice(0, 6) === "pocket") {
@@ -94,10 +88,9 @@ export default function BagInventory({
       }
     },
     onRemove: (clickedInfo) => {
-      console.log(clickedInfo);
       const nextInventory = { ...this.state };
       nextInventory.equip[clickedInfo.location] = { id: false };
-      console.log(nextInventory);
+
       this.setState(nextInventory, "equip");
       bagUpdate(nextInventory);
     },
@@ -107,18 +100,15 @@ export default function BagInventory({
     $target: $bagInventory,
     initialState: this.state.inventory,
     onMove: (clickedInfo) => {
-      console.log(clickedInfo);
       // 우선 선택된 아이템이 없다면, 현 아이템이 우선항목이 된다
       if (!moveItems.from.id) {
         // 빈 항목이 선택되었을 때, 무효처리
         if (!clickedInfo.id)
           document.querySelector(".nowClicked").classList.remove("nowClicked");
         moveItems.from = clickedInfo;
-        console.log(moveItems);
         return;
       }
 
-      console.log(moveItems);
       moveItems.to = clickedInfo;
       const nextInventory = { ...this.state };
       if (moveItems.from.location.slice(0, 6) === "pocket") {
@@ -154,10 +144,9 @@ export default function BagInventory({
       }
     },
     onRemove: (clickedInfo) => {
-      console.log(clickedInfo);
       const nextInventory = { ...this.state };
       nextInventory.inventory[clickedInfo.location] = { id: false };
-      console.log(nextInventory);
+
       this.setState(nextInventory, "inventory");
       bagUpdate(nextInventory);
     },

@@ -32,7 +32,6 @@ export default function Header({ $target, pathFinder }) {
     `;
 
     $header.querySelector("#headerBagBtn").addEventListener("click", (e) => {
-      console.log("bag click");
       e.target.closest("button").classList.toggle("openedBtn");
       document.querySelector("#bag").classList.toggle("active");
     });
@@ -63,8 +62,6 @@ export default function Header({ $target, pathFinder }) {
           ${paths.map((path) => `<li>${path.join(" -> ")}</li>`).join("")}
         </ul>`;
           }
-        } else {
-          console.log("close");
         }
 
         $header.querySelector(".loadingModule").remove();
@@ -82,7 +79,6 @@ export default function Header({ $target, pathFinder }) {
 
         const modalHeight =
           $allItemPath.querySelector(".itemPaths").style.height;
-        console.log(modalHeight);
         modalHeight > 0 ? ($loadingModule.style.height = modalHeight) : "30px";
 
         $allItemPath.querySelector("ul")

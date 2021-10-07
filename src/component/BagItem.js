@@ -13,7 +13,6 @@ export default function BagItem({ $target, initialState, onMove, onRemove }) {
   };
 
   this.render = () => {
-    console.log(this.state);
     const pocketName = Object.keys(this.state);
     $bagItem.innerHTML = `
     <ul>

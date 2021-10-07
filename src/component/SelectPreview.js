@@ -33,8 +33,6 @@ export default function SelectPreview({
   };
 
   this.render = () => {
-    console.log(this.state);
-    console.log(itemInfoKeys);
     $selectPreview.innerHTML = `
       <div data-id="${this.state.cart}" id="itemPreview">
         <div id="itemImg">

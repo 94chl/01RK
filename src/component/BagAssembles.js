@@ -39,7 +39,6 @@ const assemblable = (bagNow) => {
       });
     }
   });
-  console.log(assemblables);
   return assemblables;
 };
 
@@ -49,15 +48,12 @@ export default function BagAssembles({ $target, initialState, onClick }) {
   $target.appendChild($bagAssembles);
 
   this.state = makeBagNow(initialState);
-  console.log(this.state);
   this.setState = (nextState) => {
     this.state = makeBagNow(nextState);
-    console.log(this.state);
     this.render();
   };
 
   this.render = () => {
-    console.log(this.state);
     const assemblables = assemblable(this.state);
     const assemblablesId = Object.keys(assemblables);
     $bagAssembles.innerHTML = `

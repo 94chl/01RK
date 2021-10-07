@@ -12,7 +12,7 @@ export default function Area({ $target, initialState, getDrop, routeCustom }) {
 
   this.setState = (nextState) => {
     this.state = nextState;
-    console.log(this.state);
+
     this.render();
   };
 
@@ -20,8 +20,6 @@ export default function Area({ $target, initialState, getDrop, routeCustom }) {
   const areaIdList = areaId.slice(2).concat(areaId[0]);
 
   this.render = () => {
-    console.log(areaIdList);
-    console.log(this.state);
     $areaBox.innerHTML = `
     <div class="tabName">
       지역
@@ -141,7 +139,6 @@ export default function Area({ $target, initialState, getDrop, routeCustom }) {
            ${customRoute.length}
           </span>`;
         }
-        console.log(customRoute);
         this.state.pickedArea = customRoute;
         routeCustom(this.state.pickedArea);
       });

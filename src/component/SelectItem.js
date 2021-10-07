@@ -11,6 +11,7 @@ export default function SelectItem({
   initialState,
   submitItem,
   pathFinder,
+  setSessionStorage,
 }) {
   const $selectItemBox = document.createElement("div");
   $selectItemBox.setAttribute("id", "selectItemBox");
@@ -32,8 +33,6 @@ export default function SelectItem({
   };
 
   this.setState = (nextState) => {
-    console.log(this.state);
-    console.log(nextState);
     this.state = {
       ...this.state,
       dept: nextState.dept,
@@ -42,7 +41,7 @@ export default function SelectItem({
       defaultCheck: nextState.defaultCheck,
       cart: nextState.cart || "",
     };
-    console.log(this.state);
+
     selectCategory.setState(this.state);
     selectDetails.setState(this.state);
     selectPreview.setState(this.state);
@@ -52,8 +51,6 @@ export default function SelectItem({
     $target: $selectItemBox,
     initialState: this.state,
     changeDept: (selected) => {
-      console.log("CHANGE Dept");
-      console.log(selected);
       this.setState({
         dept: selected,
         category: database[`${selected}Data`][0].category,
@@ -67,13 +64,10 @@ export default function SelectItem({
     $target: $selectItemBox,
     initialState: this.state,
     changeCategory: (changed) => {
-      console.log("CHANGE Category");
-      console.log(changed);
       this.state.category = changed;
 
       selectDetails.setState(this.state);
 
-      console.log(this.state);
       selectPreview.setState({
         ...this.state,
         cart: document.querySelector("#detailsList").value,
@@ -85,10 +79,7 @@ export default function SelectItem({
     $target: $selectItemBox,
     initialState: this.state,
     changeDetails: (itemId) => {
-      console.log("CHANGE Details", itemId);
-
       selectPreview.setState({ ...this.state, cart: itemId });
-      console.log(this.state);
     },
   });
 
@@ -100,9 +91,9 @@ export default function SelectItem({
   $selectItemBox
     .querySelector("#itemSubmitBtn")
     .addEventListener("click", () => {
-      console.log(this.state);
-      console.log(this.state.cartInfo);
       submitItem(this.state.cartInfo);
+
+      setSessionStorage();
     });
 
   const selectPreview = new SelectPreview({
@@ -112,8 +103,6 @@ export default function SelectItem({
       cart: document.querySelector("#detailsList").value,
     },
     searchItemInfo: (itemInfo) => {
-      console.log(this.state);
-      console.log(itemInfo);
       this.state = itemInfo;
     },
     pathFinder,
@@ -122,7 +111,6 @@ export default function SelectItem({
   $selectItemBox
     .querySelector(".toggleTabContentBtn")
     .addEventListener("click", (e) => {
-      console.log("click");
       e.target.closest(".toggleTabContentBtn").classList.toggle("closed");
       $selectItemBox.querySelector("#selectDept").classList.toggle("hide");
       $selectItemBox.querySelector("#selectCategory").classList.toggle("hide");

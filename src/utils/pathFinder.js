@@ -60,11 +60,7 @@ export function pathFinder(route, needsNow, bagNow) {
     (need) => !bag.includes(need) && !mapInfo.A000.drop.includes(need)
   );
 
-  console.log(bag);
-  console.log(needs);
-
   mapInfo = checkAreaDrop(mapInfo, needs);
-  console.log(mapInfo);
 
   if (routeStack.length > 0) {
     routeStack.forEach((area) => {
@@ -88,8 +84,6 @@ export function pathFinder(route, needsNow, bagNow) {
     }, [])
     .sort((a, b) => b.point - a.point);
 
-  console.log(startPoint);
-
   // 최단 경로 탐색
   let maxLength = 10;
 
@@ -99,7 +93,6 @@ export function pathFinder(route, needsNow, bagNow) {
 
     // 출발지 [{id, name, drop, point}...]
     let startT = JSON.parse(JSON.stringify(startPoint));
-    console.log(startT);
 
     // 출발지 별 도착지 탐색
     for (let i = 0; i < startT.length; i++) {
@@ -149,7 +142,6 @@ export function pathFinder(route, needsNow, bagNow) {
           maxLength = routeT.length;
           const routeName = routeT.map((areaId) => areaData[areaId].name);
           finishedRoute.push(routeName);
-          console.log(routeName);
         }
       } else if (needsT.length > 0 && dest.length > 0) {
         routeT.push(startT[i].id);
@@ -170,6 +162,6 @@ export function pathFinder(route, needsNow, bagNow) {
   const shortestRoute = finishedRoute.filter(
     (route) => route.length <= maxLength
   );
-  console.log(shortestRoute);
+
   return shortestRoute;
 }

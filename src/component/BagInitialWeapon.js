@@ -15,7 +15,6 @@ export default function BagInitialWeapon({ $target, initialState, onClick }) {
   };
 
   this.render = () => {
-    console.log(this.state);
     $bagInitialWeapon.innerHTML = `
     <div class="tabName">
       시작 무기    
@@ -49,7 +48,6 @@ export default function BagInitialWeapon({ $target, initialState, onClick }) {
           limit: 1,
           location: "weapon",
         };
-        console.log(clickedInfo);
         onClick(clickedInfo);
       });
     });
@@ -57,7 +55,6 @@ export default function BagInitialWeapon({ $target, initialState, onClick }) {
     $bagInitialWeapon
       .querySelector(".toggleTabContentBtn")
       .addEventListener("click", (e) => {
-        console.log("click");
         e.target.closest(".toggleTabContentBtn").classList.toggle("closed");
         $bagInitialWeapon
           .querySelector("#initialWeaponBox")

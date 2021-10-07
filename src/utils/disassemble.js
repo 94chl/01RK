@@ -9,8 +9,7 @@ export function disassembleGD(materialArr) {
     greenMatId: {},
     greenMatName: {},
   };
-  console.log(materials);
-  console.log(need2Disassemble);
+
   for (let i = 0; i < need2Disassemble.length; ) {
     const result = searchById(need2Disassemble[i]);
     if (!result.location) {
@@ -21,7 +20,6 @@ export function disassembleGD(materialArr) {
         materials.greenMatId[result.id] = 1;
         materials.greenMatName[result.name] = 1;
       } else if (result.id[0] == "W") {
-        console.log(result);
         materials.dropMatId[result.id] = 1;
         materials.dropMatName[result.name] = 1;
       } else {
@@ -50,8 +48,7 @@ export function disassembleWD(materialArr) {
     dropMatId: {},
     dropMatName: {},
   };
-  console.log(materials);
-  console.log(need2Disassemble);
+
   for (let i = 0; i < need2Disassemble.length; ) {
     const result = searchById(need2Disassemble[i]);
     if (!result.location && result.id[0] !== "W") {
@@ -113,8 +110,6 @@ export function disassembleAllWD(itemArr) {
     dropMatArr: dropsInfo,
     dropMatId: drops,
   };
-
-  console.log(itemMatInfo);
 
   return itemMatInfo;
 }

@@ -19,7 +19,6 @@ export default function Bag({ $target, initialState }) {
     this.state = nextState;
     if (targetState === "targetItem") {
       // bagTarget.setState({ targetItem: this.state.targetItem });
-      console.log("targeted past");
     } else {
       bagInventory.setState(
         { inventory: this.state.inventory, equip: this.state.equip },
@@ -27,7 +26,6 @@ export default function Bag({ $target, initialState }) {
       );
       bagAssembles.setState([this.state.equip, this.state.inventory]);
     }
-    console.log(this.state);
   };
 
   const bagInventory = new BagInventory({
@@ -38,12 +36,10 @@ export default function Bag({ $target, initialState }) {
     },
     setInitialWeapon: (newEquips) => {
       this.state.equip = newEquips;
-      console.log(this.state);
     },
     bagUpdate: (nextBag) => {
       this.state = { ...this.state, ...nextBag };
       bagAssembles.setState([this.state.equip, this.state.inventory]);
-      console.log(this.state);
     },
   });
 
@@ -52,14 +48,11 @@ export default function Bag({ $target, initialState }) {
     initialState: [this.state.equip, this.state.inventory],
     onClick: (assembled) => {
       const bagInfo = JSON.parse(JSON.stringify(this.state));
-      console.log(bagInfo);
 
       const assembledInfo = searchById(assembled);
       assembledInfo.count = assembledInfo.pickup;
-      console.log(assembledInfo);
 
       const needMat = [...assembledInfo.material];
-      console.log(needMat);
 
       // 조합 시 재료 소모 처리
       for (const key of Object.keys(bagInfo)) {
@@ -68,15 +61,11 @@ export default function Bag({ $target, initialState }) {
             bagItem.count < 2
               ? (bagInfo[key][bagItem.location] = { id: false })
               : bagItem.count--;
-            console.log(bagItem);
             needMat.splice(needMat.indexOf(bagItem.id), 1);
           }
         });
-        console.log(key, needMat);
         if (needMat.length < 1) break;
       }
-
-      console.log(bagInfo);
 
       // 장비칸으로
       if (equippable.includes(assembledInfo.sort)) {
@@ -98,14 +87,11 @@ export default function Bag({ $target, initialState }) {
           bagEquip[assembledInfo.sort] = assembledInfo;
           this.setState({ ...bagInfo, equip: bagEquip }, "allBag");
           return;
-        } else {
-          console.log("no equip space for " + assembledInfo.name);
         }
       }
 
       // 가방으로
       const bagInventory = bagInfo.inventory;
-      console.log(bagInventory);
 
       // 가방에 동일한 아이템을 겹칠 수 있는지 확인
       let bagSpace = Object.keys(bagInventory).findIndex(
@@ -113,7 +99,6 @@ export default function Bag({ $target, initialState }) {
           bagInventory[pocket].id === assembledInfo.id &&
           bagInventory[pocket].count < bagInventory[pocket].limit
       );
-      console.log(bagSpace);
 
       // 가방에 동일한 아이템을 겹칠 수 없을 때
       if (bagSpace < 0) {
@@ -123,15 +108,12 @@ export default function Bag({ $target, initialState }) {
         );
         // 가방에 빈 공간이 없을 때
         if (bagSpace < 0) {
-          console.log("no space in bag" + assembledInfo.name);
-          console.log(bagInfo.inventory);
           return;
         }
         assembledInfo.location = `pocket${bagSpace}`;
         bagInventory[`pocket${bagSpace}`] = assembledInfo;
       } else {
         const targetPocket = bagInventory[`pocket${bagSpace}`];
-        console.log(targetPocket);
 
         if (targetPocket.count + assembledInfo.count > targetPocket.limit) {
           const remains = {
@@ -141,27 +123,20 @@ export default function Bag({ $target, initialState }) {
           };
           targetPocket.count = targetPocket.limit;
 
-          console.log(targetPocket.count, assembledInfo.count, remains.count);
-
           // 빈 공간 있는지 확인
           bagSpace = Object.keys(bagInfo.inventory).findIndex(
             (e) => bagInfo.inventory[e].id === false
           );
 
           // 가방에 빈 공간이 없을 때
-          if (bagSpace < 0) {
-            console.log("no space in bag for extra " + assembledInfo.name);
-            console.log(bagInfo.inventory);
-            return;
-          }
+          if (bagSpace < 0) return;
+
           remains.location = `pocket${bagSpace}`;
           bagInventory[`pocket${bagSpace}`] = remains;
         } else {
           targetPocket.count += assembledInfo.count;
         }
       }
-      console.log("bag space: pocket" + bagSpace);
-      console.log(bagInventory);
       this.setState({ ...bagInfo, inventory: bagInventory }, "allBag");
     },
   });

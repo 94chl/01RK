@@ -19,7 +19,6 @@ export default function SelectCategory({
   };
 
   this.render = () => {
-    console.log(this.state);
     $selectCategory.innerHTML = `
       <select data-name="selectCategory" id="categoryList">
       ${this.state.data.map(

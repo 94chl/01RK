@@ -23,16 +23,10 @@ const header = new Header({
       const checkNeedsChange = needsIdArrayNow.filter((id) =>
         needsIdArray.includes(id)
       );
-      console.log(checkNeedsChange);
-      if (checkNeedsChange.length > 0) {
-        console.log("연산 불필요");
-        return false;
-      }
+      if (checkNeedsChange.length > 0) return false;
     }
 
     needsIdArrayNow = [...needsIdArray];
-
-    console.log(needsIdArray);
 
     const bagEquip = Object.values(bag.state.equip).reduce((acc, item) => {
       if (item.id) acc.push(item.id);
@@ -47,7 +41,6 @@ const header = new Header({
     );
 
     const bagNow = bagEquip.concat(bagInventory);
-    console.log(bagNow);
 
     const loading = document.createElement("div");
     loading.classList.add("loading");
@@ -57,7 +50,7 @@ const header = new Header({
     const routes = pathFinder(customRoute.state, needsIdArray, bagNow);
 
     $target.querySelector(".loading").remove();
-    console.log(needsIdArrayNow);
+
     return routes;
   },
 });
@@ -70,11 +63,10 @@ const selectItem = new SelectItem({
     data: weaponData,
   },
   submitItem: (selected) => {
-    console.log(selected);
     const nextBagState = {
       targetItem: [...targetItems.state.targetItem, selected],
     };
-    console.log(nextBagState);
+
     targetItems.setState(nextBagState, "targetItem");
     needDrops.setState(nextBagState.targetItem);
   },
@@ -82,9 +74,6 @@ const selectItem = new SelectItem({
     const bagTarget = [selectedId];
     const needsInfo = disassembleWD(bagTarget);
     const needsIdArray = Object.keys(needsInfo.dropMatId);
-
-    console.log(needsInfo);
-    console.log(needsIdArray);
 
     const bagEquip = Object.values(bag.state.equip).reduce((acc, item) => {
       if (item.id) acc.push(item.id);
@@ -99,8 +88,6 @@ const selectItem = new SelectItem({
     );
 
     const bagNow = bagEquip.concat(bagInventory);
-    console.log(bagNow);
-    console.log(bagTarget);
 
     const loading = document.createElement("div");
     loading.classList.add("loading");
@@ -113,15 +100,21 @@ const selectItem = new SelectItem({
 
     return routes;
   },
+  setSessionStorage: () => {
+    sessionStorage.setItem(
+      "targetItems",
+      JSON.stringify(targetItems.state.targetItem)
+    );
+  },
 });
 
 const targetItems = new TargetItems({
   $target,
-  initialState: { targetItem: [] },
+  initialState: {
+    targetItem: JSON.parse(sessionStorage.getItem("targetItems", [])),
+  },
   onRemove: (targetId) => {
-    console.log(targetId);
     const bagInfo = JSON.parse(JSON.stringify(targetItems.state));
-    console.log(bagInfo);
 
     if (targetId === "ALL") {
       bagInfo.targetItem = [];
@@ -131,9 +124,12 @@ const targetItems = new TargetItems({
 
     targetItems.state = bagInfo;
     needDrops.setState(targetItems.state.targetItem);
+    sessionStorage.setItem(
+      "targetItems",
+      JSON.stringify(targetItems.state.targetItem)
+    );
   },
   viewInfo: (targetId) => {
-    console.log(targetId);
     selectItem.setState({ ...selectItem.state, cart: targetId });
   },
 });
@@ -197,8 +193,6 @@ const area = new Area({
   initialState: { pickedArea: [], dropMatId: [] },
   getDrop: (dropInfo) => {
     const bagInfo = JSON.parse(JSON.stringify(bag.state));
-    console.log(dropInfo);
-    console.log(bagInfo);
 
     // 장비칸으로
     if (equippable.includes(dropInfo.sort)) {
@@ -217,14 +211,11 @@ const area = new Area({
         bagEquip[dropInfo.sort] = dropInfo;
         bag.setState({ ...bagInfo, equip: bagEquip }, "equip");
         return;
-      } else {
-        console.log("no equip space for " + dropInfo.name);
       }
     }
 
     // 가방으로
     const bagInventory = { ...bagInfo.inventory };
-    console.log(bagInventory);
 
     // 가방에 동일한 아이템을 겹칠 수 있는지 확인
     let bagSpace = Object.keys(bagInventory).findIndex(
@@ -232,7 +223,6 @@ const area = new Area({
         bagInventory[pocket].id === dropInfo.id &&
         bagInventory[pocket].count < bagInventory[pocket].limit
     );
-    console.log(bagSpace);
 
     // 가방에 동일한 아이템을 겹칠 수 없을 때
     if (bagSpace < 0) {
@@ -241,16 +231,12 @@ const area = new Area({
         (e) => bagInfo.inventory[e].id === false
       );
       // 가방에 빈 공간이 없을 때
-      if (bagSpace < 0) {
-        console.log("no space in bag");
-        console.log(bagInfo.inventory);
-        return;
-      }
+      if (bagSpace < 0) return;
+
       dropInfo.location = `pocket${bagSpace}`;
       bagInventory[`pocket${bagSpace}`] = dropInfo;
     } else {
       const targetPocket = bagInventory[`pocket${bagSpace}`];
-      console.log(targetPocket.count, dropInfo.count);
       if (targetPocket.count + dropInfo.count > targetPocket.limit) {
         targetPocket.count = targetPocket.limit;
 
@@ -264,21 +250,16 @@ const area = new Area({
           (e) => bagInfo.inventory[e].id === false
         );
         // 가방에 빈 공간이 없을 때
-        if (bagSpace < 0) {
-          console.log("no space in bag");
-          console.log(bagInfo.inventory);
-          return;
-        }
+        if (bagSpace < 0) return;
+
         remains.location = `pocket${bagSpace}`;
         bagInventory[`pocket${bagSpace}`] = remains;
       } else {
         targetPocket.count += dropInfo.count;
       }
     }
-    console.log("bag space: pocket" + bagSpace);
-    console.log(bagInventory);
+
     bag.setState({ ...bagInfo, inventory: bagInventory }, "inventory");
-    console.log(bag.state);
   },
   routeCustom: (route) => {
     customRoute.setState(route);

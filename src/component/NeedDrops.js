@@ -12,7 +12,6 @@ export default function NeedDrops({ $target, initialState, onChange }) {
 
   this.setState = (nextState) => {
     this.state = disassembleAllWD(nextState);
-    console.log(this.state);
     this.render();
     onChange(this.state.dropMatId);
   };
@@ -37,7 +36,6 @@ export default function NeedDrops({ $target, initialState, onChange }) {
     $needDrops
       .querySelector(".toggleTabContentBtn")
       .addEventListener("click", (e) => {
-        console.log("click");
         e.target.closest(".toggleTabContentBtn").classList.toggle("closed");
         $needDrops.querySelector("#needDropsBox").classList.toggle("hide");
       });

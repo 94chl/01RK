@@ -15,7 +15,6 @@ export default function CustomRoute({ $target, initialState }) {
   };
 
   this.render = () => {
-    console.log(this.state);
     $customRoute.innerHTML = `
     <div class="tabName">
       루트 순서
@@ -37,9 +36,7 @@ export default function CustomRoute({ $target, initialState }) {
     $customRoute
       .querySelector(".toggleTabContentBtn")
       .addEventListener("click", (e) => {
-        console.log("click");
         e.target.closest(".toggleTabContentBtn").classList.toggle("closed");
-        console.log($customRoute.querySelector("#routeOrderList"));
         $customRoute.querySelector("#routeOrderList").classList.toggle("hide");
       });
   };

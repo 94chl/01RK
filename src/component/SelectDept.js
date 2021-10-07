@@ -12,7 +12,6 @@ export default function SelectDepartment({
   this.state = initialState;
 
   this.render = () => {
-    console.log(this.state);
     $selectDept.innerHTML = `
       ${deptArray
         .map(

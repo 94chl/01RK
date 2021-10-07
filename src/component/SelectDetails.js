@@ -14,14 +14,11 @@ export default function SelectDetails({
   this.state = initialState;
 
   this.setState = (nextState) => {
-    console.log(this.state);
-    console.log(nextState);
     this.state = nextState;
     this.render();
   };
 
   this.render = () => {
-    console.log(this.state);
     $selectDetails.innerHTML = `
       <select data-name="selectDetails" id="detailsList">
       ${this.state.data

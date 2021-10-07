@@ -13,9 +13,7 @@ export default function BagEquip({ $target, initialState, onMove, onRemove }) {
   };
 
   this.render = () => {
-    console.log(this.state);
     const bagEquipSort = Object.keys(this.state);
-    console.log(bagEquipSort);
     $bagEquip.innerHTML = `<ul>
       ${bagEquipSort
         .map((sort) => {

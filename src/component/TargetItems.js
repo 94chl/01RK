@@ -14,12 +14,10 @@ export default function TargetItems({
 
   this.setState = (nextState) => {
     this.state = nextState;
-    console.log(this.state);
     this.render();
   };
 
   this.render = () => {
-    console.log(this.state);
     $targetItems.innerHTML = `
       <div class="tabName">
         목표 아이템
@@ -79,7 +77,6 @@ export default function TargetItems({
     $targetItems
       .querySelector(".toggleTabContentBtn")
       .addEventListener("click", (e) => {
-        console.log("click");
         e.target.closest(".toggleTabContentBtn").classList.toggle("closed");
         $targetItems.querySelector("#targetItemBox").classList.toggle("hide");
       });

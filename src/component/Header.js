@@ -86,10 +86,13 @@ export default function Header({ $target, pathFinder }) {
           ? $allItemPath.querySelector("ul").remove()
           : null;
 
-        const paths = await pathFinder();
-        $allItemPath.querySelector(".itemPaths").innerHTML += `<ul>
+        const paths = await pathFinder(true);
+        console.log(paths);
+        if (paths.length) {
+          $allItemPath.querySelector(".itemPaths").innerHTML += `<ul>
           ${paths.map((path) => `<li>${path.join(" -> ")}</li>`).join("")}
         </ul>`;
+        }
 
         $header.querySelector(".loadingModule").remove();
       });

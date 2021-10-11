@@ -15,15 +15,16 @@ let needsIdArrayNow = [];
 
 const header = new Header({
   $target: document.querySelector("#header"),
-  pathFinder: () => {
+  pathFinder: (refresh) => {
     const needsInfo = JSON.parse(JSON.stringify(needDrops.state));
+    console.log(needsInfo);
     const needsIdArray = Object.keys(needsInfo.dropMatId);
 
     if (needsIdArray.length === needsIdArrayNow.length) {
       const checkNeedsChange = needsIdArrayNow.filter((id) =>
         needsIdArray.includes(id)
       );
-      if (checkNeedsChange.length > 0) return false;
+      if (checkNeedsChange.length > 0 && !refresh) return false;
     }
 
     needsIdArrayNow = [...needsIdArray];
@@ -42,14 +43,7 @@ const header = new Header({
 
     const bagNow = bagEquip.concat(bagInventory);
 
-    const loading = document.createElement("div");
-    loading.classList.add("loading");
-    loading.innerHTML = "루트 탐색 중";
-    $target.appendChild(loading);
-
     const routes = pathFinder(customRoute.state, needsIdArray, bagNow);
-
-    $target.querySelector(".loading").remove();
 
     return routes;
   },
@@ -89,14 +83,7 @@ const selectItem = new SelectItem({
 
     const bagNow = bagEquip.concat(bagInventory);
 
-    const loading = document.createElement("div");
-    loading.classList.add("loading");
-    loading.innerHTML = "루트 탐색 중";
-    $target.appendChild(loading);
-
     const routes = pathFinder(customRoute.state, needsIdArray, bagNow);
-
-    $target.querySelector(".loading").remove();
 
     return routes;
   },
@@ -178,7 +165,7 @@ const bag = new Bag({
 
 const needDrops = new NeedDrops({
   $target,
-  initialState: {
+  initialState: JSON.parse(sessionStorage.getItem("needDrops")) || {
     greenMatId: {},
     dropMatArr: [],
     dropMatId: {},

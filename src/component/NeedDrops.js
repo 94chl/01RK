@@ -12,6 +12,7 @@ export default function NeedDrops({ $target, initialState, onChange }) {
 
   this.setState = (nextState) => {
     this.state = disassembleAllWD(nextState);
+    sessionStorage.setItem("needDrops", JSON.stringify(this.state));
     this.render();
     onChange(this.state.dropMatId);
   };

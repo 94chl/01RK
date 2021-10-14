@@ -12,11 +12,21 @@ export function disassembleGD(materialArr) {
 
   for (let i = 0; i < need2Disassemble.length; ) {
     const result = searchById(need2Disassemble[i]);
+
     if (!result.location) {
-      if (result.id[0] == "G" && materials.greenMatId[result.id]) {
+      const resultGreenMaterial = result.material.filter((id) => id[0] === "G");
+      if (
+        result.id[0] == "G" &&
+        !resultGreenMaterial.length &&
+        materials.greenMatId[result.id]
+      ) {
         materials.greenMatId[result.id]++;
         materials.greenMatName[result.name]++;
-      } else if (result.id[0] == "G" && !materials.greenMatId[result.id]) {
+      } else if (
+        result.id[0] == "G" &&
+        !resultGreenMaterial.length &&
+        !materials.greenMatId[result.id]
+      ) {
         materials.greenMatId[result.id] = 1;
         materials.greenMatName[result.name] = 1;
       } else if (result.id[0] == "W") {

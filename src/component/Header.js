@@ -87,7 +87,7 @@ export default function Header({ $target, pathFinder }) {
           : null;
 
         const paths = await pathFinder(true);
-        console.log(paths);
+
         if (paths.length) {
           $allItemPath.querySelector(".itemPaths").innerHTML += `<ul>
           ${paths.map((path) => `<li>${path.join(" -> ")}</li>`).join("")}

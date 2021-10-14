@@ -17,7 +17,6 @@ const header = new Header({
   $target: document.querySelector("#header"),
   pathFinder: (refresh) => {
     const needsInfo = JSON.parse(JSON.stringify(needDrops.state));
-    console.log(needsInfo);
     const needsIdArray = Object.keys(needsInfo.dropMatId);
 
     if (needsIdArray.length === needsIdArrayNow.length) {
@@ -177,7 +176,10 @@ const needDrops = new NeedDrops({
 
 const area = new Area({
   $target,
-  initialState: { pickedArea: [], dropMatId: [] },
+  initialState: {
+    pickedArea: [],
+    dropMatId: JSON.parse(sessionStorage.getItem("needDrops")).dropMatId || [],
+  },
   getDrop: (dropInfo) => {
     const bagInfo = JSON.parse(JSON.stringify(bag.state));
 

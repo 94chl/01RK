@@ -178,7 +178,9 @@ const area = new Area({
   $target,
   initialState: {
     pickedArea: [],
-    dropMatId: JSON.parse(sessionStorage.getItem("needDrops")).dropMatId || [],
+    dropMatId: sessionStorage.getItem("needDrops")
+      ? JSON.parse(sessionStorage.getItem("needDrops")).dropMatId
+      : [],
   },
   getDrop: (dropInfo) => {
     const bagInfo = JSON.parse(JSON.stringify(bag.state));

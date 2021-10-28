@@ -65,7 +65,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1ZWdcZ-LKFkpa68VLbUIaaRT38tvQ_OoG=w1402-h253-iv1",
         "location": ["A006", "A011", "A015"],
-        "tobe": ["BWB006", "PWC001", "PWF003", "PWH002", "BWL002", "BWM001", "GWO001", "PWS002", "GA005"],
+        "tobe": ["GWB002", "PWC001", "PWF003", "PWH002", "BWL002", "BWM001", "GWO001", "PWS002", "GA005"],
         "pickup": 1,
         "limit": 3,
         "name": "레이저 포인터"
@@ -125,7 +125,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1z9tzGCeJIkFZXH-JqK5SNDoIdFmsgMbw=w1402-h253-iv1",
         "location": ["A004", "A005", "A012", "A013"],
-        "tobe": ["BWB003", "GM004", "GM011"],
+        "tobe": ["BWB003", "GM004", "GM011", "PH005"],
         "pickup": 1,
         "limit": 3,
         "name": "원석"
@@ -251,7 +251,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1p2tglyS9lD4lBOnTR_LUw2TDhjVlxa2T=w1402-h253-iv1",
         "location": false,
-        "tobe": ["BWB005", "PWC002", "PWE003", "BWT001", "BC008", "PH005", "PB006"],
+        "tobe": ["BWB005", "PWC002", "PWE003", "BWT001", "PC014", "PB006"],
         "pickup": 1,
         "limit": 3,
         "name": "루비",
@@ -485,7 +485,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1YfrCYrU0AN00y2_U1TIjy4koir14vsc6=w1402-h253-iv1",
         "location": ["A000"],
-        "tobe": ["YWA001", "YWB002", "YWF001", "YWG001", "YWH001", "YWI001", "YWJ001", "YWK001", "YWK02", "YWL001", "YWM001", "YWN002", "YWP001", "YWQ002", "YWR001", "YC003", "YC004", "YH002", "YH003", "YB003", "YB004", "YS003", "YS004", "YA001", "YA002", "YT001"],
+        "tobe": ["YWA001", "YWB002", "YWF001", "YWG001", "YWH001", "YWI001", "YWJ001", "YWK001", "YWK02", "YWL001", "YWM001", "YWN002", "YWP001", "YWQ002", "YWR001", "YC003", "YC004", "YC005", "YH002", "YH003", "YB003", "YB004", "YS003", "YS004", "YA001", "YA002", "YT001"],
         "pickup": 1,
         "limit": 3,
         "name": "VF 혈액 샘플"

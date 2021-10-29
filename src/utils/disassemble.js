@@ -9,11 +9,12 @@ export function disassembleGD(materialArr) {
     greenMatId: {},
     greenMatName: {},
   };
-
+  console.log(need2Disassemble);
   for (let i = 0; i < need2Disassemble.length; ) {
+    console.log(need2Disassemble[i]);
     const result = searchById(need2Disassemble[i]);
 
-    if (!result.location) {
+    if (!result.location && result.material) {
       const resultGreenMaterial = result.material.filter((id) => id[0] === "G");
       if (
         result.id[0] == "G" &&

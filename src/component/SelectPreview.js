@@ -21,12 +21,15 @@ export default function SelectPreview({
   let itemInfoKeys = Object.keys(this.state.cartInfo);
 
   this.setState = (nextState) => {
+    console.log(nextState.cart);
+    const cartId = searchById(nextState.cart);
+    console.log("cartID", cartId);
+    console.log([nextState.cart]);
+    const cartMat = disassembleGD([nextState.cart]);
+    console.log("cartMAT", cartMat);
     this.state = {
       ...nextState,
-      cartInfo: {
-        ...searchById(nextState.cart),
-        ...disassembleGD([nextState.cart]),
-      },
+      cartInfo: { ...cartId, ...cartMat },
     };
     itemInfoKeys = Object.keys(this.state.cartInfo);
     this.render();

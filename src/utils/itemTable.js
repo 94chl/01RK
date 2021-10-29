@@ -254,6 +254,7 @@ export const searchById = (itemId) => {
     itemInfo.dept = "item";
     itemInfo.category = idToCategory[itemInfo.dept][itemId[1]];
   }
+  console.log(itemInfo, itemId);
   itemInfo.details = database[`${itemInfo.dept}Data`]
     .filter((dept) => dept.category == itemInfo.category)[0]
     .items.filter((list) => list.id == itemInfo.id)[0];

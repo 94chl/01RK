@@ -107,7 +107,7 @@ const targetItems = new TargetItems({
     } else {
       bagInfo.targetItem.splice(bagInfo.targetItem.indexOf(targetId), 1);
     }
-
+    console.log(bagInfo);
     targetItems.state = bagInfo;
     needDrops.setState(targetItems.state.targetItem);
     sessionStorage.setItem(

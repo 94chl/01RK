@@ -5,7 +5,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1BdFZE4Ng7mIzxYGoszAr-T_x2sL-l1LX=w1402-h253-iv1",
         "location": ["A003", "A009", "A010"],
-        "tobe": ["GWI002", "WWU001", "GA003", "GM013", "BF021", "GD003", "GD004"],
+        "tobe": ["WWU001", "WWV001", "GWI002", "GA003", "GM013", "BF021", "GD003", "GD004"],
         "pickup": 2,
         "limit": 3,
         "name": "유리병"
@@ -15,7 +15,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1K2vf1zTaOyqb1tyj7dkYm6JbsMcw5muX=w1402-h253-iv1",
         "location": ["A000"],
-        "tobe": ["PWT004", "GH005", "BS006", "GA003", "GM006", "GM012", "BM001"],
+        "tobe": ["GH005", "BS006", "GA003", "GM006", "GM012", "BM001"],
         "pickup": 2,
         "limit": 3,
         "name": "돌멩이"
@@ -25,7 +25,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1afMzEr42nXIBNps2YqrHHBxOhjVJx7C-=w1402-h253-iv1",
         "location": ["A005", "A010", "A013"],
-        "tobe": ["BWA003", "BWE003", "GC003", "GB001", "GF005"],
+        "tobe": ["BWA003", "BWE003", "GC003", "GB001"],
         "pickup": 1,
         "limit": 3,
         "name": "거북이 등딱지"
@@ -45,7 +45,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1uqkmpIy-oUGunwb20T3ngLgDzMXinvcg=w1402-h253-iv1",
         "location": ["A006", "A008", "A010", "A014"],
-        "tobe": ["GWR001", "GS003", "GM001", "GM010", "BM003", "BT001"],
+        "tobe": ["GWR001", "GS003", "BS006", "GM001", "GM010", "BM003", "BT001"],
         "pickup": 1,
         "limit": 3,
         "name": "고철"
@@ -55,7 +55,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1Zg0dz3yONUwaXP04-E2C5nQk1mEHrCQL=w1402-h253-iv1",
         "location": ["A002", "A008", "A010", "A015"],
-        "tobe": ["GWB001", "BWK006", "PA002", "GM003", "GM007", "GM012", "GD001", "BD002"],
+        "tobe": ["WWV001", "GWB001", "BWK006", "PA002", "GM003", "GM007", "GM012", "GD001", "BD002"],
         "pickup": 1,
         "limit": 2,
         "name": "라이터"
@@ -75,7 +75,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1iDnMnZXL9nnOSOuk2lyAA85JP3frVjl9=w1402-h253-iv1",
         "location": ["A002", "A004", "A013"],
-        "tobe": ["BWF001", "GWH001", "BWJ003", "BWK003", "BC009", "BH003", "GA010"],
+        "tobe": ["BWF001", "GWH001", "BWJ003", "BWK003", "BWV004", "PWT004", "BC009", "BH003", "GA010"],
         "pickup": 1,
         "limit": 3,
         "name": "마패"
@@ -95,7 +95,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1XgjTNbKBO3OstHjHIOms7QvM4iQVd617=w1402-h253-iv1",
         "location": ["A006", "A008", "A015"],
-        "tobe": ["PWJ003", "GF009", "GD004", "GD005", "GD008"],
+        "tobe": ["GWV001", "PWJ003", "GD004", "GD005", "GD008"],
         "pickup": 1,
         "limit": 3,
         "name": "알코올"
@@ -376,14 +376,14 @@
         "limit": 3,
         "name": "철사",
         "stack": 3,
-        "material": ["WM021", "WWP001"]
+        "material": ["WM021", "WWP001", "BS006"]
       },
       {
         "id": "BM001",
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1Rc8Z1kNYiHq7AxFojR6Eriog7wSL1tXL=w1402-h253-iv1",
         "location": false,
-        "tobe": ["PWD002", "PWK006", "YWO001", "PWP004", "PWQ003", "PB009", "PB010", "BA005", "PA003", "YA003", "BD011"],
+        "tobe": ["PWD002", "PWK006", "YWO001", "PWP004", "PWQ003", "PWV005", "PB009", "PB010", "BA005", "PA003", "YA003", "BD011"],
         "pickup": 1,
         "limit": 3,
         "name": "문스톤",
@@ -455,7 +455,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1jai1w6D6dfuNarT6ytM-URMPc6AVqLY_=w1402-h253-iv1",
         "location": ["A002", "A008", "A011"],
-        "tobe": ["PWS005", "PC003", "PH001", "PB003", "PB012", "PS002", "PA004", "YA003", "BT002", "BF027"],
+        "tobe": ["PWS005", "PC003", "PH001", "PB003", "PS002", "PA004", "YA003", "BT002", "BF027"],
         "pickup": 1,
         "limit": 3,
         "name": "미스릴"
@@ -475,7 +475,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1cjFqIxouRXxw6MEKh8SQ3HaLUz0lB5sO=w1402-h253-iv1",
         "location": ["A007", "A012", "A014", "A006"],
-        "tobe": ["PA001", "PA002", "PM002"],
+        "tobe": ["PA001", "PA002", "PM002", "PF003"],
         "pickup": 1,
         "limit": 3,
         "name": "생명의 나무"
@@ -485,7 +485,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1YfrCYrU0AN00y2_U1TIjy4koir14vsc6=w1402-h253-iv1",
         "location": ["A000"],
-        "tobe": ["YWA001", "YWB002", "YWF001", "YWG001", "YWH001", "YWI001", "YWJ001", "YWK001", "YWK02", "YWL001", "YWM001", "YWN002", "YWP001", "YWQ002", "YWR001", "YC003", "YC004", "YC005", "YH002", "YH003", "YB003", "YB004", "YS003", "YS004", "YA001", "YA002", "YT001"],
+        "tobe": ["YWB002", "YWH001", "YWK001", "YWP001", "YWQ002", "YWR001", "YC003", "YC005", "YH003", "YB004", "YS004", "YA002"],
         "pickup": 1,
         "limit": 3,
         "name": "VF 혈액 샘플"
@@ -495,7 +495,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1CCjIqDTFgfJOPf4U8Tp9b_UQyvlND9HH=w1402-h253-iv1",
         "location": false,
-        "tobe": ["YWD001"],
+        "tobe": ["YWA001", "YWK02", "YWM001", "YWJ001", "YWL001", "YWI001", "YWG001", "YWF001", "YWN002", "YWD001", "YH002", "YC004", "YS003", "YB003", "YB005", "YA001", "YT001"],
         "pickup": 1,
         "limit": 3,
         "name": "포스 코어",
@@ -673,7 +673,7 @@
         "sort": "trap",
         "img": "https://lh3.google.com/u/0/d/15r8fmjlwY0P9FgwW2F-f7-L0ymUiSitr=w1402-h253-iv2",
         "location": false,
-        "tobe": ["PWI002", "YWJ002", "PWL004", "PT001", "PT002", "YT002"],
+        "tobe": ["PWI002", "PWL004", "PT001", "PT002", "YT002"],
         "pickup": 1,
         "limit": 5,
         "name": "RDX",
@@ -810,7 +810,7 @@
         "limit": 5,
         "name": "리모트 마인",
         "stack": 1,
-        "material": ["GT002", "PM001"]
+        "material": ["GT002", "PM002"]
       },
       {
         "id": "YT002",
@@ -833,7 +833,7 @@
         "sort": "food",
         "img": "https://lh3.google.com/u/0/d/1yUTxb4eBSMpgsmgChcKnweFMyx2uQl1m=w1402-h253-iv1",
         "location": ["A002", "A004", "A005"],
-        "tobe": ["GF016", "BF001", "BF003", "BF012", "BF025"],
+        "tobe": ["BF001", "BF003", "BF012", "BF025"],
         "pickup": 2,
         "limit": 5,
         "name": "감자"
@@ -923,7 +923,7 @@
         "sort": "food",
         "img": "https://lh3.google.com/u/0/d/1KEYGPyiFlWlitRLSWmMRuQZQ0L2ciTb3=w1402-h253-iv1",
         "location": ["A004", "A005", "A012"],
-        "tobe": ["GF005", "GF010", "BF023", "BD008"],
+        "tobe": ["GF010", "BF023", "BD008"],
         "pickup": 1,
         "limit": 5,
         "name": "약초"
@@ -979,24 +979,12 @@
         "sort": "food",
         "img": "https://lh3.google.com/u/0/d/1dr8un0iaoRQ9bv6LCQexrzx-nh4_mJI1=w1402-h253-iv1",
         "location": false,
-        "tobe": ["BF012", "BF019", "BF024", "BF025"],
+        "tobe": ["BF012", "BF019", "BF025"],
         "pickup": 1,
         "limit": 5,
         "name": "버터",
         "stack": 1,
         "material": ["WD007", "WWG002"]
-      },
-      {
-        "id": "GF005",
-        "sort": "food",
-        "img": "https://lh3.google.com/u/0/d/1qcX8S4f3yfXAAq6NjlD-2MLMOKf1K_s6=w1402-h253-iv1",
-        "location": false,
-        "tobe": ["BF006"],
-        "pickup": 2,
-        "limit": 5,
-        "name": "보약",
-        "stack": 1,
-        "material": ["WF011", "WM003"]
       },
       {
         "id": "GF006",
@@ -1021,18 +1009,6 @@
         "name": "초코파이",
         "stack": 1,
         "material": ["WF007", "WF012"]
-      },
-      {
-        "id": "GF009",
-        "sort": "food",
-        "img": "https://lh3.google.com/u/0/d/1wr4BgE74Bfg5uNtIczeOf8ijxrzzIbeq=w1402-h253-iv1",
-        "location": false,
-        "tobe": ["BF006"],
-        "pickup": 1,
-        "limit": 5,
-        "name": "한방침",
-        "stack": 1,
-        "material": ["WM010", "WWS001"]
       },
       {
         "id": "GF010",
@@ -1081,18 +1057,6 @@
         "name": "햄버거",
         "stack": 1,
         "material": ["WF007", "WF008"]
-      },
-      {
-        "id": "GF016",
-        "sort": "food",
-        "img": "https://lh3.google.com/u/0/d/1vrVeICheebaHoP2bejTLpIHlZFfmUoPo=w1402-h253-iv1",
-        "location": false,
-        "tobe": false,
-        "pickup": 2,
-        "limit": 5,
-        "name": "감자 수프",
-        "stack": 1,
-        "material": ["WF001", "WD007"]
       },
       {
         "id": "GF017",
@@ -1172,7 +1136,7 @@
         "img": "https://lh3.google.com/u/0/d/1Mv-NytQKTCprI0cg4Mhx25BRFTncUeO2=w1402-h253-iv1",
         "location": ["A000"],
         "tobe": false,
-        "pickup": 2,
+        "pickup": 1,
         "limit": 5,
         "name": "구급상자"
       },
@@ -1211,18 +1175,6 @@
         "name": "냉면",
         "stack": 1,
         "material": ["WF010", "GD015"]
-      },
-      {
-        "id": "BF006",
-        "sort": "food",
-        "img": "https://lh3.google.com/u/0/d/15k_e03P9yiN6txjJ6g_JRnZIoWvTuSRf=w1402-h684-iv2",
-        "location": false,
-        "tobe": false,
-        "pickup": 2,
-        "limit": 5,
-        "name": "대환단",
-        "stack": 1,
-        "material": ["GF009", "GF005"]
       },
       {
         "id": "BF007",
@@ -1267,7 +1219,7 @@
         "location": false,
         "tobe": false,
         "pickup": 3,
-        "limit": 5,
+        "limit": 10,
         "name": "메로구이",
         "stack": 1,
         "material": ["WF002", "GM012"]
@@ -1424,9 +1376,9 @@
         "tobe": false,
         "pickup": 2,
         "limit": 5,
-        "name": "파운드 케이크",
+        "name": "술빵",
         "stack": 1,
-        "material": ["GF004", "WF007"]
+        "material": ["GD005", "WF007"]
       },
       {
         "id": "BF025",
@@ -1486,6 +1438,18 @@
         "name": "일레븐 세트",
         "stack": 1,
         "material": ["BF001", "GF014"]
+      },
+      {
+        "id": "PF003",
+        "sort": "food",
+        "img": "https://lh3.google.com/u/0/d/15k_e03P9yiN6txjJ6g_JRnZIoWvTuSRf=w1402-h684-iv2",
+        "location": false,
+        "tobe": false,
+        "pickup": 3,
+        "limit": 5,
+        "name": "대환단",
+        "stack": 1,
+        "material": ["BM009", "WA005"]
       }
     ]
   },
@@ -1516,7 +1480,7 @@
         "sort": "drink",
         "img": "https://lh3.google.com/u/0/d/1t6I5jAKvxhsxKlmsN1jF7ZajDAyck2Dt=w1402-h684-iv2",
         "location": ["A006", "A007", "A014"],
-        "tobe": ["PWE004", "PA001", "GF024", "GD006", "GD015", "GD016", "BD001"],
+        "tobe": ["GWV002", "PWE004", "PA001", "GF024", "GD006", "GD015", "GD016", "BD001"],
         "pickup": 2,
         "limit": 5,
         "name": "얼음"
@@ -1556,7 +1520,7 @@
         "sort": "drink",
         "img": "https://lh3.google.com/u/0/d/1wBu4BtuoIRiWL1aD1zD5o3OFzR1ACwqD=w1402-h684-iv2",
         "location": ["A003", "A006", "A009"],
-        "tobe": ["GF004", "GF016", "GD010", "GD011", "GD013", "GD017", "BD003"],
+        "tobe": ["GF004", "GD010", "GD011", "GD013", "GD017", "BD003"],
         "pickup": 2,
         "limit": 5,
         "name": "우유"
@@ -1619,7 +1583,7 @@
         "limit": 5,
         "name": "소주",
         "stack": 1,
-        "material": ["WM010", "WD002"]
+        "material": ["WM010", "WD002", "BF024"]
       },
       {
         "id": "GD006",
@@ -1770,7 +1734,7 @@
         "sort": "drink",
         "img": "https://lh3.google.com/u/0/d/1NV0W-UGLPd_X_UwcCuUhY0EDhP996qes=w1402-h684-iv2",
         "location": false,
-        "tobe": ["PC012", "PA003"],
+        "tobe": ["PWV002", "PC012", "PA003"],
         "pickup": 2,
         "limit": 5,
         "name": "정화수",

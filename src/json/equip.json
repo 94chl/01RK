@@ -1637,9 +1637,9 @@
       {
         "id": "BS006",
         "sort": "shoes",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1RMRTl1eodhnJVw83RP0MTlTlPaLNJNSZ=w1079-h665-iv1",
         "location": false,
-        "tobe": [""],
+        "tobe": ["PS008"],
         "pickup": 1,
         "limit": 1,
         "name": "아이젠",
@@ -1760,7 +1760,7 @@
       {
         "id": "PS008",
         "sort": "shoes",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/17xIu66TR2cCnhTsKQU_rT51t_wMOoiMO=w1079-h665-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,

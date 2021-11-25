@@ -4200,7 +4200,7 @@
     "items": [{
         "id": "WWV001",
         "sort": "arcana",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1UC1HgnNp04gFUjr9xb88zIfeayj6skXs=w1079-h665-iv1",
         "location": false,
         "tobe": ["GWV001", "GWV002"],
         "pickup": 1,
@@ -4212,7 +4212,7 @@
       {
         "id": "GWV001",
         "sort": "arcana",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1WOLhu0cl-fs3PMXrcKVx1YAZ74br5Jmr=w1079-h665-iv1",
         "location": false,
         "tobe": ["BWV001", "BWV002", "PWV005"],
         "pickup": 1,
@@ -4225,7 +4225,7 @@
       {
         "id": "GWV002",
         "sort": "arcana",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1ZAJQawZ3csmOovfditjBDnYv7IJ5uFZH=w1079-h665-iv1",
         "location": false,
         "tobe": ["BWV003", "BWV004"],
         "pickup": 1,
@@ -4239,7 +4239,7 @@
       {
         "id": "BWV001",
         "sort": "arcana",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1vAgsnkMOr9x_OVhQnG7aMvbBcf8LpYPB=w1079-h665-iv1",
         "location": false,
         "tobe": ["PWV004"],
         "pickup": 1,
@@ -4252,7 +4252,7 @@
       {
         "id": "BWV002",
         "sort": "arcana",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1LnICHbXWywTyDgVX_OxUy_PvAksmMEhw=w1079-h665-iv1",
         "location": false,
         "tobe": ["PWV002"],
         "pickup": 1,
@@ -4266,7 +4266,7 @@
       {
         "id": "BWV003",
         "sort": "arcana",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/13z9FcvwLMnsdnCTRrNQnLLyfNK_HDe6V=w1079-h665-iv1",
         "location": false,
         "tobe": ["PWV003"],
         "pickup": 1,
@@ -4281,7 +4281,7 @@
       {
         "id": "BWV004",
         "sort": "arcana",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1HyCDh5HxOFjgkbveU_On6JFei3vY32t1=w1079-h665-iv1",
         "location": false,
         "tobe": ["PWV001"],
         "pickup": 1,
@@ -4296,7 +4296,7 @@
       {
         "id": "PWV001",
         "sort": "arcana",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1-beu6b2X0LoCw7_edQg1RYsRm-s2Zmu_=w1079-h665-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -4311,8 +4311,8 @@
       },
       {
         "id": "PWV002",
-        "sort": "",
-        "img": "",
+        "sort": "arcana",
+        "img": "https://lh3.google.com/u/0/d/1dyrV5g1B35iN51-77zmUAWEjZkWDa2K9=w1079-h665-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -4329,7 +4329,7 @@
       {
         "id": "PWV003",
         "sort": "arcana",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1UmJ3FFjLrkee_CDDvvmuQS8SFcMTvea-=w1079-h665-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -4345,7 +4345,7 @@
       {
         "id": "PWV004",
         "sort": "arcana",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1SAh9qkJPs4yxL487gGHVe9ReYA1nbaVD=w1079-h665-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -4359,7 +4359,7 @@
       {
         "id": "PWV005",
         "sort": "arcana",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1baSCP4FeUe6JJ8JE-FSwE_y-GeJl6CJu=w1079-h959-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
